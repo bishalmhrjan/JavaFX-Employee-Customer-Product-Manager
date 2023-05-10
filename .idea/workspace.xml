@@ -5,94 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/CommonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/LogInController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/RecieptController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ExpenditureController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductChartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/worker/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/worker/EmployeeMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/AdminModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/Boxes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DailyQuittung.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DatabaseDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/EmployeeModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/MonthlyQuittung.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/ProductModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/QuaterlyQuittung.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/QuittungModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/SixMonthQuittung.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/WeeklyQuittung.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/WorkerModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/YearlyQuittung.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/BagAndPurse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/ChristmasAndEaster.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/Felt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/HempAndNettle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/Jewellery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/KitchenItems.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/LoktaPaperCrafts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/Metal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/Pottery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/ShawlsAndScarfsAndThrows.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/SoapAndBars.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/Wellness.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/Wollen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/Wooden.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/AccountType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/AdminOptionView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/CommonOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ProdcutSpecificView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ProductTypeView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/WorkerOptionView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/AddProduct.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/Admin.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/AdminMenu.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/DailyChart.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/DailyChartExpenditure.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/DeleteProduct.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/Expenditure.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/HalfYearlyChart.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/HalfYearlyChartExpenditure.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/MonthlyChart.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/MonthlyChartExpenditure.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/QuarterlyChart.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/QuarterlyChartExpenditure.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/SixMonthChart.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/StateOfProducts.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/UpdateProduct.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/WeeklyChart.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/WeeklyChartExpenditure.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/YearlyChart.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/YearlyChartExpenditure.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Anmelde.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Reciept.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/SearchProduct.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/Search.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/addProduct.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/adminLeftPanel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/products.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/worker/Employee.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/worker/EmployeeMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/LogInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DatabaseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DatabaseDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +122,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

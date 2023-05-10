@@ -242,4 +242,7 @@ public class ViewFactory {
     public void setLogInAccountType(AccountType value) {
         this.accountType = value;
     }
+    public  void closeStage(Stage stage){
+        stage.close();
+    }
 }
