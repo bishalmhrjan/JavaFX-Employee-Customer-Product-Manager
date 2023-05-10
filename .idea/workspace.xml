@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/CommonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/LogInController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/RecieptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ExpenditureController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductChartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/worker/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/worker/EmployeeMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/AdminModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/Boxes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DailyQuittung.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DatabaseDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/EmployeeModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/MonthlyQuittung.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/ProductModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/QuaterlyQuittung.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/QuittungModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/SixMonthQuittung.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/WeeklyQuittung.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/WorkerModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/YearlyQuittung.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/BagAndPurse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/ChristmasAndEaster.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/Felt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/HempAndNettle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/Jewellery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/KitchenItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/LoktaPaperCrafts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/Metal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/Pottery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/ShawlsAndScarfsAndThrows.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/SoapAndBars.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/Wellness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/Wollen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/Wooden.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/AccountType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/AdminOptionView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/CommonOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ProdcutSpecificView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ProductTypeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/WorkerOptionView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/AddProduct.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/Admin.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/AdminMenu.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/DailyChart.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/DailyChartExpenditure.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/DeleteProduct.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/Expenditure.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/HalfYearlyChart.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/HalfYearlyChartExpenditure.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/MonthlyChart.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/MonthlyChartExpenditure.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/QuarterlyChart.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/QuarterlyChartExpenditure.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/SixMonthChart.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/StateOfProducts.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/UpdateProduct.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/WeeklyChart.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/WeeklyChartExpenditure.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/YearlyChart.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Admin/YearlyChartExpenditure.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Anmelde.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Reciept.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/SearchProduct.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/Search.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/addProduct.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/adminLeftPanel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/products.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/worker/Employee.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/worker/EmployeeMenu.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2P5cL5TL3dKxZO9FiKNJt4QpBkZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/FilesExercises/DiyaShop/src/main/resources/worker&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.diyashop.view" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\FilesExercises\DiyaShop\src\main\resources\worker" />
+      <recent name="D:\FilesExercises\DiyaShop\src\main\java\com\example\diyashop\controller\worker" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\FilesExercises\DiyaShop\src\main\resources" />
+      <recent name="D:\FilesExercises\DiyaShop\src\main\resources\Admin" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.App" />
+      <module name="DiyaShop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.diyashop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.HelloApplication" />
+      <module name="DiyaShop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.diyashop.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="" />
+      <created>1682750325597</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682750325597</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

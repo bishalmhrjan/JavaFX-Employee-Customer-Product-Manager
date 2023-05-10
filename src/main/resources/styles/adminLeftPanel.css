@@ -1,0 +1,38 @@
+.left_panel{
+-fx-background-color:#EEEEEE;
+ -fx-alignment:center;
+}
+
+.logo_container{
+    -fx-alignment:center;
+    -fx-font-size:2em;
+    -fx-font-weight:bold;
+}
+
+
+.menu_container{
+-fx-padding:5 5 5 10;
+-fx-spacing:10;
+-fx-background-color:rgb(128,0,0);
+ }
+
+.menu_container Button{
+ -fx-pref-width:150;
+ -fx-pref-height:40;
+-fx-alignment:left;
+-fx-font-size:1.2em;
+-fx-background-color:rgb(128,0,0);
+-fx-text-fill:white;
+-fx-border-radius:2px;
+-fx-font-weight:bold;
+}
+.menu_container Button FontAwesomeIconView{
+    -fx-fill:#132A13;
+}
+
+
+
+.menu_container Button:hover{
+-fx-cursor:hand;
+}
+
