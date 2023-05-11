@@ -5,7 +5,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="750.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller=" com.example.diyashop.controller.admin.ProductChartController">
+<AnchorPane prefHeight="750.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" >
    <children>
       <Text layoutX="133.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weekly Chart" wrappingWidth="109.13671875">
          <font>

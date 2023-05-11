@@ -11,5 +11,12 @@ module com.example.diyashop {
     opens com.example.diyashop to javafx.fxml;
     exports com.example.diyashop;
     exports com.example.diyashop.controller;
-    opens com.example.diyashop.controller to javafx.fxml;
+    exports com.example.diyashop.controller.admin;
+    exports com.example.diyashop.controller.worker;
+    exports com.example.diyashop.model.productstype;
+    exports com.example.diyashop.model;
+    exports com.example.diyashop.view;
+   opens com.example.diyashop.controller to javafx.fxml;
+   opens com.example.diyashop.controller.admin to javafx.fxml;
+   opens com.example.diyashop.controller.worker to javafx.fxml;
 }

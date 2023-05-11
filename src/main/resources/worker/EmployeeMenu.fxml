@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="750.0" prefWidth="200.0" styleClass="left_panel" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diyashop.controller.worker.EmployeeMenuController">
     <children>
-        <VBox prefHeight="100.0" prefWidth="200.0" styleClass="logo_container" stylesheets="@../styles/adminLeftPanel.css">
+        <VBox prefHeight="100.0" prefWidth="200.0" styleClass="logo_container" stylesheets="@../styles/adminMenu.css">
             <children>
                 <FontAwesomeIconView glyphName="HOME" size="30" />
                 <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="logo_container" text="Diya Hastakala">
@@ -19,7 +19,7 @@
                 </Text>
             </children>
         </VBox>
-        <VBox layoutY="-1.0" prefHeight="172.0" prefWidth="202.0" styleClass="menu_container" stylesheets="@../styles/adminLeftPanel.css" AnchorPane.bottomAnchor="458.0">
+        <VBox layoutY="-1.0" prefHeight="172.0" prefWidth="202.0" styleClass="menu_container" stylesheets="@../styles/adminMenu.css" AnchorPane.bottomAnchor="458.0">
             <children>
 
                 <Button fx:id="reciept" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" text="Reciept" />

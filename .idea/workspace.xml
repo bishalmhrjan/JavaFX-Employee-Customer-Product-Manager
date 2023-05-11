@@ -5,11 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diyadesktop.db" beforeDir="false" afterPath="$PROJECT_DIR$/diyadesktop.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diyadesktop.db-journal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/CommonController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/LogInController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DatabaseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DatabaseDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/worker/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/worker/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/worker/EmployeeMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/worker/EmployeeMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/AdminOptionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/AdminOptionView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/CommonOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/CommonOption.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/WorkerOptionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/WorkerOptionView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/Admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/Admin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/AdminMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/AdminMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/DailyChart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/DailyChart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/DeleteProduct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/DeleteProduct.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/Expenditure.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/DailyExpenditure.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/HalfYearlyChart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/HalfYearlyChart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/HalfYearlyChartExpenditure.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/HalfYearlyChartExpenditure.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/MonthlyChart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/MonthlyChart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/MonthlyChartExpenditure.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/MonthlyChartExpenditure.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/QuarterlyChart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/QuarterlyChart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/QuarterlyChartExpenditure.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/QuarterlyChartExpenditure.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/SixMonthChart.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/StateOfProducts.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/StateOfProducts.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/WeeklyChart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/WeeklyChart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/WeeklyChartExpenditure.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/WeeklyChartExpenditure.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/YearlyChart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/YearlyChart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/YearlyChartExpenditure.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/YearlyChartExpenditure.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Anmelde.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Anmelde.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/adminLeftPanel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/adminMenu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/worker/Employee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/worker/Employee.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/worker/EmployeeMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/worker/EmployeeMenu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +172,27 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java</url>
+          <line>224</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java</url>
+          <line>194</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

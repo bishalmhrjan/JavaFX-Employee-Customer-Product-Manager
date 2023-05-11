@@ -16,10 +16,10 @@
 -fx-background-color:rgb(128,0,0);
  }
 
-.menu_container Button{
+.menu_container MenuButton {
  -fx-pref-width:150;
  -fx-pref-height:40;
--fx-alignment:left;
+
 -fx-font-size:1.2em;
 -fx-background-color:rgb(128,0,0);
 -fx-text-fill:white;

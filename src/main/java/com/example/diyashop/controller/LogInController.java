@@ -3,6 +3,7 @@ package com.example.diyashop.controller;
 import com.example.diyashop.model.Model;
 import com.example.diyashop.view.AccountType;
 import javafx.collections.FXCollections;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
@@ -14,13 +15,64 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class LogInController implements Initializable {
+
+    @FXML
     private ChoiceBox<AccountType> chooseAccountType;
+
+    @FXML
     private TextField userName;
+
+    @FXML
     private TextField password;
+    @FXML
     private Button logInButton;
+
+    @FXML
     private Label userNameLabel;
+
+    @FXML
     private Label passwordLabel;
 
+    public void setLogInButton(Button logInButton) {
+        this.logInButton = logInButton;
+    }
+    public Button getLogInButton() {
+        return logInButton;
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+    this.getChooseAccountType().setItems(FXCollections.observableArrayList(AccountType.EMPLOYEE,AccountType.ADMIN));
+        this.getChooseAccountType().setValue(Model.getInstance().getViewFactory().getAccountType());
+        this.getChooseAccountType().valueProperty().addListener(e->setChooseAccountType());
+    this.getLogInButton().setOnAction(e->onLogIn());
+    }
+
+    private void onLogIn() {
+        Stage stage =(Stage) passwordLabel.getScene().getWindow();
+        if(Model.getInstance().getViewFactory().getAccountType()==AccountType.EMPLOYEE){
+                Model.getInstance().evaluateCredential(AccountType.EMPLOYEE, this.getUserName().getText(),this.getPassword().getText());
+            Model.getInstance().getViewFactory().showWorkerWindow();
+        } else{
+            if(Model.getInstance().getViewFactory().getAccountType()==AccountType.ADMIN){
+                Model.getInstance().evaluateCredential(AccountType.ADMIN, this.getUserName().getText(),this.getPassword().getText());
+                    Model.getInstance().getViewFactory().showAdminWindow();
+            }
+        }
+
+    }
+
+    private  void setChooseAccountType(){
+        Model.getInstance().getViewFactory().setLogInAccountType(chooseAccountType.getValue());
+
+        if(chooseAccountType.getValue()==AccountType.ADMIN){
+            userNameLabel.setText("Admin Username");
+        } else if (chooseAccountType.getValue()==AccountType.EMPLOYEE) {
+            userNameLabel.setText("Worker Username");
+
+        }
+
+    }
     public ChoiceBox<AccountType> getChooseAccountType() {
         return chooseAccountType;
     }
@@ -33,40 +85,26 @@ public class LogInController implements Initializable {
         return password;
     }
 
-    public Button getLogInButton() {
-        return logInButton;
+
+
+    public void setChooseAccountType(ChoiceBox<AccountType> chooseAccountType) {
+        this.chooseAccountType = chooseAccountType;
     }
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-    chooseAccountType.setItems(FXCollections.observableArrayList(AccountType.EMPLOYEE,AccountType.ADMIN));
-    chooseAccountType.setValue(Model.getInstance().getViewFactory().getAccountType());
-    chooseAccountType.valueProperty().addListener(e->setChooseAccountType());
-    logInButton.setOnAction(e->onLogIn());
+    public void setUserName(TextField userName) {
+        this.userName = userName;
     }
 
-    private void onLogIn() {
-        Stage stage =(Stage) passwordLabel.getScene().getWindow();
-        if(Model.getInstance().getViewFactory().getAccountType()==AccountType.EMPLOYEE){
-                Model.getInstance().evaluateCredential(AccountType.EMPLOYEE, this.getUserName().getText(),this.getPassword().getText());
-        } else{
-            if(Model.getInstance().getViewFactory().getAccountType()==AccountType.ADMIN){
-                Model.getInstance().evaluateCredential(AccountType.ADMIN, this.getUserName().getText(),this.getPassword().getText());
-
-            }
-        }
-
+    public void setPassword(TextField password) {
+        this.password = password;
     }
 
-    private  void setChooseAccountType(){
 
-        if(chooseAccountType.getValue()==AccountType.ADMIN){
-            userNameLabel.setText("Admin Username");
-        } else if (chooseAccountType.getValue()==AccountType.EMPLOYEE) {
-            userNameLabel.setText("Worker Username");
+    public void setUserNameLabel(Label userNameLabel) {
+        this.userNameLabel = userNameLabel;
+    }
 
-        }
-        Model.getInstance().getViewFactory().setLogInAccountType(chooseAccountType.getValue());
-
+    public void setPasswordLabel(Label passwordLabel) {
+        this.passwordLabel = passwordLabel;
     }
 }
