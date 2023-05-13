@@ -3,8 +3,8 @@ package com.example.diyashop.controller.admin;
 import com.example.diyashop.controller.CommonMenuController;
 import com.example.diyashop.model.Model;
 import com.example.diyashop.view.AdminOptionView;
+import com.example.diyashop.view.CommonOptionView;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
@@ -17,10 +17,7 @@ public class AdminMenuController extends CommonMenuController {
 
  @FXML
  private Button addProduct;
- @FXML
- private Button reciept;
- @FXML
- private Button search;
+
  @FXML
  private Button stateOfProducts;
 
@@ -64,21 +61,13 @@ private MenuButton expenditureChart;
   return addProduct;
  }
 
- public Button getReciept() {
-  return reciept;
- }
 
- public Button getSearch() {
-  return search;
- }
+
 
  public Button getStateOfProducts() {
   return stateOfProducts;
  }
 
- public MenuButton getBusinessChart() {
-  return businessChart;
- }
 
  public MenuItem getDailyChart() {
   return dailyChart;
@@ -134,9 +123,7 @@ private MenuButton expenditureChart;
 
  @Override
  public void initialize(URL url, ResourceBundle resourceBundle) {
-  this.getAddProduct().setOnAction(e-> onAddProductClicked());
-  this.getReciept().setOnAction(e->onRecieptClicked());
-  this.getSearch().setOnAction(e->onSearchClicked());
+  this.getAddProduct().setOnAction(e -> onAddProductClicked());
   this.getStateOfProducts().setOnAction(e->onStateOfProductsClicked());
   //Charts Begins
   this.getDailyChart().setOnAction(e->onDailyChartViewClicked());
@@ -162,13 +149,9 @@ private MenuButton expenditureChart;
   Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.ADD_PRODUCT);
  }
 
- public void onRecieptClicked() {
-  Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.RECIEPT); ;
- }
 
- public void onSearchClicked() {
-  Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.SEARCH);
- }
+
+
 
  public void onStateOfProductsClicked() {
   Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.STATE_OF_PRODUCTS);

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="400.0" prefWidth="300.0" styleClass="add_product_detail" stylesheets="@styles/addProduct.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diyashop.controller.CommonController">
+<AnchorPane prefHeight="400.0" prefWidth="300.0" styleClass="add_product_detail" stylesheets="@styles/addProduct.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" >
    <children>
       <VBox prefHeight="400.0" prefWidth="300.0" styleClass="vbox" stylesheets="@styles/addProduct.css">
          <children>

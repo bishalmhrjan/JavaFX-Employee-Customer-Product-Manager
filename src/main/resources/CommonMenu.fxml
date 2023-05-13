@@ -22,7 +22,7 @@
     <VBox layoutY="116.0" prefHeight="160.0" prefWidth="200.0" styleClass="menu_container" stylesheets="@styles/adminMenu.css" AnchorPane.bottomAnchor="479.0">
         <children>
 
-            <Button fx:id="reciept" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" text="Reciept" />
+            <Button fx:id="receipt" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" text="Reciept" />
             <Button fx:id="search" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" text="Search" />
 
 

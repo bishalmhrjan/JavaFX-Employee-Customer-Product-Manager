@@ -270,15 +270,15 @@ public class ViewFactory {
 
     public void showAdminWindow(){
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Admin/Admin.fxml"));
-        AdminController controller = new AdminController();
-        loader.setController(controller);
+
+
         createStage(loader);
     }
 
     public void showWorkerWindow(){
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/worker/Employee.fxml"));
-        AdminController controller = new AdminController();
-        loader.setController(controller);
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Common.fxml"));
+
+
         createStage(loader);
     }
 

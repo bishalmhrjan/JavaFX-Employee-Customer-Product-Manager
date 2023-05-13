@@ -22,8 +22,7 @@ public class AdminController extends CommonController {
             switch (newValue){
                 case ADD_PRODUCT -> this.getAdminParent().setCenter(Model.getInstance().getViewFactory().getAddProductAnchorPane());
                 case STATE_OF_PRODUCTS ->this.getAdminParent().setCenter(Model.getInstance().getViewFactory().getStateOfProductsAnchorPane());
-                case RECIEPT -> this.getAdminParent().setCenter(Model.getInstance().getViewFactory().getRecieptAnchorPane());
-                // charts
+                 // charts
                 case DAILY_VIEW -> this.getAdminParent().setCenter(Model.getInstance().getViewFactory().getDailyViewAnchorPane());
                 case WEEKLY_VIEW -> this.getAdminParent().setCenter(Model.getInstance().getViewFactory().getWeeklyViewAnchorPane());
                 case MOTHLY_VIEW -> this.getAdminParent().setCenter(Model.getInstance().getViewFactory().getMonthlyViewAnchorPane());
