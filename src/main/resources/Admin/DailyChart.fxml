@@ -7,9 +7,9 @@
 
 <AnchorPane prefHeight="750.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"  >
    <children>
-      <Text layoutX="225.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daily Chart" wrappingWidth="96.990234375">
+      <Text layoutX="270.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daily Chart" wrappingWidth="96.990234375">
          <font>
-            <Font size="18.0" />
+            <Font size="20.0" />
          </font>
       </Text>
    </children>

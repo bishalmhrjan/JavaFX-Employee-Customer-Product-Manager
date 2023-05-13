@@ -1,38 +1,40 @@
-.left_panel{
--fx-background-color:#EEEEEE;
- -fx-alignment:center;
+.menu_container {
+    -fx-padding: 5 ;
+    -fx-spacing: 10;
+    -fx-background-color: rgb(128,0,0);
+    -fx-background-insets: 0;
+    -fx-border-width: 0;
 }
 
-.logo_container{
-    -fx-alignment:center;
-    -fx-font-size:2em;
-    -fx-font-weight:bold;
+.menu_container Button, .menu_container MenuButton, .menu_container MenuButton .label {
+    -fx-pref-width: 190;
+    -fx-pref-height: 40;
+    -fx-font-size: 1.2em;
+    -fx-background-color: rgb(128,0,0);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
 }
 
 
-.menu_container{
--fx-padding:5 5 5 10;
--fx-spacing:10;
--fx-background-color:rgb(128,0,0);
- }
 
+
+
+.menu_container MenuButton .menu-item {
+    -fx-margin-left:0;
+    -fx-margin-right:0;
+    -fx-padding:0;
+
+}
 .menu_container MenuButton {
- -fx-pref-width:150;
- -fx-pref-height:40;
-
--fx-font-size:1.2em;
--fx-background-color:rgb(128,0,0);
--fx-text-fill:white;
--fx-border-radius:2px;
--fx-font-weight:bold;
-}
-.menu_container Button FontAwesomeIconView{
-    -fx-fill:#132A13;
+    -fx-background-color: rgb(128,0,0);
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
 }
 
-
-
-.menu_container Button:hover{
--fx-cursor:hand;
+.menu_container Button FontAwesomeIconView {
+    -fx-fill: #132A13;
 }
 
+.menu_container Button:hover {
+    -fx-cursor: hand;
+}

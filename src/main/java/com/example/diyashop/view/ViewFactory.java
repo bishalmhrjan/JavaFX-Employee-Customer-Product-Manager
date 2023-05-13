@@ -38,7 +38,7 @@ public class ViewFactory {
     private  AnchorPane yearlyViewAnchorPane;
 
     private AccountType accountType;
-    private final ObjectProperty<WorkerOptionView> workerOptionViewObjectProperty;
+    private final ObjectProperty<CommonOptionView> commonOptionViewObjectProperty;
     private final ObjectProperty<AdminOptionView> adminOptionViewObjectProperty;
 
 
@@ -47,12 +47,12 @@ public class ViewFactory {
 
     public  ViewFactory(){
         this.accountType=AccountType.EMPLOYEE;
-        this.workerOptionViewObjectProperty = new SimpleObjectProperty<>();
+        this.commonOptionViewObjectProperty = new SimpleObjectProperty<>();
         this.adminOptionViewObjectProperty = new SimpleObjectProperty<>();
     }
 
-    public ObjectProperty<WorkerOptionView> getWorkerOptionViewObjectPropertyProperty() {
-        return workerOptionViewObjectProperty;
+    public ObjectProperty<CommonOptionView> getWorkerOptionViewObjectProperty() {
+        return commonOptionViewObjectProperty;
     }
 
     public AccountType getAccountType() {

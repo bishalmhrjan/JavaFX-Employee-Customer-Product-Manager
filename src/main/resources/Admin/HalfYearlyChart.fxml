@@ -6,10 +6,11 @@
 
 
 <AnchorPane prefHeight="750.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+
    <children>
-      <Text layoutX="217.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Half Yearly Chart" wrappingWidth="188.32421875">
+      <Text layoutX="270.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Half Yearly Chart">
          <font>
-            <Font size="18.0" />
+            <Font size="20.0" />
          </font>
       </Text>
    </children>

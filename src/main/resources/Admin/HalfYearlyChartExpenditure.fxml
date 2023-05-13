@@ -5,10 +5,11 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="750.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+
    <children>
-      <Text layoutX="237.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Half Year Expenditure Chart">
+      <Text layoutX="270.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Half Year Expenditure Chart">
          <font>
-            <Font size="18.0" />
+            <Font size="20.0" />
          </font>
       </Text>
    </children>

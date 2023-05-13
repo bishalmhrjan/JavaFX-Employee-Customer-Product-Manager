@@ -9,7 +9,7 @@ import javafx.scene.layout.BorderPane;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class AdminController extends CommonController implements Initializable {
+public class AdminController extends CommonController {
     @FXML private BorderPane adminParent;
 
     public BorderPane getAdminParent() {

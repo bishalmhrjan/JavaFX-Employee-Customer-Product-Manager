@@ -1,5 +1,6 @@
 package com.example.diyashop.controller.admin;
 
+import com.example.diyashop.controller.CommonMenuController;
 import com.example.diyashop.model.Model;
 import com.example.diyashop.view.AdminOptionView;
 import javafx.fxml.FXML;
@@ -11,7 +12,7 @@ import javafx.scene.control.MenuItem;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class AdminMenuController implements Initializable {
+public class AdminMenuController extends CommonMenuController {
 
 
  @FXML

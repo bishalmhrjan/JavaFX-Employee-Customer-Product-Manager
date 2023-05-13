@@ -1,16 +1,11 @@
 package com.example.diyashop.controller.worker;
 
+import com.example.diyashop.controller.CommonMenuController;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
-public class EmployeeMenuController {
+public class EmployeeMenuController extends CommonMenuController {
 
-    @FXML
-    public Button reciept;
-    @FXML
-    public Button search;
-    @FXML
-    public Button stateOfProducts;
 
 
 
