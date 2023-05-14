@@ -4,11 +4,7 @@
 
 <BorderPane fx:id="adminParent" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diyashop.controller.admin.AdminController">
     <left>
+        <fx:include source="../Common.fxml"/>
         <fx:include source="AdminMenu.fxml" />
     </left>
-
-    <center>
-        <fx:include source="../SearchProduct.fxml" />
-    </center>
-
 </BorderPane>
