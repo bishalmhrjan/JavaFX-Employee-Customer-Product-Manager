@@ -16,6 +16,9 @@ import java.util.ResourceBundle;
 
 public class LogInController implements Initializable {
 
+
+    @FXML
+    public Label error_lbl;
     @FXML
     private ChoiceBox<AccountType> chooseAccountType;
 
@@ -49,18 +52,34 @@ public class LogInController implements Initializable {
     }
 
     private void onLogIn() {
-        Stage stage =(Stage) passwordLabel.getScene().getWindow();
-        if(Model.getInstance().getViewFactory().getAccountType()==AccountType.EMPLOYEE){
-                Model.getInstance().evaluateCredential(AccountType.EMPLOYEE, this.getUserName().getText(),this.getPassword().getText());
-            Model.getInstance().getViewFactory().showWorkerWindow();
-        } else{
-            if(Model.getInstance().getViewFactory().getAccountType()==AccountType.ADMIN){
-                Model.getInstance().evaluateCredential(AccountType.ADMIN, this.getUserName().getText(),this.getPassword().getText());
-                    Model.getInstance().getViewFactory().showAdminWindow();
-            }
-        }
+        Stage stage = (Stage) passwordLabel.getScene().getWindow();
+        boolean falschEmployee = true;
+        boolean falschAdmin = true;
+        if (Model.getInstance().getViewFactory().getAccountType() == AccountType.EMPLOYEE) {
 
+            if (Model.getInstance().evaluateCredential(AccountType.EMPLOYEE, this.getUserName().getText(), this.getPassword().getText())) {
+
+                Model.getInstance().getViewFactory().showWorkerWindow();
+            } else {
+                error_lbl.setText("Either wrong Benutzername or Password");
+            }
+        } else {
+
+            if (Model.getInstance().getViewFactory().getAccountType() == AccountType.ADMIN) {
+
+                if (Model.getInstance().evaluateCredential(AccountType.ADMIN, this.getUserName().getText(), this.getPassword().getText())) {
+                    Model.getInstance().getViewFactory().showAdminWindow();
+
+                } else {
+                    error_lbl.setText("Keine Admin mit dieser Existiert");
+                }
+            }
+
+
+        }
     }
+
+
 
     private  void setChooseAccountType(){
         Model.getInstance().getViewFactory().setLogInAccountType(chooseAccountType.getValue());
@@ -106,5 +125,13 @@ public class LogInController implements Initializable {
 
     public void setPasswordLabel(Label passwordLabel) {
         this.passwordLabel = passwordLabel;
+    }
+
+    public Label getError_lbl() {
+        return error_lbl;
+    }
+
+    public void setError_lbl(Label error_lbl) {
+        this.error_lbl = error_lbl;
     }
 }

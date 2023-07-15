@@ -4,12 +4,16 @@ import java.sql.*;
 
 public class DatabaseDriver {
 private Connection connection;
+private final String CONNECTION="jdbc:sqlite:diyadesktop.db";
 
+    private final String ADMIN_QUERY_USERNAME="select * from Admin where username='";
+    private final String EMPLOYEE_QUERY_USERNAME="select * from Employee where username='";
+    private final String PASSWORDS ="' and Password='";
     public DatabaseDriver(){
 
 
         try{
-            this.connection = DriverManager.getConnection("jdbc:sqlite:diyadesktop.db");
+            this.connection = DriverManager.getConnection(CONNECTION);
         } catch (SQLException e){
             e.printStackTrace();
         }
@@ -23,7 +27,7 @@ private Connection connection;
             ResultSet resultSet = null;
             try{
                 statement = this.connection.createStatement();
-                resultSet = statement.executeQuery("select * from Admin where username='"+username+"' and Password='"+password+"';");
+                resultSet = statement.executeQuery(ADMIN_QUERY_USERNAME+username+ PASSWORDS +password+"';");
             }catch (SQLException e){
                 e.printStackTrace();
             }
@@ -38,7 +42,7 @@ private Connection connection;
             ResultSet resultSet = null;
             try{
                 statement = this.connection.createStatement();
-                resultSet = statement.executeQuery("select * from Employee where username='"+username+"' and Password='"+password+"';");
+                resultSet = statement.executeQuery(EMPLOYEE_QUERY_USERNAME+username+PASSWORDS+password+"';");
             }catch (SQLException e){
                 e.printStackTrace();
             }

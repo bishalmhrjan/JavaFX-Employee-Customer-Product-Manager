@@ -12,18 +12,32 @@ public class Model {
     private final ViewFactory viewFactory;
 
     private final DatabaseDriver database;
+    private final EmployeeModel employeeModel;
+    private  boolean clientLogInSuccessFlag;
 
-    private final boolean employeeLoginSuccess;
 
-    private final boolean adminLogInSuccess;
+    private   boolean adminLogInSuccess;
+
+    public boolean isAdminLogInSuccess() {
+        return adminLogInSuccess;
+    }
+
+    public boolean isEmployeeLogInSuccess() {
+        return employeeLogInSuccess;
+    }
+
+    private  boolean employeeLogInSuccess;
+
 
 
 
     private Model(){
-        this.employeeLoginSuccess= false;
+        this.employeeLogInSuccess= false;
         this.adminLogInSuccess = false;
         this.viewFactory = new ViewFactory();
         this.database = new DatabaseDriver();
+        this.employeeModel = new EmployeeModel(0,"","");
+
     }
 
 
@@ -45,12 +59,25 @@ public class Model {
         return database;
     }
 
-    public void evaluateCredential(AccountType accountType,String username, String password) {
+    public boolean evaluateCredential(AccountType accountType, String username, String password) {
         ResultSet resultSet = null;
+        String usernameInDatabase="";
+        String passwordInDatabase="";
+
+
         if (accountType == AccountType.ADMIN) {
             resultSet = database.getAdmitData(username, password);
             try {
                 while (resultSet.next()) {
+                    usernameInDatabase = resultSet.getString("Username");
+                    passwordInDatabase = resultSet.getString("Password");
+
+                    if(username.equals(usernameInDatabase)&&password.equals(passwordInDatabase)){
+                        this.adminLogInSuccess=true;
+                        return adminLogInSuccess;
+                    }
+
+
 
                 }
             } catch (SQLException e) {
@@ -62,6 +89,14 @@ public class Model {
                 try {
                     while (resultSet.next()) {
 
+                            usernameInDatabase = resultSet.getString("Username");
+                            passwordInDatabase = resultSet.getString("Password");
+                        if(username.equals(usernameInDatabase)&&password.equals(passwordInDatabase)){
+                            this.employeeLogInSuccess=true;
+                            return employeeLogInSuccess;
+                        }
+
+
                     }
                 } catch (SQLException e) {
                     e.printStackTrace();
@@ -70,5 +105,10 @@ public class Model {
 
         }
 
+        return false;
     }
+
+
+
+
 }

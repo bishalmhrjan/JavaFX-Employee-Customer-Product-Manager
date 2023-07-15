@@ -60,6 +60,7 @@
                   <MenuItem fx:id="yearlyExpenditrueChart" mnemonicParsing="false" text="Yearly" />
               </items>
             </MenuButton>
+            <Button fx:id="logOut" mnemonicParsing="false" text="Log Out" />
         </children>
     </VBox>
 </children>

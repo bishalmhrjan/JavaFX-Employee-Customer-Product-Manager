@@ -59,7 +59,7 @@
                </VBox.margin>
             </HBox>
             <HBox prefHeight="23.0" prefWidth="296.0" />
-            <Label styleClass="error_lbl" text="Error:" />
+            <Label fx:id ="error_lbl" text="Error:" />
          </children>
       </VBox>
    </children>

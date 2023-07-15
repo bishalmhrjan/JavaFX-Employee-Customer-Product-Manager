@@ -12,6 +12,30 @@ import java.io.IOException;
 
 public class ViewFactory {
 
+    private final String RECIEPT_ANCHORPANE="/Reciept.fxml";
+    private final String SEARCH_PRODUCT_ANCHORPANE="/SearchProduct.fxml";
+    private final String ANMELDUNG_DIALOG="/Anmelde.fxml";
+    private final String ADD_PRODUCT_ANCHORPANE="/Admin/AddProduct.fxml";
+    private final String STATE_OF_PRODUCTS_ANCHORPANE="/Admin/StateOfProducts.fxml";
+    private final String DAILYCHART_ANCHORPANE="/Admin/DailyChart.fxml";
+    private final String MONTHLYCHART_ANCHORPANE="/Admin/MonthlyChart.fxml";
+    private final String QUATERLYCHART_ANCHORPANE="/Admin/QuarterlyChart.fxml";
+    private final String HALFYEARLY_ANCHORPANE="/Admin/HalfYearlyChart.fxml";
+    private final String YEARLY_ANCHORPANE="/Admin/YearlyChart.fxml";
+    private final String DAILY_EXPENDITURE="/Admin/DailyExpenditure.fxml";
+    private final String WEEKLYCHART_EXPENDITURE="/Admin/WeeklyChartExpenditure.fxml";
+    private final String MONTHLYCHART_EXPENDITURE="/Admin/MonthlyChart.fxml";
+    private final String WEEKLYCHART_ANCHORPANE="/Admin/WeeklyChart.fxml";
+    private final String QUATERLYCHART_EXPENDITURE="/Admin/QuarterlyChartExpenditure.fxml";
+    private final String HALFYEARLYCHART_EXPENDITURE="/Admin/HalfYearlyChartExpenditure.fxml";
+    private final String COMMON_ANCHORPANE="/Common.fxml";
+
+    private final String YEARLYCHART_EXPENDITURE="/Admin/YearlyChartExpenditure.fxml";
+    private final String ADMIN_DIALOG="/Admin/Admin.fxml";
+
+    private final String COMPANY_NAME="Diya Hastakala";
+
+
 
     //Admin views
 
@@ -69,7 +93,7 @@ public class ViewFactory {
 
         if(this.recieptAnchorPane==null){
             try{
-                this.recieptAnchorPane = new FXMLLoader(getClass().getResource("/Reciept.fxml")).load();
+                this.recieptAnchorPane = new FXMLLoader(getClass().getResource(RECIEPT_ANCHORPANE)).load();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -80,7 +104,7 @@ public class ViewFactory {
     public AnchorPane getSearchAnchorPane() {
         if(this.searchAnchorPane==null){
             try{
-                this.searchAnchorPane = new FXMLLoader(getClass().getResource("/SearchProduct.fxml")).load();
+                this.searchAnchorPane = new FXMLLoader(getClass().getResource(SEARCH_PRODUCT_ANCHORPANE)).load();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -90,7 +114,7 @@ public class ViewFactory {
 
 
     public void showLogInWindow() {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Anmelde.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(ANMELDUNG_DIALOG));
         createStage(loader);
 
     }
@@ -98,7 +122,7 @@ public class ViewFactory {
     public AnchorPane getAddProductAnchorPane() {
         if(this.addProductAnchorPane==null){
             try{
-                this.addProductAnchorPane = new FXMLLoader(getClass().getResource("/Admin/AddProduct.fxml")).load();
+                this.addProductAnchorPane = new FXMLLoader(getClass().getResource(ADD_PRODUCT_ANCHORPANE)).load();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -109,7 +133,7 @@ public class ViewFactory {
     public AnchorPane getStateOfProductsAnchorPane() {
         if(this.stateOfProductsAnchorPane==null){
             try{
-                this.stateOfProductsAnchorPane = new FXMLLoader(getClass().getResource("/Admin/StateOfProducts.fxml")).load();
+                this.stateOfProductsAnchorPane = new FXMLLoader(getClass().getResource(STATE_OF_PRODUCTS_ANCHORPANE)).load();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -123,7 +147,7 @@ public class ViewFactory {
     public AnchorPane getDailyViewAnchorPane() {
         if(this.dailyViewAnchorPane==null){
             try{
-                this.dailyViewAnchorPane = new FXMLLoader(getClass().getResource("/Admin/DailyChart.fxml")).load();
+                this.dailyViewAnchorPane = new FXMLLoader(getClass().getResource(DAILYCHART_ANCHORPANE)).load();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -134,7 +158,7 @@ public class ViewFactory {
 
         if(this.monthlyViewAnchorPane==null){
             try{
-                this.monthlyViewAnchorPane = new FXMLLoader(getClass().getResource("/Admin/MonthlyChart.fxml")).load();
+                this.monthlyViewAnchorPane = new FXMLLoader(getClass().getResource(MONTHLYCHART_ANCHORPANE)).load();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -146,7 +170,7 @@ public class ViewFactory {
     public AnchorPane getWeeklyViewAnchorPane() {
         if(this.weeklyViewAnchorPane==null){
             try{
-                this.weeklyViewAnchorPane = new FXMLLoader(getClass().getResource("/Admin/WeeklyChart.fxml")).load();
+                this.weeklyViewAnchorPane = new FXMLLoader(getClass().getResource(WEEKLYCHART_ANCHORPANE)).load();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -157,7 +181,7 @@ public class ViewFactory {
     public AnchorPane getQuaterlyViewAnchorPane() {
         if(this.quaterlyViewAnchorPane==null){
             try{
-                this.quaterlyViewAnchorPane = new FXMLLoader(getClass().getResource("/Admin/QuarterlyChart.fxml")).load();
+                this.quaterlyViewAnchorPane = new FXMLLoader(getClass().getResource(QUATERLYCHART_ANCHORPANE)).load();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -168,7 +192,7 @@ public class ViewFactory {
     public AnchorPane getHalfYearlyViewAnchorPane() {
         if(this.halfYearlyViewAnchorPane==null){
             try{
-                this.halfYearlyViewAnchorPane = new FXMLLoader(getClass().getResource("/Admin/HalfYearlyChart.fxml")).load();
+                this.halfYearlyViewAnchorPane = new FXMLLoader(getClass().getResource(HALFYEARLY_ANCHORPANE)).load();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -179,7 +203,7 @@ public class ViewFactory {
     public AnchorPane getYearlyViewAnchorPane() {
         if(this.yearlyViewAnchorPane ==null){
             try{
-                this.yearlyViewAnchorPane = new FXMLLoader(getClass().getResource("/Admin/YearlyChart.fxml")).load();
+                this.yearlyViewAnchorPane = new FXMLLoader(getClass().getResource(YEARLY_ANCHORPANE)).load();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -194,7 +218,7 @@ public class ViewFactory {
     public AnchorPane getDailyExpenditureAnchorPane() {
         if(this.dailyExpenditureAnchorPane==null){
             try{
-                this.dailyExpenditureAnchorPane = new FXMLLoader(getClass().getResource("/Admin/DailyExpenditure.fxml")).load();
+                this.dailyExpenditureAnchorPane = new FXMLLoader(getClass().getResource(DAILY_EXPENDITURE)).load();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -204,7 +228,7 @@ public class ViewFactory {
     public AnchorPane getWeeklyExpenditureAnchorPane() {
         if(this.weeklyExpenditureAnchorPane==null){
             try{
-                this.weeklyExpenditureAnchorPane = new FXMLLoader(getClass().getResource("/Admin/WeeklyChartExpenditure.fxml")).load();
+                this.weeklyExpenditureAnchorPane = new FXMLLoader(getClass().getResource(WEEKLYCHART_EXPENDITURE)).load();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -214,7 +238,7 @@ public class ViewFactory {
     public AnchorPane getMonthlyExpenditureAnchorPane() {
         if(this.MonthlyExpenditureAnchorPane==null){
             try{
-                this.MonthlyExpenditureAnchorPane = new FXMLLoader(getClass().getResource("/Admin/MonthlyChartExpenditure.fxml")).load();
+                this.MonthlyExpenditureAnchorPane = new FXMLLoader(getClass().getResource(MONTHLYCHART_EXPENDITURE)).load();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -224,7 +248,7 @@ public class ViewFactory {
     public AnchorPane getQuaterlyExpenditureAnchorPane() {
         if(this.quaterlyExpenditureAnchorPane==null){
             try{
-                this.quaterlyExpenditureAnchorPane = new FXMLLoader(getClass().getResource("/Admin/QuarterlyChartExpenditure.fxml")).load();
+                this.quaterlyExpenditureAnchorPane = new FXMLLoader(getClass().getResource(QUATERLYCHART_EXPENDITURE)).load();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -234,7 +258,7 @@ public class ViewFactory {
     public AnchorPane getHalfYealryExpenditureAnchorPane() {
         if(this.halfYealryExpenditureAnchorPane==null){
             try{
-                this.halfYealryExpenditureAnchorPane = new FXMLLoader(getClass().getResource("/Admin/HalfYearlyChartExpenditure.fxml")).load();
+                this.halfYealryExpenditureAnchorPane = new FXMLLoader(getClass().getResource(HALFYEARLYCHART_EXPENDITURE)).load();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -244,7 +268,7 @@ public class ViewFactory {
     public AnchorPane getYealryExpenditureAnchorPane() {
         if(this.yealryExpenditureAnchorPane==null){
             try{
-                this.yealryExpenditureAnchorPane = new FXMLLoader(getClass().getResource("/Admin/YearlyChartExpenditure.fxml")).load();
+                this.yealryExpenditureAnchorPane = new FXMLLoader(getClass().getResource(YEARLYCHART_EXPENDITURE)).load();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -264,19 +288,19 @@ public class ViewFactory {
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.setResizable(false);
-        stage.setTitle("Diya Hastakala");
+        stage.setTitle(COMPANY_NAME);
         stage.show();
     }
 
     public void showAdminWindow(){
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Admin/Admin.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(ADMIN_DIALOG));
 
 
         createStage(loader);
     }
 
     public void showWorkerWindow(){
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Common.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(COMMON_ANCHORPANE));
 
 
         createStage(loader);

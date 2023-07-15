@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -15,6 +16,9 @@ import java.util.ResourceBundle;
 public class AdminMenuController extends CommonMenuController {
 
 
+
+ @FXML
+ public Button logOut;
  @FXML
  private Button addProduct;
 
@@ -120,11 +124,14 @@ private MenuButton expenditureChart;
  public MenuItem getYearlyExpenditrueChart() {
   return yearlyExpenditrueChart;
  }
-
+ public Button getLogOut() {
+  return logOut;
+ }
  @Override
  public void initialize(URL url, ResourceBundle resourceBundle) {
   this.getAddProduct().setOnAction(e -> onAddProductClicked());
   this.getStateOfProducts().setOnAction(e->onStateOfProductsClicked());
+  this.getLogOut().setOnAction(e->onLogOutClick());
   //Charts Begins
   this.getDailyChart().setOnAction(e->onDailyChartViewClicked());
   this.getWeeklyCharts().setOnAction(e->onWeeklyChartViewClicked());
@@ -205,4 +212,8 @@ private MenuButton expenditureChart;
   Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.YEARLY_EXPENDITURE);
  }
 
+
+ public void onLogOutClick(){
+  ((Stage)logOut.getScene().getWindow()).close();
+ }
 }
