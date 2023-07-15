@@ -17,7 +17,7 @@
                      <graphic>
                         <ImageView fx:id="paperitem1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171117_161144-300x300.jpg" />
+                              <Image url="@paperitem.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -26,7 +26,7 @@
                      <graphic>
                         <ImageView fx:id="paperitem2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171117_161623-300x300.jpg" />
+                              <Image url="@paperitem1.jpg" />
                            </image>
                         </ImageView>
                      </graphic>

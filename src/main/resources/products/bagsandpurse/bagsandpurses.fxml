@@ -17,7 +17,7 @@
                      <graphic>
                         <ImageView fx:id="bag1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171102_163213-300x300.jpg" />
+                              <Image url="@bagsandpurse.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -26,7 +26,7 @@
                      <graphic>
                         <ImageView fx:id="bag2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171112_161920-300x300.jpg" />
+                              <Image url="@bagsandpurse12.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -35,7 +35,7 @@
                      <graphic>
                         <ImageView fx:id="bag3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171112_162209-300x300.jpg" />
+                              <Image url="@bagsandpurse11.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -44,7 +44,7 @@
                      <graphic>
                         <ImageView fx:id="bag4" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171112_162356-300x300.jpg" />
+                              <Image url="@bagsandpurse10.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -57,7 +57,7 @@
                      <graphic>
                         <ImageView fx:id="bag5" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171113_122046-300x300.jpg" />
+                              <Image url="@bagsandpurse9.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -66,7 +66,7 @@
                      <graphic>
                         <ImageView fx:id="bag6" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171115_162703-300x300.jpg" />
+                              <Image url="@bagsandpurse8.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -75,7 +75,7 @@
                      <graphic>
                         <ImageView fx:id="bag7" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171115_163502-300x300.jpg" />
+                              <Image url="@bagsandpurse7.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -84,7 +84,7 @@
                      <graphic>
                         <ImageView fx:id="bag8" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171115_163952-300x300.jpg" />
+                              <Image url="@bagsandpurse6.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -97,7 +97,7 @@
                      <graphic>
                         <ImageView fx:id="bag9" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171115_164940-300x300.jpg" />
+                              <Image url="@bagsandpurse5.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -106,7 +106,7 @@
                      <graphic>
                         <ImageView fx:id="bag10" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171115_165136-300x300.jpg" />
+                              <Image url="@bagsandpurse4.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -115,7 +115,7 @@
                      <graphic>
                         <ImageView fx:id="bag11" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171115_165746-300x300.jpg" />
+                              <Image url="@bagsandpurse3.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -124,7 +124,7 @@
                      <graphic>
                         <ImageView fx:id="bag12" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171115_170713-300x300.jpg" />
+                              <Image url="@bagsandpurse2.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -137,7 +137,7 @@
                      <graphic>
                         <ImageView fx:id="bag13" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171115_174544-300x300.jpg" />
+                              <Image url="@bagsandpurse1.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
