@@ -9,14 +9,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class LogInController implements Initializable {
-
-
     @FXML
     public Label error_lbl;
     @FXML
@@ -52,7 +49,7 @@ public class LogInController implements Initializable {
     }
 
     private void onLogIn() {
-        Stage stage = (Stage) passwordLabel.getScene().getWindow();
+    //    Stage stage = (Stage) passwordLabel.getScene().getWindow();
         boolean falschEmployee = true;
         boolean falschAdmin = true;
         if (Model.getInstance().getViewFactory().getAccountType() == AccountType.EMPLOYEE) {
@@ -74,12 +71,8 @@ public class LogInController implements Initializable {
                     error_lbl.setText("Keine Admin mit dieser Existiert");
                 }
             }
-
-
         }
     }
-
-
 
     private  void setChooseAccountType(){
         Model.getInstance().getViewFactory().setLogInAccountType(chooseAccountType.getValue());
@@ -105,33 +98,4 @@ public class LogInController implements Initializable {
     }
 
 
-
-    public void setChooseAccountType(ChoiceBox<AccountType> chooseAccountType) {
-        this.chooseAccountType = chooseAccountType;
-    }
-
-    public void setUserName(TextField userName) {
-        this.userName = userName;
-    }
-
-    public void setPassword(TextField password) {
-        this.password = password;
-    }
-
-
-    public void setUserNameLabel(Label userNameLabel) {
-        this.userNameLabel = userNameLabel;
-    }
-
-    public void setPasswordLabel(Label passwordLabel) {
-        this.passwordLabel = passwordLabel;
-    }
-
-    public Label getError_lbl() {
-        return error_lbl;
-    }
-
-    public void setError_lbl(Label error_lbl) {
-        this.error_lbl = error_lbl;
-    }
 }

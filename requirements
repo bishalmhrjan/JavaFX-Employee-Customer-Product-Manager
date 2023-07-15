@@ -1,0 +1,11 @@
+1.Account has two type: Admin and worker.
+2.
+
+
+
+
+//Product
+1.it has name, stocks, bought price, target price, discount price, category_id,
+added,sold
+2. Search bar
+

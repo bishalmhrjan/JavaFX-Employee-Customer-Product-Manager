@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DiyaDesktop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/CommonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/CommonMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/CommonMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diyadesktop.db" beforeDir="false" afterPath="$PROJECT_DIR$/diyadesktop.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/LogInController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DatabaseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DatabaseDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/AdminMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/AdminMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Anmelde.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Anmelde.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Common.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Common.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/CommonMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/CommonMenu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +23,7 @@
         <option value="Enum" />
         <option value="Class" />
         <option value="FxmlFile" />
+        <option value="editable-svg" />
       </list>
     </option>
   </component>
@@ -61,18 +53,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/PrivateProjectExercises/DiyaShop",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/PrivateProjectExercises/DiyaShop&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.diyashop.view" />
