@@ -19,5 +19,17 @@ tesko tala number of stocks dekhinu paryo, euta box ma.
 -Search garne chai arrow down wa textfield search bar ko use garne.textfield ko use gareko ramro hola, ali new ni hunxa malai.
 -search list ma kei ni vetena vane, kei ni nadekhaune!
 -search ko result haru box ma dekhi nu paryo. ra dherai nai xa vane, next button use garera arko page ma hunu paryo.
+weekly, monthly, daily ko expenditure hos ya business details, table view ma application ma nai dekhaune. tespaxi details
+haru lai diagramm ma convert garne.
+
+
+-CSS manage:
+-color change, logo change and logo color changed,button haru ramro banaune
+- diagramm lai ramro banaune.ani deploy garne
+
+Internet ma connect garne:
+- android app ma every sell reciept ko details as notification aune banaune.
+
+2nd: Calendar banaune, artifact banaune ra tyo mero project ma use garne as artifact. tyo calendar bata nai from ra date to date picker jasari banaune.
 
 

@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/SearchBar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements" beforeDir="false" afterPath="$PROJECT_DIR$/requirements" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/BagAndPurse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/BagAndPurse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/products/Hemp/hemp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/products/Hemp/hemp.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/20171102_163213-300x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/bagsandpurse.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/20171112_161920-300x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/bagsandpurse12.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/20171112_162209-300x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/bagsandpurse11.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/20171112_162356-300x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/bagsandpurse10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/20171113_122046-300x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/bagsandpurse9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/20171115_162703-300x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/bagsandpurse8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/20171115_163502-300x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/bagsandpurse7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/20171115_163952-300x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/bagsandpurse6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/20171115_164940-300x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/bagsandpurse5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/20171115_165136-300x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/bagsandpurse4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/20171115_165746-300x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/bagsandpurse3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/20171115_170713-300x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/bagsandpurse2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/20171115_174544-300x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/bagsandpurse1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/bagsandpurses.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/products/bagsandpurse/bagsandpurses.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
