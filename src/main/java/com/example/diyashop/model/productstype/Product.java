@@ -82,7 +82,7 @@ public enum Product {
             NECKLACE, EAR_RINGS {
                 enum ProductType {
                     COLOR_RED, COLOR_BLUE, COLOR_BLACK;
-                };
+                }
 
 
             };

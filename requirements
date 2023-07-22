@@ -39,7 +39,7 @@ Todays goal:
 
 
 Todays goal:
-product type defined in enum,
+product type defined in enum,--DONE
 add pane with diff type in observable list defined,
 product and its type count number in table save, edit, connect
 product search bar and should give result product name, type and pic
