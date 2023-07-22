@@ -1,2 +1,3 @@
-package com.example.diyashop.model;public class QuittungModel {
+package com.example.diyashop.model;
+public class QuittungModel {
 }
