@@ -1,6 +1,7 @@
 package com.example.diyashop.view;
 
 import com.example.diyashop.controller.admin.AdminController;
+import com.example.diyashop.model.productstype.Product;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.fxml.FXMLLoader;
@@ -65,6 +66,9 @@ public class ViewFactory {
     private AccountType accountType;
     private final ObjectProperty<CommonOptionView> commonOptionViewObjectProperty;
     private final ObjectProperty<AdminOptionView> adminOptionViewObjectProperty;
+    private  Product product;
+
+    private Product productType;
 
 
 
@@ -312,5 +316,20 @@ public class ViewFactory {
     }
     public  void closeStage(Stage stage){
         stage.close();
+    }
+
+    public Product getProductName() {
+
+        return product;
+    }
+
+    public void setProduct(Product product) {
+
+            this.product=product;
+
+    }
+
+    public void setProductType(Product value) {
+        this.productType=productType;
     }
 }

@@ -50,8 +50,7 @@ public class LogInController implements Initializable {
 
     private void onLogIn() {
     //    Stage stage = (Stage) passwordLabel.getScene().getWindow();
-        boolean falschEmployee = true;
-        boolean falschAdmin = true;
+
         if (Model.getInstance().getViewFactory().getAccountType() == AccountType.EMPLOYEE) {
 
             if (Model.getInstance().evaluateCredential(AccountType.EMPLOYEE, this.getUserName().getText(), this.getPassword().getText())) {
