@@ -6,12 +6,20 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 
 public class ProductController {
-    @FXML public TextField buyingPrice;
-    @FXML public TextField noOfStocks;
     @FXML
-   public TextField targetPrice;
-    @FXML public Button addProduct;
-    public ChoiceBox productName;
-    public ChoiceBox productType;
+    private TextField buyingPrice;
+    @FXML
+    private TextField noOfStocks;
+    @FXML
+   private TextField targetPrice;
+    @FXML
+    private  Button addProduct;
+
+
+    private ChoiceBox productName;
+    private ChoiceBox productType;
+
+
+
     //update, delete,create garxa
 }

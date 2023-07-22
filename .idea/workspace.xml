@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="viewfactory code is updated and made readable by deleting string file path in every method">
+    <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="Choise box in fxml is added and respective variable in ProductController is defined.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/Expenditure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/Reciept.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements" beforeDir="false" afterPath="$PROJECT_DIR$/requirements" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/AddProduct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/AddProduct.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DailyQuittung.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/MonthlyQuittung.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/QuaterlyQuittung.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/SixMonthQuittung.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/WeeklyQuittung.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/YearlyQuittung.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +25,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
-        <option value="Enum" />
         <option value="FxmlFile" />
         <option value="editable-svg" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -136,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690021400332</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Choise box in fxml is added and respective variable in ProductController is defined.">
+      <created>1690024493096</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690024493096</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,7 +177,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="viewfactory code is updated and made readable by deleting string file path in every method" />
-    <option name="LAST_COMMIT_MESSAGE" value="viewfactory code is updated and made readable by deleting string file path in every method" />
+    <MESSAGE value="Choise box in fxml is added and respective variable in ProductController is defined." />
+    <option name="LAST_COMMIT_MESSAGE" value="Choise box in fxml is added and respective variable in ProductController is defined." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
