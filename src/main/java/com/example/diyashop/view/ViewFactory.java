@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import org.kordamp.bootstrapfx.BootstrapFX; // Import the BootstrapFX class
 
 import java.io.IOException;
 
@@ -281,7 +282,7 @@ public class ViewFactory {
         Scene scene = null;
         try{
               scene = new Scene(loader.load());
-        } catch (Exception e){
+         } catch (Exception e){
             e.printStackTrace();
         }
 
