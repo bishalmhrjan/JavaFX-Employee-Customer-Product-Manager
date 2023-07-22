@@ -9,6 +9,7 @@ module com.example.diyashop {
     requires org.xerial.sqlitejdbc;
     requires java.desktop;
     requires kotlin.stdlib;
+    requires org.kordamp.bootstrapfx.core;
 
     opens com.example.diyashop to javafx.fxml;
     exports com.example.diyashop;
