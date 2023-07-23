@@ -1,5 +1,6 @@
 package com.example.diyashop.controller.admin;
 
+import com.example.diyashop.DiyaShopException;
 import com.example.diyashop.model.DatabaseDriver;
 import com.example.diyashop.model.finance.PeriodTime;
 import com.example.diyashop.model.productstype.Product;
@@ -89,6 +90,8 @@ public class ProductController implements Initializable {
             try {
                 saveInDataBase();
             } catch (SQLException ex) {
+                throw new RuntimeException(ex);
+            } catch (DiyaShopException ex) {
                 throw new RuntimeException(ex);
             }
         });
@@ -252,14 +255,38 @@ public class ProductController implements Initializable {
     }
 
 
-    private void saveInDataBase() throws SQLException {
+    private void saveInDataBase() throws SQLException, NumberFormatException, DiyaShopException {
 
-            new DatabaseDriver().addProduct(getProductName().getValue(),getProductType().getValue(),Integer.parseInt(getNoOfStocks().getText().toString()),Double.parseDouble(getBuyingPrice().getText().toString()),Double.parseDouble(getTargetPrice().getText().toString()),Double.parseDouble(getMaxDiscountPercent().getText().toString()),getTimePeriod().getValue());
+        if (isValid(getNoOfStocks().getText().toString()) && isValid(getBuyingPrice().getText().toString()) && isValid(getTargetPrice().getText().toString()) && isValid(getMaxDiscountPercent().getText().toString())) {
+            new DatabaseDriver().addProduct(getProductName().getValue(), getProductType().getValue(), Integer.parseInt(getNoOfStocks().getText().toString()),
+                    Double.parseDouble(getBuyingPrice().getText().toString()), Double.parseDouble(getTargetPrice().getText().toString()), Double.parseDouble(getMaxDiscountPercent().getText().toString()), getTimePeriod().getValue());
+            getNoOfStocks().setText("");
+            getBuyingPrice().setText("");
+            getTargetPrice().setText("");
+            getMaxDiscountPercent().setText("");
+        } else {
+            throw new DiyaShopException("Either number is  negative, non-number or empty textfield.");
+
+        }
+
+
 
     }
 
 
-
-
+    //4 Textfield compare, valid int or double and non negative,
+    //target price must be greater than buying price and non empty
+    //
     //update, delete,create garxa
+
+
+    public boolean isValid(String string) {
+        if (string.length() != 0 && !string.contains("") && string != null) {
+            if ((Integer.parseInt(string) > 0) || (Double.parseDouble(string) > 0)) {
+                return true;
+
+            }
+        }
+        return false;
+    }
 }
