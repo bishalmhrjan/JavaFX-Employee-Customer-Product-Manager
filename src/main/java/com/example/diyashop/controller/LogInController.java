@@ -11,6 +11,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class LogInController implements Initializable {
@@ -45,10 +46,16 @@ public class LogInController implements Initializable {
     this.getChooseAccountType().setItems(FXCollections.observableArrayList(AccountType.EMPLOYEE,AccountType.ADMIN));
         this.getChooseAccountType().setValue(Model.getInstance().getViewFactory().getAccountType());
         this.getChooseAccountType().valueProperty().addListener(e->setChooseAccountType());
-    this.getLogInButton().setOnAction(e->onLogIn());
+    this.getLogInButton().setOnAction(e-> {
+        try {
+            onLogIn();
+        } catch (SQLException ex) {
+            throw new RuntimeException(ex);
+        }
+    });
     }
 
-    private void onLogIn() {
+    private void onLogIn() throws SQLException {
     //    Stage stage = (Stage) passwordLabel.getScene().getWindow();
 
         if (Model.getInstance().getViewFactory().getAccountType() == AccountType.EMPLOYEE) {

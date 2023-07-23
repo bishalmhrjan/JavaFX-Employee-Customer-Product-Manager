@@ -3,7 +3,6 @@ package com.example.diyashop.controller.admin;
 import com.example.diyashop.controller.CommonMenuController;
 import com.example.diyashop.model.Model;
 import com.example.diyashop.view.AdminOptionView;
-import com.example.diyashop.view.CommonOptionView;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuButton;
@@ -28,20 +27,20 @@ public class AdminMenuController extends CommonMenuController {
 
  @FXML private MenuButton businessChart;
  @FXML
- private MenuItem dailyChart;
+ private MenuItem dailyEarningChart;
  @FXML
- private MenuItem weeklyCharts;
+ private MenuItem weeklyEarningCharts;
 
 
  @FXML
- private MenuItem monthlyChart;
+ private MenuItem monthlyEarningChart;
 
  @FXML
- private MenuItem quarterlyChart;
+ private MenuItem quarterlyEarningChart;
  @FXML
- private MenuItem halfYearlChart;
+ private MenuItem halfYearlyEarningChart;
  @FXML
- private MenuItem yearlyChart;
+ private MenuItem yearlyEarningChart;
 
 @FXML
 private MenuButton expenditureChart;
@@ -73,28 +72,28 @@ private MenuButton expenditureChart;
  }
 
 
- public MenuItem getDailyChart() {
-  return dailyChart;
+ public MenuItem getDailyEarningChart() {
+  return dailyEarningChart;
  }
 
- public MenuItem getWeeklyCharts() {
-  return weeklyCharts;
+ public MenuItem getWeeklyEarningCharts() {
+  return weeklyEarningCharts;
  }
 
  public MenuItem getMonthlyCharts() {
-  return monthlyChart;
+  return monthlyEarningChart;
  }
 
- public MenuItem getQuarterlyChart() {
-  return quarterlyChart;
+ public MenuItem getQuarterlyEarningChart() {
+  return quarterlyEarningChart;
  }
 
- public MenuItem getHalfYearlChart() {
-  return halfYearlChart;
+ public MenuItem getHalfYearlyEarningChart() {
+  return halfYearlyEarningChart;
  }
 
- public MenuItem getYearlyChart() {
-  return yearlyChart;
+ public MenuItem getYearlyEarningChart() {
+  return yearlyEarningChart;
  }
 
  public MenuButton getExpenditureChart() {
@@ -133,12 +132,12 @@ private MenuButton expenditureChart;
   this.getStateOfProducts().setOnAction(e->onStateOfProductsClicked());
   this.getLogOut().setOnAction(e->onLogOutClick());
   //Charts Begins
-  this.getDailyChart().setOnAction(e->onDailyChartViewClicked());
-  this.getWeeklyCharts().setOnAction(e->onWeeklyChartViewClicked());
+  this.getDailyEarningChart().setOnAction(e->onDailyChartViewClicked());
+  this.getWeeklyEarningCharts().setOnAction(e->onWeeklyChartViewClicked());
   this.getMonthlyCharts().setOnAction(e->onMonthlyChartViewClicked());
-  this.getQuarterlyChart().setOnAction(e->onQuarterlyChartViewClicked());
-  this.getHalfYearlChart().setOnAction(e->onHalfYearChartViewClicked());
-  this.getYearlyChart().setOnAction(e->onYearlyChartViewClicked());
+  this.getQuarterlyEarningChart().setOnAction(e->onQuarterlyChartViewClicked());
+  this.getHalfYearlyEarningChart().setOnAction(e->onHalfYearChartViewClicked());
+  this.getYearlyEarningChart().setOnAction(e->onYearlyChartViewClicked());
 
    //Expenditure Begins
   this.getDailyExpenditrueChart().setOnAction(e->onDailyExpenditureClicked());

@@ -5,20 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="Choise box in fxml is added and respective variable in ProductController is defined.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/earnings/DailyEarning.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/earnings/Earning.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/earnings/HalfYearEarning.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/earnings/MonthlyEarning.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/earnings/QuaterlyEarning.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/earnings/WeeklyEarning.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/expenditure/DailyExpenditure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/expenditure/Expenditure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/expenditure/HalfYearExpenditure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/expenditure/MonthlyExpenditure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/expenditure/QuaterlyExpenditure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/expenditure/WeeklyExpenditure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/PeriodTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/QuittungModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/QuittungModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diyadesktop.db" beforeDir="false" afterPath="$PROJECT_DIR$/diyadesktop.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/LogInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DatabaseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DatabaseDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/earnings/Earning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/earnings/Earning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/AddProduct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/AddProduct.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/AdminMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/AdminMenu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +28,8 @@
         <option value="Kotlin Class" />
         <option value="FxmlFile" />
         <option value="editable-svg" />
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -88,7 +85,7 @@
       <recent name="D:\FilesExercises\DiyaShop\src\main\resources\Admin" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WeeklyEarning">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.diyashop.App" />
       <module name="DiyaShop" />
@@ -137,8 +134,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WeeklyEarning" />
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.WeeklyEarning" />
         <item itemvalue="Application.SearchBar" />
         <item itemvalue="Application.HelloApplication" />
       </list>
@@ -218,18 +215,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java</url>
-          <line>216</line>
+          <line>215</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java</url>
-          <line>217</line>
+          <line>216</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java</url>
-          <line>59</line>
+          <line>78</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java</url>
+          <line>256</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java</url>
+          <line>87</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

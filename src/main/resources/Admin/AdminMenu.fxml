@@ -32,12 +32,12 @@
             <MenuButton fx:id="businessChart" accessibleRole="BUTTON" lineSpacing="100.0" mnemonicParsing="false" text="Business Charts" >
               <items>
 
-                  <MenuItem fx:id="dailyChart" mnemonicParsing="false" text="Daily"  />
-                  <MenuItem fx:id="weeklyCharts" mnemonicParsing="false" text="Weekly" />
-                  <MenuItem fx:id="monthlyChart" mnemonicParsing="false" text="Monthly" />
-                  <MenuItem fx:id="quarterlyChart" mnemonicParsing="false" text="Quaterly" />
-                  <MenuItem fx:id="halfYearlChart" mnemonicParsing="false" text="Half Yearly" />
-                  <MenuItem fx:id="yearlyChart" mnemonicParsing="false" text="Yearly" />
+                  <MenuItem fx:id="dailyEarningChart" mnemonicParsing="false" text="Daily"  />
+                  <MenuItem fx:id="weeklyEarningCharts" mnemonicParsing="false" text="Weekly" />
+                  <MenuItem fx:id="monthlyEarningChart" mnemonicParsing="false" text="Monthly" />
+                  <MenuItem fx:id="quarterlyEarningChart" mnemonicParsing="false" text="Quaterly" />
+                  <MenuItem fx:id="halfYearlyEarningChart" mnemonicParsing="false" text="Half Yearly" />
+                  <MenuItem fx:id="yearlyEarningChart" mnemonicParsing="false" text="Yearly" />
 
 
               </items>

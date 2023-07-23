@@ -1,5 +1,7 @@
 package com.example.diyashop.controller.admin;
 
+import com.example.diyashop.model.DatabaseDriver;
+import com.example.diyashop.model.finance.PeriodTime;
 import com.example.diyashop.model.productstype.Product;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
@@ -9,9 +11,18 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class ProductController implements Initializable {
+
+
+    @FXML
+    public  ChoiceBox<PeriodTime> timePeriod;
+
+
+
+    public TextField maxDiscountPercent;
     @FXML
     private TextField buyingPrice;
     @FXML
@@ -27,6 +38,8 @@ public class ProductController implements Initializable {
     private ChoiceBox<Product> productName;
     @FXML
     private ChoiceBox<Product.ProductType> productType;
+
+
 
 
     public TextField getBuyingPrice() {
@@ -54,6 +67,12 @@ public class ProductController implements Initializable {
         return productType;
 
     }
+    public TextField getMaxDiscountPercent() {
+        return maxDiscountPercent;
+    }
+    public ChoiceBox<PeriodTime> getTimePeriod() {
+        return timePeriod;
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -63,6 +82,16 @@ public class ProductController implements Initializable {
         this.getProductName().valueProperty().addListener(e -> setProductType(getProductName().getValue()));
         this.getProductName().setValue(Product.T_SHIRT);
         this.getProductType().setValue(Product.ProductType.GOD);
+        this.getTimePeriod().setItems(FXCollections.observableArrayList(PeriodTime.SIX_MONTH_AGO,PeriodTime.THREE_MONTH_AGO,PeriodTime.ONE_MONTH_AGO,
+                PeriodTime.ONE_WEEK_AGO,PeriodTime.YESTERDAY,PeriodTime.TODAY));
+        this.getTimePeriod().setValue(PeriodTime.TODAY);
+        this.getAddProduct().setOnAction(e-> {
+            try {
+                saveInDataBase();
+            } catch (SQLException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
     }
 
 
@@ -221,6 +250,15 @@ public class ProductController implements Initializable {
         this.getProductType().setValue(Product.ProductType.COLOR_BLUE);
 
     }
+
+
+    private void saveInDataBase() throws SQLException {
+
+            new DatabaseDriver().addProduct(getProductName().getValue(),getProductType().getValue(),Integer.parseInt(getNoOfStocks().getText().toString()),Double.parseDouble(getBuyingPrice().getText().toString()),Double.parseDouble(getTargetPrice().getText().toString()),Double.parseDouble(getMaxDiscountPercent().getText().toString()),getTimePeriod().getValue());
+
+    }
+
+
 
 
     //update, delete,create garxa

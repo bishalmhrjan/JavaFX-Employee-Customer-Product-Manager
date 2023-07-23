@@ -2,6 +2,9 @@ package com.example.diyashop.model.finance.earnings;
 
 import java.util.Date;
 
+/**
+ * earning has date and amount. Reciept must have
+ */
 
 public class Earning {
 

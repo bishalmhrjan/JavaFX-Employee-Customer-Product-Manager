@@ -14,7 +14,7 @@
          <children>
             <HBox prefHeight="105.0" prefWidth="588.0" spacing="10.0">
                <children>
-                  <VBox layoutX="200.0" prefHeight="103.0" prefWidth="580.0" spacing="10.0">
+                  <VBox layoutX="200.0" prefHeight="170.0" prefWidth="580.0" spacing="10.0">
                      <children>
                         <HBox prefHeight="50.0" prefWidth="580.0">
                            <children>
@@ -28,26 +28,38 @@
                               <ChoiceBox fx:id="productType" prefHeight="30.0" prefWidth="150.0" translateX="255.0" />
                            </children>
                         </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Time:" />
+                              <ChoiceBox fx:id="timePeriod" prefWidth="150.0" translateX="319.0" />
+                           </children>
+                        </HBox>
                      </children>
                   </VBox>
                </children>
             </HBox>
-            <HBox prefHeight="100.0" prefWidth="200.0" translateY="30.0">
+            <HBox prefHeight="50.0" prefWidth="200.0" translateY="30.0">
                <children>
                   <Label prefHeight="23.0" prefWidth="110.0" text="Buying Price :" />
-                  <TextField fx:id="buyingPrice" prefHeight="14.0" prefWidth="54.0" translateX="60.0" />
+                  <TextField fx:id="buyingPrice" prefHeight="14.0" prefWidth="54.0" translateX="280.0" />
                </children>
             </HBox>
-            <HBox prefHeight="100.0" prefWidth="200.0" translateY="30.0">
+            <HBox prefHeight="50.0" prefWidth="200.0" translateY="30.0">
                <children>
                   <Label prefHeight="23.0" prefWidth="111.0" text="No.of Stocks :" />
-                  <TextField fx:id="noOfStocks" prefHeight="25.0" prefWidth="53.0" translateX="60.0" />
+                  <TextField fx:id="noOfStocks" prefHeight="25.0" prefWidth="53.0" translateX="280.0" />
                </children>
             </HBox>
-            <HBox prefHeight="100.0" prefWidth="200.0" translateY="30.0">
+            <HBox prefHeight="50.0" prefWidth="200.0" translateY="30.0">
                <children>
                   <Label prefHeight="13.0" prefWidth="100.0" text="Target Price :" />
-                  <TextField fx:id="targetPrice" prefHeight="25.0" prefWidth="53.0" translateX="70.0" />
+                  <TextField fx:id="targetPrice" prefHeight="25.0" prefWidth="53.0" translateX="290.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0" translateY="30.0">
+               <children>
+                  <Label prefHeight="23.0" prefWidth="190.0" text="Max-Discount-Percent:" />
+                  <TextField fx:id="maxDiscountPercent" prefHeight="14.0" prefWidth="54.0" translateX="200.0" />
                </children>
             </HBox>
             <Button fx:id="addProduct" mnemonicParsing="false" text="Add" translateY="50.0" />
