@@ -89,9 +89,7 @@ public class ProductController implements Initializable {
         this.getAddProduct().setOnAction(e-> {
             try {
                 saveInDataBase();
-            } catch (SQLException ex) {
-                throw new RuntimeException(ex);
-            } catch (DiyaShopException ex) {
+            } catch (SQLException | DiyaShopException ex) {
                 throw new RuntimeException(ex);
             }
         });

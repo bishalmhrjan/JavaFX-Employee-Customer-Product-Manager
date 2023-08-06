@@ -21,10 +21,12 @@ public class DiyaShopException extends  Exception{
         stage.setTitle("Error!");
 
         HBox hBox = new HBox(200);
+        hBox.setMinHeight(200);
         hBox.getChildren().add(label);
 
         Scene scene = new Scene(hBox);
          stage.setScene(scene);
+         stage.show();
 
     }
 

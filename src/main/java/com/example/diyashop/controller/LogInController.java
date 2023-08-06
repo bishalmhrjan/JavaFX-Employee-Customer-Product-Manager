@@ -5,10 +5,7 @@ import com.example.diyashop.view.AccountType;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 import java.net.URL;
 import java.sql.SQLException;
@@ -17,6 +14,7 @@ import java.util.ResourceBundle;
 public class LogInController implements Initializable {
     @FXML
     public Label error_lbl;
+    @FXML public Hyperlink signUp;
     @FXML
     private ChoiceBox<AccountType> chooseAccountType;
 
@@ -37,26 +35,30 @@ public class LogInController implements Initializable {
     public void setLogInButton(Button logInButton) {
         this.logInButton = logInButton;
     }
+
     public Button getLogInButton() {
         return logInButton;
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-    this.getChooseAccountType().setItems(FXCollections.observableArrayList(AccountType.EMPLOYEE,AccountType.ADMIN));
-        this.getChooseAccountType().setValue(Model.getInstance().getViewFactory().getAccountType());
-        this.getChooseAccountType().valueProperty().addListener(e->setChooseAccountType());
-    this.getLogInButton().setOnAction(e-> {
-        try {
-            onLogIn();
-        } catch (SQLException ex) {
-            throw new RuntimeException(ex);
-        }
-    });
+        this.getChooseAccountType().setItems(FXCollections.observableArrayList(AccountType.EMPLOYEE, AccountType.ADMIN));
+       this.getChooseAccountType().setValue(AccountType.ADMIN);
+        this.getChooseAccountType().valueProperty().addListener(e -> setChooseAccountType());
+        this.getSignUp().setOnAction(e->{
+            Model.getInstance().getViewFactory().createAccount();
+        });
+        this.getLogInButton().setOnAction(e -> {
+            try {
+                onLogIn();
+            } catch (SQLException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
     }
 
     private void onLogIn() throws SQLException {
-    //    Stage stage = (Stage) passwordLabel.getScene().getWindow();
+        //    Stage stage = (Stage) passwordLabel.getScene().getWindow();
 
         if (Model.getInstance().getViewFactory().getAccountType() == AccountType.EMPLOYEE) {
 
@@ -80,17 +82,18 @@ public class LogInController implements Initializable {
         }
     }
 
-    private  void setChooseAccountType(){
+    private void setChooseAccountType() {
         Model.getInstance().getViewFactory().setLogInAccountType(chooseAccountType.getValue());
 
-        if(chooseAccountType.getValue()==AccountType.ADMIN){
+        if (chooseAccountType.getValue() == AccountType.ADMIN) {
             userNameLabel.setText("Admin Username");
-        } else if (chooseAccountType.getValue()==AccountType.EMPLOYEE) {
+        } else if (chooseAccountType.getValue() == AccountType.EMPLOYEE) {
             userNameLabel.setText("Worker Username");
 
         }
 
     }
+
     public ChoiceBox<AccountType> getChooseAccountType() {
         return chooseAccountType;
     }
@@ -103,5 +106,7 @@ public class LogInController implements Initializable {
         return password;
     }
 
-
+    public Hyperlink getSignUp() {
+        return signUp;
+    }
 }

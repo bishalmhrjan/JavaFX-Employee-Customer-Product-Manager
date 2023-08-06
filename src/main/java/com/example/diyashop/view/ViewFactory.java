@@ -1,6 +1,5 @@
 package com.example.diyashop.view;
 
-import com.example.diyashop.controller.admin.AdminController;
 import com.example.diyashop.model.productstype.Product;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
@@ -8,7 +7,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import org.kordamp.bootstrapfx.BootstrapFX; // Import the BootstrapFX class
 
 import java.io.IOException;
 
@@ -31,6 +29,8 @@ public class ViewFactory {
     private final String QUATERLYCHART_EXPENDITURE="/Admin/QuarterlyChartExpenditure.fxml";
     private final String HALFYEARLYCHART_EXPENDITURE="/Admin/HalfYearlyChartExpenditure.fxml";
     private final String COMMON_ANCHORPANE="/Common.fxml";
+
+    private final String CREATE_ACCOUNT="/CreateAccount.fxml";
 
     private final String YEARLYCHART_EXPENDITURE="/Admin/YearlyChartExpenditure.fxml";
     private final String ADMIN_DIALOG="/Admin/Admin.fxml";
@@ -75,8 +75,8 @@ public class ViewFactory {
 
 
     public  ViewFactory(){
-        this.accountType=AccountType.EMPLOYEE;
-        this.commonOptionViewObjectProperty = new SimpleObjectProperty<>();
+        this.accountType= AccountType.EMPLOYEE;
+         this.commonOptionViewObjectProperty = new SimpleObjectProperty<>();
         this.adminOptionViewObjectProperty = new SimpleObjectProperty<>();
     }
 
@@ -311,6 +311,13 @@ public class ViewFactory {
         createStage(loader);
     }
 
+    public void createAccount() {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(CREATE_ACCOUNT));
+
+
+        createStage(loader);
+    }
+
     public void setLogInAccountType(AccountType value) {
         this.accountType = value;
     }
@@ -332,4 +339,6 @@ public class ViewFactory {
     public void setProductType(Product value) {
         this.productType=productType;
     }
+
+
 }

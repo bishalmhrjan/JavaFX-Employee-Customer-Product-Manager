@@ -39,17 +39,16 @@ Todays goal:
 
 
 Todays goal:
-product type defined in enum,--DONE
-add pane with diff type in observable list defined,
-product and its type count number in table save, edit, connect
+
 product search bar and should give result product name, type and pic
 image gallery?
 
 
 Today's Goal:
 - CRUD in database
--LogInLDAP
--Passwort Save in Encryption
+-LogInLDAP--> only work for webapps, also not good idea.
+-Passwort Save in Encryption done
+-Create new account for admin, worker, and admin can be only created when admin is logged in, otherwise not
 -Date Artifacts save in local
 -Database Pool
 
