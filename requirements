@@ -44,3 +44,12 @@ add pane with diff type in observable list defined,
 product and its type count number in table save, edit, connect
 product search bar and should give result product name, type and pic
 image gallery?
+
+
+Today's Goal:
+- CRUD in database
+-LogInLDAP
+-Passwort Save in Encryption
+-Date Artifacts save in local
+-Database Pool
+

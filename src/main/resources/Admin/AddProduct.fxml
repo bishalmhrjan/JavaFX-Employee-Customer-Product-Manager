@@ -59,7 +59,7 @@
             <HBox prefHeight="50.0" prefWidth="200.0" translateY="30.0">
                <children>
                   <Label prefHeight="23.0" prefWidth="190.0" text="Max-Discount-Percent:" />
-                  <TextField fx:id="maxDiscountPercent" prefHeight="14.0" prefWidth="54.0" translateX="200.0" />
+                  <TextField fx:id="maxDiscountPercent"  prefHeight="14.0" prefWidth="54.0" translateX="200.0" />
                </children>
             </HBox>
             <Button fx:id="addProduct" mnemonicParsing="false" text="Add" translateY="50.0" />
