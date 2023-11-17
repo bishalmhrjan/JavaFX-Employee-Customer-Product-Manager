@@ -1,6 +1,7 @@
 package com.example.diyashop.model;
 
 import com.example.diyashop.DiyaShopException;
+import com.example.diyashop.controller.LogInController;
 import com.example.diyashop.model.finance.PeriodTime;
 import com.example.diyashop.model.productstype.Product;
 import com.example.diyashop.view.AccountType;
@@ -86,6 +87,13 @@ public class DatabaseDriver {
                     PreparedStatement preparedStatement = this.connection.prepareStatement(CREATE_NEW_AADMIN);
                     preparedStatement.setString(1, username);
                     preparedStatement.setString(2, firstPassword);
+                    //Model.getInstance().getDatabase
+                    Model.getInstance().getViewFactory().showLogInWindow();
+
+                    /**
+                     * getadmin data lai boolean banayera admin pw check garera matrai admin ko new account create garne.
+                     *
+                     */
                     preparedStatement.executeUpdate();
 
                   System.out.println("admin created successfully");

@@ -43,12 +43,21 @@ Todays goal:
 product search bar and should give result product name, type and pic
 image gallery?
 
-
-Today's Goal:
+Functions to add:
 - CRUD in database
 -LogInLDAP--> only work for webapps, also not good idea.
 -Passwort Save in Encryption done
 -Create new account for admin, worker, and admin can be only created when admin is logged in, otherwise not
 -Date Artifacts save in local
 -Database Pool
+-How to save data in cache, reduce read and write operation in database
+
+Main functions to add:
+-java fx css background with orange, shiny 60,30, and 10 % rule frontend
+-Menu, sub menu with Css, JS
+- daily, weekly, monthly sales, expenditure in pie chart, chart, line chart with diff color in
+main section with multiple tabs
+- customer details with QR-code, name, lastName, sex, nationality(200 Nations), resident(200 Nations), age, nepal(Primary KEy= Username), With Reciept Number key generator,
+and qr code scan n save in web database/server
+
 

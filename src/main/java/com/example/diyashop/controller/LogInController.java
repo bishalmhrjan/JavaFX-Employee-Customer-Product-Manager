@@ -57,7 +57,7 @@ public class LogInController implements Initializable {
         });
     }
 
-    private void onLogIn() throws SQLException {
+    public boolean onLogIn() throws SQLException {
         //    Stage stage = (Stage) passwordLabel.getScene().getWindow();
 
         if (Model.getInstance().getViewFactory().getAccountType() == AccountType.EMPLOYEE) {
@@ -65,8 +65,10 @@ public class LogInController implements Initializable {
             if (Model.getInstance().evaluateCredential(AccountType.EMPLOYEE, this.getUserName().getText(), this.getPassword().getText())) {
 
                 Model.getInstance().getViewFactory().showWorkerWindow();
+                return true;
             } else {
                 error_lbl.setText("Either wrong Benutzername or Password");
+                return false;
             }
         } else {
 
@@ -74,12 +76,14 @@ public class LogInController implements Initializable {
 
                 if (Model.getInstance().evaluateCredential(AccountType.ADMIN, this.getUserName().getText(), this.getPassword().getText())) {
                     Model.getInstance().getViewFactory().showAdminWindow();
-
+                    return true;
                 } else {
                     error_lbl.setText("Keine Admin mit dieser Existiert");
+                    return false;
                 }
             }
         }
+        return false;
     }
 
     private void setChooseAccountType() {
