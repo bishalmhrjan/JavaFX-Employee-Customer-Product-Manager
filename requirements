@@ -61,3 +61,8 @@ main section with multiple tabs
 and qr code scan n save in web database/server
 
 
+
+//DB Requirements:
+-> produkt ma produkt name, ra product type together pk, ra reciept ma fk hunxa
+-> reciept ma automatic incrment pk, reciept fk produckt name+procut type,date hunu paryo
+-> customer username-pk, fk reciept ko rnr hunxa, age, sex, nationality, residence in
