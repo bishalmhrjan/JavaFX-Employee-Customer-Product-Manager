@@ -40,7 +40,7 @@ Todays goal:
 
 Todays goal:
 
-product search bar and should give result product name, type and pic
+productEnum search bar and should give result productEnum name, type and pic
 image gallery?
 
 Functions to add:
@@ -63,7 +63,10 @@ and qr code scan n save in web database/server
 
 
 //DB Requirements:
--> produkt ma produkt name, ra product type together pk, ra reciept ma fk hunxa
+-> produkt ma produkt name, ra productEnum type together pk, ra reciept ma fk hunxa
 -> reciept ma automatic incrment pk, reciept fk produckt name+procut type,date hunu paryo, customer username as fk
 -> customer username-pk,, age, sex, nationality, residence in
--> Reciept_Item has auto increment pk hunxa jasma recipet ra product id fk hunxa.
+-> Reciept_Item has auto increment pk hunxa jasma recipet ra productEnum id fk hunxa.
+
+
+//reciept bata old datas new table ma migrate hunu parxa.not sharding, migration

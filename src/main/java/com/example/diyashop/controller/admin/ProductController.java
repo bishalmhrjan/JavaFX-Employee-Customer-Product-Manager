@@ -3,7 +3,7 @@ package com.example.diyashop.controller.admin;
 import com.example.diyashop.DiyaShopException;
 import com.example.diyashop.model.DatabaseDriver;
 import com.example.diyashop.model.finance.PeriodTime;
-import com.example.diyashop.model.productstype.Product;
+import com.example.diyashop.model.productstype.ProductEnum;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -36,9 +36,9 @@ public class ProductController implements Initializable {
 
 
     @FXML
-    private ChoiceBox<Product> productName;
+    private ChoiceBox<ProductEnum> productName;
     @FXML
-    private ChoiceBox<Product.ProductType> productType;
+    private ChoiceBox<ProductEnum.ProductType> productType;
 
 
 
@@ -60,11 +60,11 @@ public class ProductController implements Initializable {
     }
 
 
-    public ChoiceBox<Product> getProductName() {
+    public ChoiceBox<ProductEnum> getProductName() {
         return productName;
     }
 
-    public ChoiceBox<Product.ProductType> getProductType() {
+    public ChoiceBox<ProductEnum.ProductType> getProductType() {
         return productType;
 
     }
@@ -77,12 +77,12 @@ public class ProductController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        this.getProductName().setItems(FXCollections.observableArrayList(Product.JACKET, Product.T_SHIRT, Product.SWEATER,
-                Product.BAG, Product.PURSE, Product.CERAMICS, Product.SHOES, Product.SLIPPERS, Product.TOYS, Product.PAPER_ITEMS,
-                Product.SCHWALS, Product.SOAP, Product.TEE, Product.METAL, Product.POTTERY, Product.EAR_RINGS, Product.NECKLACE));
+        this.getProductName().setItems(FXCollections.observableArrayList(ProductEnum.JACKET, ProductEnum.T_SHIRT, ProductEnum.SWEATER,
+                ProductEnum.BAG, ProductEnum.PURSE, ProductEnum.CERAMICS, ProductEnum.SHOES, ProductEnum.SLIPPERS, ProductEnum.TOYS, ProductEnum.PAPER_ITEMS,
+                ProductEnum.SCHWALS, ProductEnum.SOAP, ProductEnum.TEE, ProductEnum.METAL, ProductEnum.POTTERY, ProductEnum.EAR_RINGS, ProductEnum.NECKLACE));
         this.getProductName().valueProperty().addListener(e -> setProductType(getProductName().getValue()));
-        this.getProductName().setValue(Product.T_SHIRT);
-        this.getProductType().setValue(Product.ProductType.GOD);
+        this.getProductName().setValue(ProductEnum.T_SHIRT);
+        this.getProductType().setValue(ProductEnum.ProductType.GOD);
         this.getTimePeriod().setItems(FXCollections.observableArrayList(PeriodTime.SIX_MONTH_AGO,PeriodTime.THREE_MONTH_AGO,PeriodTime.ONE_MONTH_AGO,
                 PeriodTime.ONE_WEEK_AGO,PeriodTime.YESTERDAY,PeriodTime.TODAY));
         this.getTimePeriod().setValue(PeriodTime.TODAY);
@@ -97,8 +97,8 @@ public class ProductController implements Initializable {
 
 
 
-    private void setProductType(Product productType) {
-        switch (productType) {
+    private void setProductType(ProductEnum productEnumType) {
+        switch (productEnumType) {
             case JACKET -> setJacketType();
 
             case SWEATER -> setSweaterType();
@@ -132,7 +132,7 @@ public class ProductController implements Initializable {
             case NECKLACE ->setNecklace();
 
             default ->
-                    this.getProductType().setItems(FXCollections.observableArrayList(Product.ProductType.COLOR_RED, Product.ProductType.COLOR_BLUE, Product.ProductType.COLOR_BLACK));
+                    this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.COLOR_RED, ProductEnum.ProductType.COLOR_BLUE, ProductEnum.ProductType.COLOR_BLACK));
 
         }
         //Model.getInstance().getViewFactory().setProductType(this.productType.getValue());
@@ -140,115 +140,115 @@ public class ProductController implements Initializable {
 
 
     private void setJacketType() {
-        this.getProductType().setItems(FXCollections.observableArrayList(Product.ProductType.WOLL_SHEEP, Product.ProductType.WOLL_SHEEP, Product.ProductType.WOLL_YAK, Product.ProductType.SILK));
-        this.getProductType().setValue(Product.ProductType.WOLL_SHEEP);
+        this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.WOLL_SHEEP, ProductEnum.ProductType.WOLL_SHEEP, ProductEnum.ProductType.WOLL_YAK, ProductEnum.ProductType.SILK));
+        this.getProductType().setValue(ProductEnum.ProductType.WOLL_SHEEP);
     }
 
     private void setSweaterType() {
-        this.getProductType().setItems(FXCollections.observableArrayList(Product.ProductType.CASHMERE, Product.ProductType.COTTON, Product.ProductType.SILK, Product.ProductType.WOLL_SHEEP));
-        this.getProductType().setValue(Product.ProductType.CASHMERE);
+        this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.CASHMERE, ProductEnum.ProductType.COTTON, ProductEnum.ProductType.SILK, ProductEnum.ProductType.WOLL_SHEEP));
+        this.getProductType().setValue(ProductEnum.ProductType.CASHMERE);
 
     }
 
     private void setTShirtType() {
-        this.getProductType().setItems(FXCollections.observableArrayList(Product.ProductType.GOD, Product.ProductType.NORMAL, Product.ProductType.SYMBOL));
-        this.getProductType().setValue(Product.ProductType.GOD);
+        this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.GOD, ProductEnum.ProductType.NORMAL, ProductEnum.ProductType.SYMBOL));
+        this.getProductType().setValue(ProductEnum.ProductType.GOD);
     }
 
     private void setBagType() {
-        this.getProductType().setItems(FXCollections.observableArrayList(Product.ProductType.COTTON, Product.ProductType.SILK, Product.ProductType.LEATHER, Product.ProductType.FELT));
+        this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.COTTON, ProductEnum.ProductType.SILK, ProductEnum.ProductType.LEATHER, ProductEnum.ProductType.FELT));
 
-        this.getProductType().setValue(Product.ProductType.COTTON);
+        this.getProductType().setValue(ProductEnum.ProductType.COTTON);
     }
 
     private void setPurseType() {
-        this.getProductType().setItems(FXCollections.observableArrayList(Product.ProductType.COTTON, Product.ProductType.SILK, Product.ProductType.LEATHER, Product.ProductType.FELT));
+        this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.COTTON, ProductEnum.ProductType.SILK, ProductEnum.ProductType.LEATHER, ProductEnum.ProductType.FELT));
 
-        this.getProductType().setValue(Product.ProductType.COTTON);
+        this.getProductType().setValue(ProductEnum.ProductType.COTTON);
 
     }
 
     private void setCeramics() {
-        this.getProductType().setItems(FXCollections.observableArrayList(Product.ProductType.TEA_POTS, Product.ProductType.SAUCER_SETS, Product.ProductType.CUPS));
+        this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.TEA_POTS, ProductEnum.ProductType.SAUCER_SETS, ProductEnum.ProductType.CUPS));
 
-        this.getProductType().setValue(Product.ProductType.TEA_POTS);
+        this.getProductType().setValue(ProductEnum.ProductType.TEA_POTS);
 
     }
 
     private void setShoes() {
-        this.getProductType().setItems(FXCollections.observableArrayList(Product.ProductType.PLASTIC, Product.ProductType.SANTA_COLOR, Product.ProductType.FELT));
+        this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.PLASTIC, ProductEnum.ProductType.SANTA_COLOR, ProductEnum.ProductType.FELT));
 
-        this.getProductType().setValue(Product.ProductType.FELT);
+        this.getProductType().setValue(ProductEnum.ProductType.FELT);
 
     }
 
     private void setSlippers() {
-        this.getProductType().setItems(FXCollections.observableArrayList(Product.ProductType.PLASTIC, Product.ProductType.SANTA_COLOR, Product.ProductType.FELT));
+        this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.PLASTIC, ProductEnum.ProductType.SANTA_COLOR, ProductEnum.ProductType.FELT));
 
-        this.getProductType().setValue(Product.ProductType.FELT);
+        this.getProductType().setValue(ProductEnum.ProductType.FELT);
 
     }
 
     private void setToys() {
-        this.getProductType().setItems(FXCollections.observableArrayList(Product.ProductType.CHRISTMAS_TREE, Product.ProductType.CHRISTMAS_ITEM));
+        this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.CHRISTMAS_TREE, ProductEnum.ProductType.CHRISTMAS_ITEM));
 
-        this.getProductType().setValue(Product.ProductType.CHRISTMAS_ITEM);
+        this.getProductType().setValue(ProductEnum.ProductType.CHRISTMAS_ITEM);
 
     }
 
     private void setPaperItems() {
-        this.getProductType().setItems(FXCollections.observableArrayList(Product.ProductType.GREETING_CARD_SET, Product.ProductType.NOTEBOOK, Product.ProductType.PAPER_PHOTO_FRAME));
+        this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.GREETING_CARD_SET, ProductEnum.ProductType.NOTEBOOK, ProductEnum.ProductType.PAPER_PHOTO_FRAME));
 
-        this.getProductType().setValue(Product.ProductType.NOTEBOOK);
+        this.getProductType().setValue(ProductEnum.ProductType.NOTEBOOK);
 
     }
 
     private void setSchwals() {
-        this.getProductType().setItems(FXCollections.observableArrayList(Product.ProductType.CASHMERE, Product.ProductType.PASHMINA));
+        this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.CASHMERE, ProductEnum.ProductType.PASHMINA));
 
-        this.getProductType().setValue(Product.ProductType.CASHMERE);
+        this.getProductType().setValue(ProductEnum.ProductType.CASHMERE);
 
     }
 
     private void setSoap() {
-        this.getProductType().setItems(FXCollections.observableArrayList(Product.ProductType.HONEY, Product.ProductType.SALT, Product.ProductType.SHAMPOO_BAR));
+        this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.HONEY, ProductEnum.ProductType.SALT, ProductEnum.ProductType.SHAMPOO_BAR));
 
-        this.getProductType().setValue(Product.ProductType.HONEY);
+        this.getProductType().setValue(ProductEnum.ProductType.HONEY);
 
     }
 
     private void setTea() {
-        this.getProductType().setItems(FXCollections.observableArrayList(Product.ProductType.GREEN_TEA, Product.ProductType.BLACK_TEA));
+        this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.GREEN_TEA, ProductEnum.ProductType.BLACK_TEA));
 
-        this.getProductType().setValue(Product.ProductType.BLACK_TEA);
+        this.getProductType().setValue(ProductEnum.ProductType.BLACK_TEA);
 
     }
 
     private void setMetal() {
-        this.getProductType().setItems(FXCollections.observableArrayList(Product.ProductType.SINGING_BOWL));
+        this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.SINGING_BOWL));
 
-        this.getProductType().setValue(Product.ProductType.SINGING_BOWL);
+        this.getProductType().setValue(ProductEnum.ProductType.SINGING_BOWL);
 
     }
 
     private void setPottery() {
-        this.getProductType().setItems(FXCollections.observableArrayList(Product.ProductType.POT, Product.ProductType.VASE));
+        this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.POT, ProductEnum.ProductType.VASE));
 
-        this.getProductType().setValue(Product.ProductType.VASE);
+        this.getProductType().setValue(ProductEnum.ProductType.VASE);
 
     }
 
     private void setEarRings() {
-        this.getProductType().setItems(FXCollections.observableArrayList(Product.ProductType.COLOR_RED, Product.ProductType.COLOR_BLACK, Product.ProductType.COLOR_BLUE));
+        this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.COLOR_RED, ProductEnum.ProductType.COLOR_BLACK, ProductEnum.ProductType.COLOR_BLUE));
 
-        this.getProductType().setValue(Product.ProductType.COLOR_BLUE);
+        this.getProductType().setValue(ProductEnum.ProductType.COLOR_BLUE);
 
     }
 
     private void setNecklace() {
-        this.getProductType().setItems(FXCollections.observableArrayList(Product.ProductType.COLOR_RED, Product.ProductType.COLOR_BLACK, Product.ProductType.COLOR_BLUE));
+        this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.COLOR_RED, ProductEnum.ProductType.COLOR_BLACK, ProductEnum.ProductType.COLOR_BLUE));
 
-        this.getProductType().setValue(Product.ProductType.COLOR_BLUE);
+        this.getProductType().setValue(ProductEnum.ProductType.COLOR_BLUE);
 
     }
 

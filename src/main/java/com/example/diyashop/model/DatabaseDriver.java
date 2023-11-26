@@ -1,9 +1,8 @@
 package com.example.diyashop.model;
 
 import com.example.diyashop.DiyaShopException;
-import com.example.diyashop.controller.LogInController;
 import com.example.diyashop.model.finance.PeriodTime;
-import com.example.diyashop.model.productstype.Product;
+import com.example.diyashop.model.productstype.ProductEnum;
 import com.example.diyashop.view.AccountType;
 
 import java.sql.*;
@@ -61,11 +60,11 @@ public class DatabaseDriver {
         return resultSet;
     }
 
-    public void addProduct(Product product, Product.ProductType productType, int stocks, double boughtPrice,
+    public void addProduct(ProductEnum productEnum, ProductEnum.ProductType productType, int stocks, double boughtPrice,
                            double targetPrice, double discountPercent, PeriodTime periodTime) {
         try {
             PreparedStatement preparedStatement = this.connection.prepareStatement(INSERT_INTO_PRODUCT);
-            preparedStatement.setString(1, product.name());
+            preparedStatement.setString(1, productEnum.name());
             preparedStatement.setString(2, productType.name());
             preparedStatement.setInt(3, stocks);
             preparedStatement.setDouble(4, boughtPrice);

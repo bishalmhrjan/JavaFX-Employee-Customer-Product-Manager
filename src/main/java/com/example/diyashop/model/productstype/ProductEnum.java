@@ -1,8 +1,6 @@
 package com.example.diyashop.model.productstype;
 
-import java.util.Collection;
-
-public enum Product {
+public enum ProductEnum {
     JACKET , T_SHIRT , SWEATER , BAG , PURSE,CERAMICS , SHOES ,SLIPPERS , TOYS , PAPER_ITEMS ,
     SCHWALS , SOAP , TEE , METAL , POTTERY ,     NECKLACE, EAR_RINGS;
 

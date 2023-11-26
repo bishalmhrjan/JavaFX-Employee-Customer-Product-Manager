@@ -1,6 +1,6 @@
 package com.example.diyashop.view;
 
-import com.example.diyashop.model.productstype.Product;
+import com.example.diyashop.model.productstype.ProductEnum;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.fxml.FXMLLoader;
@@ -66,9 +66,9 @@ public class ViewFactory {
     private AccountType accountType;
     private final ObjectProperty<CommonOptionView> commonOptionViewObjectProperty;
     private final ObjectProperty<AdminOptionView> adminOptionViewObjectProperty;
-    private  Product product;
+    private ProductEnum productEnum;
 
-    private Product productType;
+    private ProductEnum productEnumType;
 
 
 
@@ -325,19 +325,19 @@ public class ViewFactory {
         stage.close();
     }
 
-    public Product getProductName() {
+    public ProductEnum getProductName() {
 
-        return product;
+        return productEnum;
     }
 
-    public void setProduct(Product product) {
+    public void setProduct(ProductEnum productEnum) {
 
-            this.product=product;
+            this.productEnum = productEnum;
 
     }
 
-    public void setProductType(Product value) {
-        this.productType=productType;
+    public void setProductType(ProductEnum value) {
+        this.productEnumType = productEnumType;
     }
 
 
