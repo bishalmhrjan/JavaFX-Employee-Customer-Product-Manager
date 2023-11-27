@@ -5,21 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="Admin, worker class is created. &#10;passwort is encrypted and decrypted.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Occupation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Reciept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/RecieptItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/ToCSVMigrator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/csvData/product/product.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/csvData/reciept/reciept.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/produkt.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DiyaDesktop.svg" beforeDir="false" afterPath="$PROJECT_DIR$/DiyaDesktop.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diyadesktop.db" beforeDir="false" afterPath="$PROJECT_DIR$/diyadesktop.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diyadesktop.db-journal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements" beforeDir="false" afterPath="$PROJECT_DIR$/requirements" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DatabaseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DatabaseDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/ProductEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/AddProduct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/AddProduct.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/cvs-produkt/produkt.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/csvData/customer/customer.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +29,8 @@
         <option value="Kotlin Class" />
         <option value="FxmlFile" />
         <option value="editable-svg" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -48,9 +45,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2P5cL5TL3dKxZO9FiKNJt4QpBkZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -82,8 +79,14 @@
       <recent name="D:\FilesExercises\DiyaShop\src\main\java\com\example\diyashop\controller\worker" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\csvData" />
+      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources" />
+      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\csvdata\cvs-produkt" />
+      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\csvdata" />
       <recent name="D:\FilesExercises\DiyaShop\src\main\resources" />
-      <recent name="D:\FilesExercises\DiyaShop\src\main\resources\Admin" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Application.App">
@@ -126,9 +129,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchBar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.controller.SearchBar" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.Test" />
       <module name="DiyaShop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.diyashop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,10 +158,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.DatabaseDriver" />
         <item itemvalue="Application.Encryptor" />
         <item itemvalue="Application.WeeklyEarning" />
-        <item itemvalue="Application.SearchBar" />
       </list>
     </recent_temporary>
   </component>
@@ -233,11 +242,6 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java</url>
           <line>215</line>
           <option name="timeStamp" value="10" />
@@ -246,39 +250,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java</url>
           <line>216</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java</url>
-          <line>88</line>
-          <properties>
-            <option name="lambda-ordinal" value="0" />
-          </properties>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java</url>
-          <line>263</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java</url>
-          <line>261</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java</url>
-          <line>257</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DatabaseDriver.java</url>
@@ -299,6 +270,9 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DiyaShop$App.ic" NAME="App Coverage Results" MODIFIED="1683884910614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.diyashop.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DiyaShop$Test.ic" NAME="Test Coverage Results" MODIFIED="1701085723872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.example.diyashop.*</FILTER>
     </SUITE>
   </component>

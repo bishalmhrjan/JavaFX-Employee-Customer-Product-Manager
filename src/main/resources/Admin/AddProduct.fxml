@@ -31,7 +31,7 @@
                         <HBox prefHeight="100.0" prefWidth="200.0">
                            <children>
                               <Label text="Time:" />
-                              <ChoiceBox fx:id="timePeriod" prefWidth="150.0" translateX="319.0" />
+                              <TextField fx:id="timePeriod" prefWidth="150.0" translateX="319.0" />
                            </children>
                         </HBox>
                      </children>

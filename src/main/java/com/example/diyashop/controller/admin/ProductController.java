@@ -4,26 +4,33 @@ import com.example.diyashop.DiyaShopException;
 import com.example.diyashop.model.DatabaseDriver;
 import com.example.diyashop.model.finance.PeriodTime;
 import com.example.diyashop.model.productstype.ProductEnum;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
+import javax.swing.text.DateFormatter;
 import java.net.URL;
 import java.sql.SQLException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class ProductController implements Initializable {
 
-
     @FXML
-    public  ChoiceBox<PeriodTime> timePeriod;
-
-
-
     public TextField maxDiscountPercent;
+    public TextField timePeriod;
     @FXML
     private TextField buyingPrice;
     @FXML
@@ -71,7 +78,8 @@ public class ProductController implements Initializable {
     public TextField getMaxDiscountPercent() {
         return maxDiscountPercent;
     }
-    public ChoiceBox<PeriodTime> getTimePeriod() {
+
+    public TextField getTimePeriod() {
         return timePeriod;
     }
 
@@ -83,16 +91,16 @@ public class ProductController implements Initializable {
         this.getProductName().valueProperty().addListener(e -> setProductType(getProductName().getValue()));
         this.getProductName().setValue(ProductEnum.T_SHIRT);
         this.getProductType().setValue(ProductEnum.ProductType.GOD);
-        this.getTimePeriod().setItems(FXCollections.observableArrayList(PeriodTime.SIX_MONTH_AGO,PeriodTime.THREE_MONTH_AGO,PeriodTime.ONE_MONTH_AGO,
-                PeriodTime.ONE_WEEK_AGO,PeriodTime.YESTERDAY,PeriodTime.TODAY));
-        this.getTimePeriod().setValue(PeriodTime.TODAY);
-        this.getAddProduct().setOnAction(e-> {
+        checkDatePattern();
+         this.getAddProduct().setOnAction(e-> {
             try {
                 saveInDataBase();
             } catch (SQLException | DiyaShopException ex) {
                 throw new RuntimeException(ex);
+            } catch (ParseException ex) {
+                throw new RuntimeException(ex);
             }
-        });
+         });
     }
 
 
@@ -253,15 +261,17 @@ public class ProductController implements Initializable {
     }
 
 
-    private void saveInDataBase() throws SQLException, NumberFormatException, DiyaShopException {
+    private void saveInDataBase() throws SQLException, NumberFormatException, DiyaShopException, ParseException {
 
         if (isValid(getNoOfStocks().getText().toString()) && isValid(getBuyingPrice().getText().toString()) && isValid(getTargetPrice().getText().toString()) && isValid(getMaxDiscountPercent().getText().toString())) {
             new DatabaseDriver().addProduct(getProductName().getValue(), getProductType().getValue(), Integer.parseInt(getNoOfStocks().getText().toString()),
-                    Double.parseDouble(getBuyingPrice().getText().toString()), Double.parseDouble(getTargetPrice().getText().toString()), Double.parseDouble(getMaxDiscountPercent().getText().toString()), getTimePeriod().getValue());
+                    Double.parseDouble(getBuyingPrice().getText().toString()), Double.parseDouble(getTargetPrice().getText().toString()), Double.parseDouble(getMaxDiscountPercent().getText().toString()),
+                    checkDatePattern());
             getNoOfStocks().setText("");
             getBuyingPrice().setText("");
             getTargetPrice().setText("");
             getMaxDiscountPercent().setText("");
+            getTimePeriod().setText("");
         } else {
             throw new DiyaShopException("Either number is  negative, non-number or empty textfield.");
 
@@ -271,6 +281,52 @@ public class ProductController implements Initializable {
 
     }
 
+     private String checkDatePattern() {
+
+        // Add a change listener to the text property of the TextField
+        timePeriod.textProperty().addListener(new ChangeListener<String>() {
+            @Override
+            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+                // Allow only numeric characters
+                String numericValue = newValue.replaceAll("[^\\d]", "");
+
+                // Remove leading zeros
+                //   numericValue = numericValue.replaceAll("^0+", "");
+
+                // Format as "####.##.##"
+                StringBuilder formattedValue = new StringBuilder();
+                int length = numericValue.length();
+
+
+                for (int i = 0; i < length; i++) {
+                    formattedValue.append(numericValue.charAt(i));
+                    if ((i == 3 || i == 5) ) {
+                        formattedValue.append("-");
+                    }
+                    if(i==7){
+                        break;
+                    }
+                }
+
+
+
+                timePeriod.setText(formattedValue.toString());
+            }
+        });
+
+        System.out.println("timeperiod is "+timePeriod.getText().toString());
+
+        return timePeriod.getText().toString();
+    }
+
+
+
+    private  String dateFormatter(String date)   {
+        String formattedDate = String.format("%04d-%02d-%02d",date);
+        System.out.println("here is formatted date "+formattedDate);
+      return   formattedDate;
+
+     }
 
     //4 Textfield compare, valid int or double and non negative,
     //target price must be greater than buying price and non empty
@@ -279,7 +335,7 @@ public class ProductController implements Initializable {
 
 
     public boolean isValid(String string) {
-        if (string.length() != 0 && !string.contains("") && string != null) {
+        if (string.length() != 0 && !string.contains(" ") && string != null) {
             if ((Integer.parseInt(string) > 0) || (Double.parseDouble(string) > 0)) {
                 return true;
 
