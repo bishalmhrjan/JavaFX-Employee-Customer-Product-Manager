@@ -92,7 +92,8 @@ public class ProductController implements Initializable {
         this.getProductName().setValue(ProductEnum.T_SHIRT);
         this.getProductType().setValue(ProductEnum.ProductType.GOD);
         checkDatePattern();
-         this.getAddProduct().setOnAction(e-> {
+
+        this.getAddProduct().setOnAction(e-> {
             try {
                 saveInDataBase();
             } catch (SQLException | DiyaShopException ex) {
@@ -263,11 +264,14 @@ public class ProductController implements Initializable {
 
     private void saveInDataBase() throws SQLException, NumberFormatException, DiyaShopException, ParseException {
 
-        if (isValid(getNoOfStocks().getText().toString()) && isValid(getBuyingPrice().getText().toString()) && isValid(getTargetPrice().getText().toString()) && isValid(getMaxDiscountPercent().getText().toString())) {
+        if (isValid(getNoOfStocks().getText().toString()) && isValid(getBuyingPrice().getText().toString()) && isValid(getTargetPrice().getText().toString()) &&   checkValidDate(getTimePeriod().getText().toString())&& isValid(getMaxDiscountPercent().getText().toString())) {
             new DatabaseDriver().addProduct(getProductName().getValue(), getProductType().getValue(), Integer.parseInt(getNoOfStocks().getText().toString()),
-                    Double.parseDouble(getBuyingPrice().getText().toString()), Double.parseDouble(getTargetPrice().getText().toString()), Double.parseDouble(getMaxDiscountPercent().getText().toString()),
-                    checkDatePattern());
-            getNoOfStocks().setText("");
+                    Double.parseDouble(getBuyingPrice().getText().toString()), Double.parseDouble(getTargetPrice().getText().toString()), Double.parseDouble(getMaxDiscountPercent().getText().toString()),getTimePeriod().getText().toString());
+
+
+
+
+             getNoOfStocks().setText("");
             getBuyingPrice().setText("");
             getTargetPrice().setText("");
             getMaxDiscountPercent().setText("");
@@ -321,12 +325,26 @@ public class ProductController implements Initializable {
 
 
 
-    private  String dateFormatter(String date)   {
-        String formattedDate = String.format("%04d-%02d-%02d",date);
-        System.out.println("here is formatted date "+formattedDate);
-      return   formattedDate;
+    private     boolean checkValidDate(String date) throws DiyaShopException {
 
-     }
+
+        String year= ""+date.charAt(0)+date.charAt(1)+date.charAt(2)+date.charAt(3);
+        String month =""+date.charAt(5)+date.charAt(6);
+        String day=""+date.charAt(8)+date.charAt(9);
+
+        int yearInt = Integer.parseInt(year);
+        int monthInt = Integer.parseInt(month);
+        int dayInt = Integer.parseInt(day);
+
+
+        if(Integer.parseInt(year)>=2080&&Integer.parseInt(year)<2100&&
+                Integer.parseInt(month)>=1&&Integer.parseInt(month)<=12
+                &&Integer.parseInt(day)>=1&&Integer.parseInt(day)<=32){
+            return true;
+        }
+
+throw new DiyaShopException("invalid date");
+    }
 
     //4 Textfield compare, valid int or double and non negative,
     //target price must be greater than buying price and non empty
