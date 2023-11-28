@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="Admin, worker class is created. &#10;passwort is encrypted and decrypted.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/RecieptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/InvoiceItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements" beforeDir="false" afterPath="$PROJECT_DIR$/requirements" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/CommonController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/CommonMenuController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/worker/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/worker/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/worker/EmployeeMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/worker/EmployeeMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/AdminOptionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/AdminOptionView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/CommonOptionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/EmployeeOptionView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/AdminMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Admin/AdminMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Common.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Employee.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/CommonMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/EmployeeMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/RecieptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/RecieptController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/ProductEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/ProductEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Reciept.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Reciept.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

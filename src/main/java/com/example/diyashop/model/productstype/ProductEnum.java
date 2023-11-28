@@ -6,7 +6,7 @@ public enum ProductEnum {
 
 
 
-     public enum ProductType {
+    public enum ProductType {
         WOLL_SHEEP, WOLL_YAK, SILK,// JacketType
          COLOR_RED, COLOR_BLUE, COLOR_BLACK,//EarringsType
          POT, VASE,//PotteryType

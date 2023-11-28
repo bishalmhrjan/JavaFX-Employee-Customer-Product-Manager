@@ -1,14 +1,15 @@
 package com.example.diyashop.controller.admin;
 
 import com.example.diyashop.DiyaShopException;
-import com.example.diyashop.model.DatabaseDriver;
+import com.example.diyashop.model.backend.RecieptItem;
 import com.example.diyashop.model.productstype.ProductEnum;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
 import java.sql.SQLException;
@@ -22,12 +23,14 @@ public class RecieptController implements Initializable {
     @FXML public TextField noOfStocks;
     @FXML public TextField total;
     @FXML public Button addProduct;
-    @FXML public TableView listOfItems;
-    @FXML public TableColumn productNameColumn;
-    @FXML public TableColumn productTypeColumn;
-    @FXML public TableColumn price;
-    @FXML public TableColumn noOfItems;
-    @FXML public TableColumn totalPriceOfSingleProduct;
+    @FXML public TableView<InvoiceItem> tableView;
+
+
+    @FXML public TableColumn<InvoiceItem,String> productNameColumn;
+    @FXML public TableColumn<InvoiceItem,String> productTypeColumn;
+    @FXML public TableColumn<InvoiceItem,Double> price;
+    @FXML public TableColumn<InvoiceItem,Integer> noOfItems;
+    @FXML public TableColumn<InvoiceItem,Double> totalPriceOfSingleProduct;
 
 
 
@@ -57,7 +60,7 @@ public class RecieptController implements Initializable {
     }
 
     public TableView getListOfItems() {
-        return listOfItems;
+        return tableView;
     }
 
     public TableColumn getProductNameColumn() {
@@ -88,8 +91,16 @@ public class RecieptController implements Initializable {
         this.getProductName().valueProperty().addListener(e -> setProductType(getProductName().getValue()));
         this.getProductName().setValue(ProductEnum.T_SHIRT);
         this.getProductType().setValue(ProductEnum.ProductType.GOD);
-    }
-    private void setProductType(ProductEnum productEnumType) {
+
+
+    productNameColumn.setCellValueFactory(new PropertyValueFactory<>("productEnum"));
+    productTypeColumn.setCellValueFactory(new PropertyValueFactory<>("productType"));
+    price.setCellValueFactory(new PropertyValueFactory<>("price"));
+    noOfItems.setCellValueFactory(new PropertyValueFactory<>("numberOfStocks"));
+    totalPriceOfSingleProduct.setCellValueFactory(new PropertyValueFactory<>("total"));
+     }
+
+     private void setProductType(ProductEnum productEnumType) {
         switch (productEnumType) {
             case JACKET -> setJacketType();
 
@@ -245,44 +256,17 @@ public class RecieptController implements Initializable {
 
 
     private void copyInTableView() throws SQLException, NumberFormatException, DiyaShopException, ParseException {
-
-
-
-
-            getNoOfStocks().setText("");
-            getSellUnitPrice().setText("");
-            getNoOfStocks().setText("");
-            getTotal().setText("");
-
-
-
-
+        getNoOfStocks().setText("");
+        getSellUnitPrice().setText("");
+        getNoOfStocks().setText("");
+        getTotal().setText("");
     }
 
 
-
-
-
-    private     boolean checkValidDate(String date) throws DiyaShopException {
-
-
-        String year= ""+date.charAt(0)+date.charAt(1)+date.charAt(2)+date.charAt(3);
-        String month =""+date.charAt(5)+date.charAt(6);
-        String day=""+date.charAt(8)+date.charAt(9);
-
-        int yearInt = Integer.parseInt(year);
-        int monthInt = Integer.parseInt(month);
-        int dayInt = Integer.parseInt(day);
-
-
-        if(Integer.parseInt(year)>=2080&&Integer.parseInt(year)<2100&&
-                Integer.parseInt(month)>=1&&Integer.parseInt(month)<=12
-                &&Integer.parseInt(day)>=1&&Integer.parseInt(day)<=32){
-            return true;
-        }
-
-        throw new DiyaShopException("invalid date");
+    public TableView getTableView() {
+        return tableView;
     }
+
 
     //4 Textfield compare, valid int or double and non negative,
     //target price must be greater than buying price and non empty
@@ -290,14 +274,22 @@ public class RecieptController implements Initializable {
     //update, delete,create garxa
 
 
-    public boolean isValid(String string) {
-        if (string.length() != 0 && !string.contains(" ") && string != null) {
-            if ((Integer.parseInt(string) > 0) || (Double.parseDouble(string) > 0)) {
-                return true;
 
-            }
-        }
-        return false;
+    @FXML
+    public void addInTable(ActionEvent actionEvent) {
+
+
+
+        ProductEnum productEnum = getProductName().getValue();
+        ProductEnum.ProductType productType = getProductType().getValue();
+        double price =Double.parseDouble(getSellUnitPrice().getText().toString());
+        int stocks = Integer.parseInt(getNoOfStocks().getText().toString());
+        double total = price * stocks;
+
+        getTableView().getItems().add(new InvoiceItem(productEnum,productType,price,stocks,total));
+
+        getNoOfStocks().setText("");
+        getSellUnitPrice().setText("");
+        getTotal().setText("");
     }
-
 }

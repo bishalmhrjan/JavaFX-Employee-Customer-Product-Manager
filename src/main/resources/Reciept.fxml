@@ -46,10 +46,10 @@
             </HBox>
             <HBox prefHeight="40.0" prefWidth="200.0" translateY="-20.0">
                <children>
-                  <Button fx:id="addProduct" mnemonicParsing="false" text="Add" />
+                  <Button fx:id="addProduct" mnemonicParsing="false" onAction="#addInTable" text="Add" />
                </children>
             </HBox>
-            <TableView fx:id="listOfItems" prefHeight="250.0" prefWidth="588.0">
+            <TableView fx:id="tableView" prefHeight="250.0" prefWidth="588.0">
               <columns>
                   <TableColumn fx:id="productNameColumn" prefWidth="135.0" text="ProducktName" />
                 <TableColumn fx:id="productTypeColumn" prefWidth="128.0" text="Product Type" />
