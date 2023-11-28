@@ -1,16 +1,14 @@
 package com.example.diyashop.controller.admin;
 
-import com.example.diyashop.controller.CommonController;
+import com.example.diyashop.controller.worker.EmployeeController;
 import com.example.diyashop.model.Model;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.layout.BorderPane;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class AdminController extends CommonController {
+public class AdminController extends EmployeeController {
     @FXML private BorderPane adminParent;
 
     public BorderPane getAdminParent() {
@@ -21,6 +19,9 @@ public class AdminController extends CommonController {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Model.getInstance().getViewFactory().getAdminSelectedMenuItem().addListener((observableValue, oldValue, newValue) ->{
             switch (newValue){
+
+                case ADMIN_RECIEPT -> this.getAdminParent().setCenter(Model.getInstance().getViewFactory().getRecieptAnchorPane());
+                case ADMIN_SEARCH -> this.getAdminParent().setCenter(Model.getInstance().getViewFactory().getSearchAnchorPane());
                 case ADD_PRODUCT -> this.getAdminParent().setCenter(Model.getInstance().getViewFactory().getAddProductAnchorPane());
                 case STATE_OF_PRODUCTS ->this.getAdminParent().setCenter(Model.getInstance().getViewFactory().getStateOfProductsAnchorPane());
                  // charts

@@ -1,6 +1,6 @@
 package com.example.diyashop.view;
 
-public enum CommonOptionView {
+public enum EmployeeOptionView {
     RECIEPT,
     SEARCH;
 

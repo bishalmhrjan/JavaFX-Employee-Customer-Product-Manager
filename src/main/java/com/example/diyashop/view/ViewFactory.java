@@ -28,7 +28,7 @@ public class ViewFactory {
     private final String WEEKLYCHART_ANCHORPANE="/Admin/WeeklyChart.fxml";
     private final String QUATERLYCHART_EXPENDITURE="/Admin/QuarterlyChartExpenditure.fxml";
     private final String HALFYEARLYCHART_EXPENDITURE="/Admin/HalfYearlyChartExpenditure.fxml";
-    private final String COMMON_ANCHORPANE="/Common.fxml";
+    private final String COMMON_ANCHORPANE= "/Employee.fxml";
 
     private final String CREATE_ACCOUNT="/CreateAccount.fxml";
 
@@ -64,7 +64,7 @@ public class ViewFactory {
     private  AnchorPane yearlyViewAnchorPane;
 
     private AccountType accountType;
-    private final ObjectProperty<CommonOptionView> commonOptionViewObjectProperty;
+    private final ObjectProperty<EmployeeOptionView> commonOptionViewObjectProperty;
     private final ObjectProperty<AdminOptionView> adminOptionViewObjectProperty;
     private ProductEnum productEnum;
 
@@ -80,7 +80,7 @@ public class ViewFactory {
         this.adminOptionViewObjectProperty = new SimpleObjectProperty<>();
     }
 
-    public ObjectProperty<CommonOptionView> getWorkerOptionViewObjectProperty() {
+    public ObjectProperty<EmployeeOptionView> getWorkerOptionViewObjectProperty() {
         return commonOptionViewObjectProperty;
     }
 

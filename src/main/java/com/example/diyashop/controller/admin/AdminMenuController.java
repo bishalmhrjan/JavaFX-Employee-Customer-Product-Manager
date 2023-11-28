@@ -1,8 +1,9 @@
 package com.example.diyashop.controller.admin;
 
-import com.example.diyashop.controller.CommonMenuController;
+import com.example.diyashop.controller.worker.EmployeeMenuController;
 import com.example.diyashop.model.Model;
 import com.example.diyashop.view.AdminOptionView;
+import com.example.diyashop.view.EmployeeOptionView;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuButton;
@@ -12,7 +13,7 @@ import javafx.stage.Stage;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class AdminMenuController extends CommonMenuController {
+public class AdminMenuController extends EmployeeMenuController {
 
 
 
@@ -129,6 +130,8 @@ private MenuButton expenditureChart;
  @Override
  public void initialize(URL url, ResourceBundle resourceBundle) {
   this.getAddProduct().setOnAction(e -> onAddProductClicked());
+  this.getReceipt().setOnAction(e->onAdminReciptClicked());
+  this.getSearch().setOnAction(e->onSearchClicked());
   this.getStateOfProducts().setOnAction(e->onStateOfProductsClicked());
   this.getLogOut().setOnAction(e->onLogOutClick());
   //Charts Begins
@@ -149,8 +152,13 @@ private MenuButton expenditureChart;
 
  }
 
+ public void onSearchClicked() {
+  Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.ADMIN_SEARCH);
+ }
+ public void onAdminReciptClicked(){
+  Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.ADMIN_RECIEPT);
 
-
+ }
  public void onAddProductClicked() {
   Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.ADD_PRODUCT);
  }
