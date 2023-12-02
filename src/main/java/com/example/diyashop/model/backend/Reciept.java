@@ -14,11 +14,17 @@ public class Reciept {
 
     private int recieptID;
 
+    private int customer_fk_id;
 
-    public Reciept(double sum, Date date, int recieptID) {
+    public Reciept(double sum, Date date, int recieptID, int customer_fk_id) {
         this.sum = sum;
         this.date = date;
         this.recieptID = recieptID;
+        this.customer_fk_id = customer_fk_id;
+    }
+
+    public int getCustomer_fk_id() {
+        return customer_fk_id;
     }
 
     public double getSum() {

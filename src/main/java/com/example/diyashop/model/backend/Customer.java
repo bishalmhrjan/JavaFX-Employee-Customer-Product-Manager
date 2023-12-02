@@ -1,12 +1,13 @@
 package com.example.diyashop.model.backend;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Customer {
     private String firstName;
     private String lastName;
     private String userName;
-    private int recieptNumber;
+    private ArrayList<Reciept> reciepts;
     private Date dateOfBirth;
     private String sex;
     private Country residence;
@@ -14,21 +15,13 @@ public class Customer {
 
     private Occupation occupation;
 
-    public Customer(String firstName, String lastName, String userName,  Date dateOfBirth, String sex, Country residence, Country nationality) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.userName = userName;
-        this.dateOfBirth = dateOfBirth;
-        this.sex = sex;
-        this.residence = residence;
-        this.nationality = nationality;
-    }
 
-    public Customer(String firstName, String lastName, String userName, int recieptNumber, Date dateOfBirth, String sex, Country residence, Country nationality, Occupation occupation) {
+
+    public Customer(String firstName, String lastName, String userName,   Date dateOfBirth, String sex, Country residence, Country nationality, Occupation occupation) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;
-        this.recieptNumber = recieptNumber;
+        this.reciepts = new ArrayList<>();
         this.dateOfBirth = dateOfBirth;
         this.sex = sex;
         this.residence = residence;
@@ -52,8 +45,8 @@ public class Customer {
         return userName;
     }
 
-    public int getRecieptNumber() {
-        return recieptNumber;
+    public ArrayList<Reciept> getReciepts() {
+        return reciepts;
     }
 
     public Date getDateOfBirth() {
