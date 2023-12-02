@@ -5,8 +5,7 @@ import com.example.diyashop.model.productstype.ProductEnum;
 import java.util.ArrayList;
 
 public class RecieptItem {
-    private ArrayList<ProductEnum> productName;
-    private ArrayList<ProductEnum.ProductType> productType;
+
     private int recieptForiegnKeyID;
     private int recieptItemID;
 

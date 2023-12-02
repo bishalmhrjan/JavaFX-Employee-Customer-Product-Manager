@@ -97,8 +97,13 @@ Customer,Product multiply attributes
 addproduct ma addproductintracker ma update garnu xa method ma, teha fk aunxa.
 
 Next Goal:
-create 100000 Data for 5 Tables.
--Date invariable, wa same.
--from random number.
+ -Product table is filled,
 
+product intracker:
+ sabai item lai fill garne, same date ma
+ -price 10,
+ -unit  10,
+ -total 20,
+ -instore 10
 
+ 1,1,10,10,20,2080/02/15,30
