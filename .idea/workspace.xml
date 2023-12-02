@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="Admin, worker class is created. &#10;passwort is encrypted and decrypted.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/RecieptCSVCreater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DiyaDesktop.svg" beforeDir="false" afterPath="$PROJECT_DIR$/DiyaDesktop.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diyadesktop.db" beforeDir="false" afterPath="$PROJECT_DIR$/diyadesktop.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements" beforeDir="false" afterPath="$PROJECT_DIR$/requirements" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/csvData/customer/customer.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/csvData/customer/customer.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/RecieptCSVCreater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/CSVCreater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/csvData/reciept/Reciept.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/csvData/reciept/Reciept.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,6 +97,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CSVCreater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.CSVCreater" />
+      <module name="DiyaShop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.diyashop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DatabaseDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.diyashop.model.DatabaseDriver" />
       <module name="DiyaShop" />
@@ -118,19 +129,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.diyashop.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RecieptCSVCreater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.RecieptCSVCreater" />
-      <module name="DiyaShop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.diyashop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

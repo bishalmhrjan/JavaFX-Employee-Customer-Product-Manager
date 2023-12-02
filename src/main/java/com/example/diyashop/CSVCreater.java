@@ -1,10 +1,8 @@
 package com.example.diyashop;
 
-import com.example.diyashop.model.Reciept;
-
 import java.io.*;
 
-public class RecieptCSVCreater {
+public class CSVCreater {
     public static  void main(String [] args){
         String pathToFile ="D:\\PrivateProjectExercises\\DiyaShop\\src\\main\\resources\\csvData\\customer\\customer.csv";
         File file= new File(pathToFile);
@@ -35,7 +33,9 @@ public class RecieptCSVCreater {
                     writer.write(",");
                     writer.write("2080/2/15");
                     writer.write(",");
-                    writer.write("'"+customer[2]+"'),"); // Assuming customer[2] contains the necessary data
+                    writer.write("'"+customer[2]+"',");
+
+                            writer.write(Integer.toString(count*100)+"),"); // Assuming customer[2] contains the necessary data
                     writer.newLine();
 
                 }  else {
