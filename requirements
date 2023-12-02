@@ -99,7 +99,13 @@ addproduct ma addproductintracker ma update garnu xa method ma, teha fk aunxa.
 Next Goal:
  -Product table is filled,
 
+product
 product intracker:
+customer
+TODO
+
+recieptItem
+reciept
  sabai item lai fill garne, same date ma
  -price 10,
  -unit  10,
