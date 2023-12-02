@@ -8,26 +8,12 @@ public class Product {
 
     private ProductEnum productName;
     private ProductEnum.ProductType productType;
-    private int numberOfStock;
-    private double boughtPrice;
-    private double targetPrice;
-    private double discountPercentage;
+    private int product_id;
 
-    private Date dateOfEntry;
-
-
-    public Product(ProductEnum productName, ProductEnum.ProductType productType, int numberOfStock, double boughtPrice, double targetPrice, double discountPercentage, Date dateOfEntry) {
+    public Product(ProductEnum productName, ProductEnum.ProductType productType, int product_id) {
         this.productName = productName;
         this.productType = productType;
-        this.numberOfStock = numberOfStock;
-        this.boughtPrice = boughtPrice;
-        this.targetPrice = targetPrice;
-        this.discountPercentage = discountPercentage;
-        this.dateOfEntry = dateOfEntry;
-    }
-
-    public Date getDateOfEntry() {
-        return dateOfEntry;
+        this.product_id = product_id;
     }
 
     public ProductEnum getProductName() {
@@ -38,31 +24,7 @@ public class Product {
         return productType;
     }
 
-    public int getNumberOfStock() {
-        return numberOfStock;
-    }
-
-    public double getBoughtPrice() {
-        return boughtPrice;
-    }
-
-    public double getTargetPrice() {
-        return targetPrice;
-    }
-
-    public double getDiscountPercentage() {
-        return discountPercentage;
-    }
-
-    public void setNumberOfStock(int numberOfStock) {
-        this.numberOfStock = numberOfStock;
-    }
-
-    public void setTargetPrice(double targetPrice) {
-        this.targetPrice = targetPrice;
-    }
-
-    public void setDiscountPercentage(double discountPercentage) {
-        this.discountPercentage = discountPercentage;
+    public int getProduct_id() {
+        return product_id;
     }
 }
