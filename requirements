@@ -109,11 +109,8 @@ recieptItem
 min 43 Reciept .
 
 -Random RecieptItem nikalne ra reciept sanga zuweisen garidine.
+-reciept ko date lai increment garera line graph ma dekhaune,
+-pie chart ma dekhaune
+ra css schön banaune. border, background, titlepanel use garne.
+mile ali code copy ni garne. ux border, passend color aussuchen garne!
 
- sabai item lai fill garne, same date ma
- -price 10,
- -unit  10,
- -total 20,
- -instore 10
-
- 1,1,10,10,20,2080/02/15,30

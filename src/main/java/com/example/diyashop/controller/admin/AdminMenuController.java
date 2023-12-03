@@ -4,6 +4,7 @@ import com.example.diyashop.controller.worker.EmployeeMenuController;
 import com.example.diyashop.model.Model;
 import com.example.diyashop.view.AdminOptionView;
 import com.example.diyashop.view.EmployeeOptionView;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuButton;
@@ -25,7 +26,7 @@ public class AdminMenuController extends EmployeeMenuController {
  @FXML
  private Button stateOfProducts;
 
-
+ /**
  @FXML private MenuButton businessChart;
  @FXML
  private MenuItem dailyEarningChart;
@@ -42,6 +43,7 @@ public class AdminMenuController extends EmployeeMenuController {
  private MenuItem halfYearlyEarningChart;
  @FXML
  private MenuItem yearlyEarningChart;
+
 
 @FXML
 private MenuButton expenditureChart;
@@ -60,7 +62,7 @@ private MenuButton expenditureChart;
  @FXML
  private MenuItem yearlyExpenditrueChart;
 
-
+*/
  public Button getAddProduct() {
   return addProduct;
  }
@@ -72,7 +74,7 @@ private MenuButton expenditureChart;
   return stateOfProducts;
  }
 
-
+/*
  public MenuItem getDailyEarningChart() {
   return dailyEarningChart;
  }
@@ -96,34 +98,8 @@ private MenuButton expenditureChart;
  public MenuItem getYearlyEarningChart() {
   return yearlyEarningChart;
  }
+*/
 
- public MenuButton getExpenditureChart() {
-  return expenditureChart;
- }
-
- public MenuItem getDailyExpenditrueChart() {
-  return dailyExpenditrueChart;
- }
-
- public MenuItem getWeeklyExpenditrueChart() {
-  return weeklyExpenditrueChart;
- }
-
- public MenuItem getMonthlyExpenditrueChart() {
-  return monthlyExpenditrueChart;
- }
-
- public MenuItem getQuarterlyExpenditrueChart() {
-  return quarterlyExpenditrueChart;
- }
-
- public MenuItem getHalfYearlyExpenditrueChart() {
-  return halfYearlyExpenditrueChart;
- }
-
- public MenuItem getYearlyExpenditrueChart() {
-  return yearlyExpenditrueChart;
- }
  public Button getLogOut() {
   return logOut;
  }
@@ -134,7 +110,7 @@ private MenuButton expenditureChart;
   this.getSearch().setOnAction(e->onSearchClicked());
   this.getStateOfProducts().setOnAction(e->onStateOfProductsClicked());
   this.getLogOut().setOnAction(e->onLogOutClick());
-  //Charts Begins
+  /* //Charts Begins
   this.getDailyEarningChart().setOnAction(e->onDailyChartViewClicked());
   this.getWeeklyEarningCharts().setOnAction(e->onWeeklyChartViewClicked());
   this.getMonthlyCharts().setOnAction(e->onMonthlyChartViewClicked());
@@ -142,14 +118,14 @@ private MenuButton expenditureChart;
   this.getHalfYearlyEarningChart().setOnAction(e->onHalfYearChartViewClicked());
   this.getYearlyEarningChart().setOnAction(e->onYearlyChartViewClicked());
 
-   //Expenditure Begins
+  //Expenditure Begins
   this.getDailyExpenditrueChart().setOnAction(e->onDailyExpenditureClicked());
   this.getWeeklyExpenditrueChart().setOnAction(e->onWeeklyExpenditureClicked());
   this.getMonthlyExpenditrueChart().setOnAction(e->onMonthlyExpenditureClicked());
   this.getQuarterlyExpenditrueChart().setOnAction(e->onQuarterlyExpenditureClicked());
   this.getHalfYearlyExpenditrueChart().setOnAction(e->onHalfYearlyExpenditureClicked());
   this.getYearlyExpenditrueChart().setOnAction(e->onYearlyExpenditureClicked());
-
+*/
  }
 
  public void onSearchClicked() {
@@ -222,5 +198,92 @@ private MenuButton expenditureChart;
 
  public void onLogOutClick(){
   ((Stage)logOut.getScene().getWindow()).close();
+ }
+
+    public void goTabPane(ActionEvent actionEvent) {
+    }
+
+ public void goTitledPane(ActionEvent actionEvent) {
+ }
+
+ public void goAccordion(ActionEvent actionEvent) {
+ }
+
+ public void goButton(ActionEvent actionEvent) {
+ }
+
+ public void goCarousel(ActionEvent actionEvent) {
+ }
+
+ public void goCheckBox(ActionEvent actionEvent) {
+ }
+
+ public void goChoiceBox(ActionEvent actionEvent) {
+ }
+
+ public void goColorPicker(ActionEvent actionEvent) {
+ }
+
+ public void goComboBox(ActionEvent actionEvent) {
+ }
+
+ public void goDatePicker(ActionEvent actionEvent) {
+ }
+
+ public void goHyperlink(ActionEvent actionEvent) {
+ }
+
+ public void goLabels(ActionEvent actionEvent) {
+ }
+
+ public void goHtmlEditor(ActionEvent actionEvent) {
+ }
+
+ public void goListView(ActionEvent actionEvent) {
+ }
+
+ public void goMediaView(ActionEvent actionEvent) {
+ }
+
+ public void goMenuBar(ActionEvent actionEvent) {
+ }
+
+ public void goMenuButton(ActionEvent actionEvent) {
+ }
+
+ public void goPagination(ActionEvent actionEvent) {
+ }
+
+ public void goProgressbar(ActionEvent actionEvent) {
+ }
+
+ public void goRadioButton(ActionEvent actionEvent) {
+ }
+
+ public void goSpinner(ActionEvent actionEvent) {
+ }
+
+ public void goPassword(ActionEvent actionEvent) {
+ }
+
+ public void goRating(ActionEvent actionEvent) {
+ }
+
+ public void goSlider(ActionEvent actionEvent) {
+ }
+
+ public void goTableView(ActionEvent actionEvent) {
+ }
+
+ public void goTextField(ActionEvent actionEvent) {
+ }
+
+ public void goSwitch(ActionEvent actionEvent) {
+ }
+
+ public void goTreeTableView(ActionEvent actionEvent) {
+ }
+
+ public void goTreeView(ActionEvent actionEvent) {
  }
 }

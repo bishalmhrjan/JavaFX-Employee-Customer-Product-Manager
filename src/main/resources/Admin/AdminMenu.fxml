@@ -8,8 +8,12 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TitledPane?>
 
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.shape.SVGPath?>
 <AnchorPane prefHeight="750.0" prefWidth="200.0" styleClass="left_panel" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diyashop.controller.admin.AdminMenuController">
 <children>
     <VBox prefHeight="100.0" prefWidth="200.0" styleClass="logo_container" stylesheets="@../styles/adminMenu.css">
@@ -31,38 +35,42 @@
 
             <Button fx:id="stateOfProducts" mnemonicParsing="false" text="State Of Products" />
 
-            <MenuButton fx:id="businessChart" accessibleRole="BUTTON" lineSpacing="100.0" mnemonicParsing="false" text="Business Charts" >
-              <items>
 
-                  <MenuItem fx:id="dailyEarningChart" mnemonicParsing="false" text="Daily"  />
-                  <MenuItem fx:id="weeklyEarningCharts" mnemonicParsing="false" text="Weekly" />
-                  <MenuItem fx:id="monthlyEarningChart" mnemonicParsing="false" text="Monthly" />
-                  <MenuItem fx:id="quarterlyEarningChart" mnemonicParsing="false" text="Quaterly" />
-                  <MenuItem fx:id="halfYearlyEarningChart" mnemonicParsing="false" text="Half Yearly" />
-                  <MenuItem fx:id="yearlyEarningChart" mnemonicParsing="false" text="Yearly" />
+            <TitledPane   alignment="CENTER_RIGHT" contentDisplay="RIGHT" expanded="false" nodeOrientation="RIGHT_TO_LEFT" style="-fx-font-weight: normal;" styleClass="drawer-menu" text="Business Charts" textAlignment="JUSTIFY">
+
+            <VBox nodeOrientation="LEFT_TO_RIGHT">
 
 
-              </items>
+                  <ToggleButton alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goDatePicker" styleClass="drawer-item" text="Daily" />
+                  <ToggleButton alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goHtmlEditor" styleClass="drawer-item" text="Weekly" />
+                  <ToggleButton alignment="CENTER_LEFT" layoutX="20.0" layoutY="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goHyperlink" styleClass="drawer-item" text="Monthly"   />
+                  <ToggleButton alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goLabels" styleClass="drawer-item" text="Quaterly" />
+                  <ToggleButton alignment="CENTER_LEFT" layoutX="20.0" layoutY="90.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goListView" styleClass="drawer-item" text="Half Yearly" />
+                  <ToggleButton alignment="CENTER_LEFT" layoutX="20.0" layoutY="230.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goMediaView" styleClass="drawer-item" text="Yearly" />
+
+
                <opaqueInsets>
                   <Insets bottom="10.0" top="10.0" />
                </opaqueInsets>
                <VBox.margin>
                   <Insets />
                </VBox.margin>
-            </MenuButton>
-            <MenuButton fx:id="expenditureChart" mnemonicParsing="false" text="Expenditure Charts">
 
+    </VBox>
+</TitledPane>
+            <TitledPane   alignment="CENTER_RIGHT" contentDisplay="RIGHT" expanded="false" nodeOrientation="RIGHT_TO_LEFT" style="-fx-font-weight: normal;" styleClass="drawer-menu" text="Expenditure Charts" textAlignment="JUSTIFY">
 
-              <items>
-                <MenuItem fx:id="dailyExpenditrueChart" mnemonicParsing="false" text="Daily" />
-                  <MenuItem fx:id="weeklyExpenditrueChart" mnemonicParsing="false" text="Weekly" />
-                <MenuItem fx:id="monthlyExpenditrueChart" mnemonicParsing="false" text="Monthly" />
-                  <MenuItem fx:id="quarterlyExpenditrueChart" mnemonicParsing="false" text="Quarterly" />
-                  <MenuItem fx:id="halfYearlyExpenditrueChart" mnemonicParsing="false" text="Half Yearly" />
-                  <MenuItem fx:id="yearlyExpenditrueChart" mnemonicParsing="false" text="Yearly" />
-              </items>
-            </MenuButton>
-            <Button fx:id="logOut" mnemonicParsing="false" text="Log Out" />
+                <VBox nodeOrientation="LEFT_TO_RIGHT">
+                    <ToggleButton  alignment="CENTER_LEFT" layoutX="20.0" layoutY="67.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goButton" styleClass="drawer-item" text="Daily"   />
+                    <ToggleButton  alignment="CENTER_LEFT" layoutX="20.0" layoutY="55.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goCarousel" styleClass="drawer-item" text="Weekly" />
+                    <ToggleButton   alignment="CENTER_LEFT" layoutX="10.0" layoutY="245.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goCheckBox" styleClass="drawer-item" text="Monthly" />
+                    <ToggleButton    alignment="CENTER_LEFT" layoutX="20.0" layoutY="615.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goChoiceBox" styleClass="drawer-item" text="Quarterly" />
+                    <ToggleButton    alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goColorPicker" styleClass="drawer-item" text="Half Yearly" />
+                    <ToggleButton  alignment="CENTER_LEFT" layoutX="20.0" layoutY="55.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goComboBox" styleClass="drawer-item" text="Yearly" />
+
+                </VBox>
+            </TitledPane>
+              <Button fx:id="logOut" mnemonicParsing="false" text="Log Out" />
         </children>
     </VBox>
 </children>
