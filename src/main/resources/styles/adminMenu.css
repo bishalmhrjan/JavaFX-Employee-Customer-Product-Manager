@@ -6,7 +6,7 @@
     -fx-border-width: 0;
 }
 
-.menu_container Button, .menu_container MenuButton, .menu_container MenuButton .label {
+.menu_container Button, .menu_container MenuButton, .menu_container MenuButton .label  {
     -fx-pref-width: 190;
     -fx-pref-height: 40;
     -fx-font-size: 1.2em;

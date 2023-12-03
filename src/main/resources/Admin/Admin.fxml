@@ -8,7 +8,7 @@
     </left>
 
     <center>
-        <fx:include source="../SearchProduct.fxml" />
+        <fx:include source="../dash.fxml" />
     </center>
 
 </BorderPane>
