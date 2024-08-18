@@ -8,9 +8,9 @@ public class Product {
 
     private ProductEnum productName;
     private ProductEnum.ProductType productType;
-    private int product_id;
+    private String product_id;
 
-    public Product(ProductEnum productName, ProductEnum.ProductType productType, int product_id) {
+    public Product(ProductEnum productName, ProductEnum.ProductType productType, String product_id) {
         this.productName = productName;
         this.productType = productType;
         this.product_id = product_id;
@@ -24,7 +24,7 @@ public class Product {
         return productType;
     }
 
-    public int getProduct_id() {
+    public String getProduct_id() {
         return product_id;
     }
 }

@@ -16,8 +16,7 @@ public class Customer {
     private Occupation occupation;
 
 
-
-    public Customer(String firstName, String lastName, String userName,   Date dateOfBirth, String sex, Country residence, Country nationality, Occupation occupation) {
+     public Customer(String firstName, String lastName, String userName,   Date dateOfBirth, String sex, Country residence, Country nationality, Occupation occupation) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;
@@ -28,6 +27,44 @@ public class Customer {
         this.nationality = nationality;
         this.occupation = occupation;
     }
+
+    public Customer(){}
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public void setReciepts(ArrayList<Reciept> reciepts) {
+        this.reciepts = reciepts;
+    }
+
+    public void setDateOfBirth(Date dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public void setResidence(Country residence) {
+        this.residence = residence;
+    }
+
+    public void setNationality(Country nationality) {
+        this.nationality = nationality;
+    }
+
+    public void setOccupation(Occupation occupation) {
+        this.occupation = occupation;
+    }
+
 
     public Occupation getOccupation() {
         return occupation;
@@ -64,4 +101,6 @@ public class Customer {
     public Country getNationality() {
         return nationality;
     }
+
+
 }

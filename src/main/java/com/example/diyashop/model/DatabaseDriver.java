@@ -127,4 +127,17 @@ public class DatabaseDriver {
     }
 
 
+    public Connection getConnection() {
+        return connection;
+    }
+
+    public void closeConnection(){
+        try{
+            if(connection !=null && !connection.isClosed()){
+                connection.close();
+            }
+        }catch (SQLException ex){
+            ex.getLocalizedMessage();
+        }
+        }
 }
