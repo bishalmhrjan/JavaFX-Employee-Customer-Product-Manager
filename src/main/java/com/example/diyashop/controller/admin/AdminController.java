@@ -20,8 +20,7 @@ public class AdminController extends EmployeeController {
         Model.getInstance().getViewFactory().getAdminSelectedMenuItem().addListener((observableValue, oldValue, newValue) ->{
             switch (newValue){
 
-                case ADMIN_RECIEPT -> this.getAdminParent().setCenter(Model.getInstance().getViewFactory().getRecieptAnchorPane());
-                case ADMIN_SEARCH -> this.getAdminParent().setCenter(Model.getInstance().getViewFactory().getSearchAnchorPane());
+
                 case ADD_PRODUCT -> this.getAdminParent().setCenter(Model.getInstance().getViewFactory().getAddProductAnchorPane());
                 case STATE_OF_PRODUCTS ->this.getAdminParent().setCenter(Model.getInstance().getViewFactory().getStateOfProductsAnchorPane());
                  // charts
