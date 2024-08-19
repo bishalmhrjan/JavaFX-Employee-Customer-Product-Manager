@@ -6,10 +6,11 @@ module com.example.diyashop {
     requires javafx.fxml;
     requires de.jensd.fx.glyphs.fontawesome;
     requires java.sql;
-    requires org.xerial.sqlitejdbc;
-    requires java.desktop;
+     requires java.desktop;
     requires kotlin.stdlib;
     requires org.kordamp.bootstrapfx.core;
+    requires org.hibernate.orm.core;
+    requires java.naming;
 
     opens com.example.diyashop to javafx.fxml;
     exports com.example.diyashop;

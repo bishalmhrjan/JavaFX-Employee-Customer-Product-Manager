@@ -5,19 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="Admin, worker class is created. &#10;passwort is encrypted and decrypted.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/CustomerFilialeTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/FilialeShop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/dao/CustomerFilialeTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/HibernateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements" beforeDir="false" afterPath="$PROJECT_DIR$/requirements" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/Worker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/CustomerFilialeTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/CustomerFilialeTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/FilialeShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/FilialeShop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/ProductInTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/ProductInTracker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Reciept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Reciept.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/RecieptItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/RecieptItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/dao/CustomerFilialeTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/dao/CustomerFilialeTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/svgfiles/DiyaDesktop.svg" beforeDir="false" afterPath="$PROJECT_DIR$/svgfiles/DiyaDesktop.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/svgfiles/DiyaDesktop13.svg" beforeDir="false" afterPath="$PROJECT_DIR$/svgfiles/DiyaDesktop13.svg" afterDir="false" />
     </list>
@@ -59,20 +63,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;returnToDiya&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/seatrade_1.0&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalResources&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "returnToDiya",
+    "last_opened_file_path": "D:/seatrade_1.0",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.diyashop.view" />
@@ -99,22 +103,9 @@
       <recent name="com.example.diyashop" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.HibernateTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.diyashop.App" />
-      <module name="DiyaShop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.diyashop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CSVCreater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.CSVCreater" />
       <module name="DiyaShop" />
       <extension name="coverage">
         <pattern>
@@ -152,6 +143,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HibernateTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.model.HibernateTest" />
+      <module name="DiyaShop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.diyashop.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.diyashop.Test" />
       <module name="DiyaShop" />
@@ -167,6 +171,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HibernateTest" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.DatabaseDriver" />

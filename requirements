@@ -117,6 +117,11 @@ ER // Diagramm:
 One or more employee sell one or more than one Products to one or more customer in certain filiale.
 
 
+************TO Complete**************
+//19.08.2024
+// Hibernate connection to every classes, CRUD Operation, single and double side add, delete, cascading effect cover
+// populate database, and  show information in diagram
+
 
 *****************DONE*********************
 productintracker (1) ↔ (1) Product
@@ -128,9 +133,6 @@ Employee (N) ↔ (1) Filiale
 Customer (M) ↔ (N) Filiale (Indirectly through Receipts)  Customer filiable table id 1:M Filiale, Customer-Filiale table 1:N Customer
 
 
-//19.08.2024
-// Hibernate connection to every classes, CRUD Operation, single and double side add, delete, cascading effect cover
-// populate database, and  show information in diagram
 
 //20.08.2024
 backend and amazon frontend (with edit connect) this time only with JS.
