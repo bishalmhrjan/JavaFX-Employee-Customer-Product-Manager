@@ -116,14 +116,17 @@ mile ali code copy ni garne. ux border, passend color aussuchen garne!
 ER // Diagramm:
 One or more employee sell one or more than one Products to one or more customer in certain filiale.
 
+
+
+*****************DONE*********************
+productintracker (1) ↔ (1) Product
+Reciept (1) ↔ (M) Reciept Item //Each reciept can have multiple reciept items, but each receipt item belongs to one reciept.
+Product (1) ↔ (M) Reciept Item // Each Product can appear in multiple receipt items, but a receipt item references exactly one product.
 Customer (1) ↔ (N) Receipt
 Filiale (1) ↔ (N) Receipt
-Customer (M) ↔ (N) Filiale (Indirectly through Receipts)  Customer filiable table id 1:M Filiale, Customer-Filiale table 1:N Customer
 Employee (N) ↔ (1) Filiale
+Customer (M) ↔ (N) Filiale (Indirectly through Receipts)  Customer filiable table id 1:M Filiale, Customer-Filiale table 1:N Customer
 
-Reciept (1) ↔ (1) Reciept Item
-Product (M) ↔ (1) Reciept Item
-productintracker (1) ↔ (1) Product
 
 //19.08.2024
 // Hibernate connection to every classes, CRUD Operation, single and double side add, delete, cascading effect cover

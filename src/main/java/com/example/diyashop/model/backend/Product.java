@@ -3,17 +3,18 @@ package com.example.diyashop.model.backend;
 import com.example.diyashop.model.productstype.ProductEnum;
 
 import java.util.Date;
+import java.util.UUID;
 
 public class Product {
 
     private ProductEnum productName;
     private ProductEnum.ProductType productType;
-    private String product_id;
+    private UUID productId;
 
-    public Product(ProductEnum productName, ProductEnum.ProductType productType, String product_id) {
+    public Product(ProductEnum productName, ProductEnum.ProductType productType) {
         this.productName = productName;
         this.productType = productType;
-        this.product_id = product_id;
+        this.productId = UUID.randomUUID();
     }
 
     public ProductEnum getProductName() {
@@ -24,7 +25,7 @@ public class Product {
         return productType;
     }
 
-    public String getProduct_id() {
-        return product_id;
+    public UUID getProductId() {
+        return productId;
     }
 }

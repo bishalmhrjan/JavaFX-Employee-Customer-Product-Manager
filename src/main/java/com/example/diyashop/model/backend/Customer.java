@@ -2,6 +2,7 @@ package com.example.diyashop.model.backend;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.UUID;
 
 public class Customer {
     private String firstName;
@@ -15,6 +16,8 @@ public class Customer {
 
     private Occupation occupation;
 
+    private UUID customerId;
+
 
      public Customer(String firstName, String lastName, String userName,   Date dateOfBirth, String sex, Country residence, Country nationality, Occupation occupation) {
         this.firstName = firstName;
@@ -26,9 +29,15 @@ public class Customer {
         this.residence = residence;
         this.nationality = nationality;
         this.occupation = occupation;
+        this.customerId = UUID.randomUUID();
     }
 
     public Customer(){}
+
+    public UUID getCustomerId() {
+        return customerId;
+    }
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }

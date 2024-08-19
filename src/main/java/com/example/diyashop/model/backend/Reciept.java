@@ -4,38 +4,57 @@ import com.example.diyashop.model.productstype.ProductEnum;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.UUID;
 
 public class Reciept {
 
 
-    private double sum;
+    private Customer customer;
+    private  FilialeShop filialeShop;
+    private UUID customerFKID;
+
+    private UUID filialeFKID;
+    private double totalAmount;
 
     private Date date;
 
-    private int recieptID;
+    private UUID recieptID;
 
-    private int customer_fk_id;
 
-    public Reciept(double sum, Date date, int recieptID, int customer_fk_id) {
-        this.sum = sum;
+    public Reciept(Customer customer, FilialeShop filialeShop, double totalAmount, Date date) {
+        this.customerFKID = customer.getCustomerId();
+        this.filialeFKID = filialeShop.getFilialeID();
+        this.totalAmount = totalAmount;
         this.date = date;
-        this.recieptID = recieptID;
-        this.customer_fk_id = customer_fk_id;
+        this.recieptID =UUID.randomUUID();
     }
 
-    public int getCustomer_fk_id() {
-        return customer_fk_id;
+    public Customer getCustomer() {
+        return customer;
     }
 
-    public double getSum() {
-        return sum;
+    public FilialeShop getFilialeShop() {
+        return filialeShop;
+    }
+
+    public UUID getCustomerFKID() {
+        return customerFKID;
+    }
+
+    public UUID getFilialeFKID() {
+        return filialeFKID;
+    }
+
+    public double getTotalAmount() {
+        return totalAmount;
     }
 
     public Date getDate() {
         return date;
     }
 
-    public int getRecieptID() {
+    public UUID getRecieptID() {
         return recieptID;
     }
-}
+
+ }

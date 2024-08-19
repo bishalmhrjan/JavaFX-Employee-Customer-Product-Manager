@@ -1,5 +1,9 @@
 package com.example.diyashop.controller.admin;
 
+import com.example.diyashop.model.backend.FilialeShop;
+
+import java.util.UUID;
+
 public class Worker {
     private String firstName;
     private String lastName;
@@ -7,13 +11,26 @@ public class Worker {
     private  boolean adminRight;
     private String id;
 
-    public Worker(String firstName, String lastName, boolean adminRight, String id) {
+    private FilialeShop filialeShop;
+
+    private UUID filialeShopFKID;
+
+
+
+    public Worker(String firstName, String lastName, boolean adminRight,FilialeShop filialeShop) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.adminRight = adminRight;
+        this.filialeShopFKID =filialeShop.getFilialeID();
         this.id = id;
     }
+    public FilialeShop getFilialeShop() {
+        return filialeShop;
+    }
 
+    public UUID getFilialeShopFKID() {
+        return filialeShopFKID;
+    }
     public String getId() {
         return id;
     }

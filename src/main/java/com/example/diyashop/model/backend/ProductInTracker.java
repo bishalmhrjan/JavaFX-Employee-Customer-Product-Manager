@@ -1,33 +1,37 @@
 package com.example.diyashop.model.backend;
 
+import java.util.Date;
+import java.util.UUID;
+
 public class ProductInTracker {
-    private int id;
-    private int product_id_fk;
+    private UUID id;
+    private UUID ProducktFKId;
     private int unit;
     private int inStore;
     private int total;
-
+    private Date entryDate;
     private String date;
 
     private double targetPrice;
+    private Product product;
 
-
-    public ProductInTracker(int id, int product_id_fk, int unit, int inStore, int total, String date, double targetPrice) {
-        this.id = id;
-        this.product_id_fk = product_id_fk;
+    public ProductInTracker(Product product, int unit, int inStore, int total, Date entryDate, String date, double targetPrice) {
+        this.ProducktFKId = product.getProductId();
         this.unit = unit;
         this.inStore = inStore;
         this.total = total;
+        this.entryDate = entryDate;
         this.date = date;
         this.targetPrice = targetPrice;
+        this.id =UUID.randomUUID();
     }
 
-    public int getId() {
+    public UUID getId() {
         return id;
     }
 
-    public int getProduct_id_fk() {
-        return product_id_fk;
+    public UUID getProducktFKId() {
+        return ProducktFKId;
     }
 
     public int getUnit() {
@@ -40,6 +44,10 @@ public class ProductInTracker {
 
     public int getTotal() {
         return total;
+    }
+
+    public Date getEntryDate() {
+        return entryDate;
     }
 
     public String getDate() {

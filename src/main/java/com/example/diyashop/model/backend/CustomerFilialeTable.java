@@ -1,2 +1,4 @@
-package com.example.diyashop.model.backend;public class CustomerFilialeTable {
+package com.example.diyashop.model.backend;
+
+public class CustomerFilialeTable {
 }
