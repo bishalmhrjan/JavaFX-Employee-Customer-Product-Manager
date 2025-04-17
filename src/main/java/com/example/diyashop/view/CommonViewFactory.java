@@ -15,7 +15,6 @@ public class CommonViewFactory {
     private final String SEARCH_PRODUCT_ANCHORPANE= "/fxml/otherfxml/SearchProduct.fxml";
     private final String ANMELDUNG_DIALOG= "/fxml/otherfxml/Anmelde.fxml";
     private final String ADD_PRODUCT_ANCHORPANE= "/fxml/otherfxml/AddProduct.fxml";
-    private final String STATE_OF_PRODUCTS_ANCHORPANE= "/fxml/otherfxml/StateOfProducts.fxml";
     private final String COMMON_ANCHORPANE= "/fxml/otherfxml/Employee.fxml";
 
     private final String CREATE_ACCOUNT= "/fxml/otherfxml/CreateAccount.fxml";
@@ -27,8 +26,10 @@ public class CommonViewFactory {
     private  AnchorPane addProductAnchorPane;
     private  AnchorPane recieptAnchorPane;
     private  AnchorPane searchAnchorPane;
-    private  AnchorPane stateOfProductsAnchorPane;
+
+
     private AccountType accountType;
+
     private final ObjectProperty<EmployeeOptionView> commonOptionViewObjectProperty;
     private final ObjectProperty<AdminOptionView> adminOptionViewObjectProperty;
     private ProductEnum productEnum;
@@ -44,71 +45,51 @@ public class CommonViewFactory {
         this.adminOptionViewObjectProperty = new SimpleObjectProperty<>();
     }
 
-    public ObjectProperty<EmployeeOptionView> getWorkerOptionViewObjectProperty() {
-        return commonOptionViewObjectProperty;
-    }
-
     public AccountType getAccountType() {
 
         return accountType;
     }
 
 
+    public ObjectProperty<EmployeeOptionView> getWorkerOptionViewObjectProperty() {
+        return commonOptionViewObjectProperty;
+    }
+
 
     public ObjectProperty<AdminOptionView> getAdminSelectedMenuItem() {
         return adminOptionViewObjectProperty;
     }
+
+
+   // admin, employee view starts
     public AnchorPane getRecieptAnchorPane() {
 
-        if(this.recieptAnchorPane==null){
-            try{
-                this.recieptAnchorPane = new FXMLLoader(getClass().getResource(RECIEPT_ANCHORPANE)).load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        return recieptAnchorPane;
+        return returnRequiredAnchorpane(recieptAnchorPane,RECIEPT_ANCHORPANE);
     }
 
     public AnchorPane getSearchAnchorPane() {
-        if(this.searchAnchorPane==null){
-            try{
-                this.searchAnchorPane = new FXMLLoader(getClass().getResource(SEARCH_PRODUCT_ANCHORPANE)).load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        return searchAnchorPane;
+
+        return returnRequiredAnchorpane(searchAnchorPane,SEARCH_PRODUCT_ANCHORPANE);
+
+    }
+    public AnchorPane getAddProductAnchorPane() {
+
+        return returnRequiredAnchorpane(addProductAnchorPane,ADD_PRODUCT_ANCHORPANE);
+
     }
 
 
+
+
+
+    // start log in window
     public void showLogInWindow() {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(ANMELDUNG_DIALOG));
         createStage(loader);
 
     }
 
-    public AnchorPane getAddProductAnchorPane() {
-        if(this.addProductAnchorPane==null){
-            try{
-                this.addProductAnchorPane = new FXMLLoader(getClass().getResource(ADD_PRODUCT_ANCHORPANE)).load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        return addProductAnchorPane;
-    }
 
-    public AnchorPane getStateOfProductsAnchorPane() {
-        if(this.stateOfProductsAnchorPane==null){
-            try{
-                this.stateOfProductsAnchorPane = new FXMLLoader(getClass().getResource(STATE_OF_PRODUCTS_ANCHORPANE)).load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        return stateOfProductsAnchorPane;
-    }
 
     private void createStage(FXMLLoader loader) {
         Scene scene = null;
@@ -168,5 +149,15 @@ public class CommonViewFactory {
         this.productEnumType = productEnumType;
     }
 
+    public AnchorPane returnRequiredAnchorpane(AnchorPane anchorPane,final String filePath){
 
+        if(anchorPane == null){
+            try{
+                anchorPane = new FXMLLoader(getClass().getResource(filePath)).load();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return anchorPane;
+    }
 }

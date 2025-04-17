@@ -26,43 +26,7 @@ public class AdminMenuController extends EmployeeMenuController {
  @FXML
  private Button stateOfProducts;
 
- /**
- @FXML private MenuButton businessChart;
- @FXML
- private MenuItem dailyEarningChart;
- @FXML
- private MenuItem weeklyEarningCharts;
 
-
- @FXML
- private MenuItem monthlyEarningChart;
-
- @FXML
- private MenuItem quarterlyEarningChart;
- @FXML
- private MenuItem halfYearlyEarningChart;
- @FXML
- private MenuItem yearlyEarningChart;
-
-
-@FXML
-private MenuButton expenditureChart;
-
-
- @FXML
- private MenuItem dailyExpenditrueChart;
- @FXML
- private MenuItem weeklyExpenditrueChart;
- @FXML
- private MenuItem monthlyExpenditrueChart;
- @FXML
- private MenuItem quarterlyExpenditrueChart;
- @FXML
- private MenuItem halfYearlyExpenditrueChart;
- @FXML
- private MenuItem yearlyExpenditrueChart;
-
-*/
  public Button getAddProduct() {
   return addProduct;
  }
@@ -74,31 +38,6 @@ private MenuButton expenditureChart;
   return stateOfProducts;
  }
 
-/*
- public MenuItem getDailyEarningChart() {
-  return dailyEarningChart;
- }
-
- public MenuItem getWeeklyEarningCharts() {
-  return weeklyEarningCharts;
- }
-
- public MenuItem getMonthlyCharts() {
-  return monthlyEarningChart;
- }
-
- public MenuItem getQuarterlyEarningChart() {
-  return quarterlyEarningChart;
- }
-
- public MenuItem getHalfYearlyEarningChart() {
-  return halfYearlyEarningChart;
- }
-
- public MenuItem getYearlyEarningChart() {
-  return yearlyEarningChart;
- }
-*/
 
  public Button getLogOut() {
   return logOut;
@@ -110,22 +49,6 @@ private MenuButton expenditureChart;
   this.getSearch().setOnAction(e->onSearchClicked());
   this.getStateOfProducts().setOnAction(e->onStateOfProductsClicked());
   this.getLogOut().setOnAction(e->onLogOutClick());
-  /* //Charts Begins
-  this.getDailyEarningChart().setOnAction(e->onDailyChartViewClicked());
-  this.getWeeklyEarningCharts().setOnAction(e->onWeeklyChartViewClicked());
-  this.getMonthlyCharts().setOnAction(e->onMonthlyChartViewClicked());
-  this.getQuarterlyEarningChart().setOnAction(e->onQuarterlyChartViewClicked());
-  this.getHalfYearlyEarningChart().setOnAction(e->onHalfYearChartViewClicked());
-  this.getYearlyEarningChart().setOnAction(e->onYearlyChartViewClicked());
-
-  //Expenditure Begins
-  this.getDailyExpenditrueChart().setOnAction(e->onDailyExpenditureClicked());
-  this.getWeeklyExpenditrueChart().setOnAction(e->onWeeklyExpenditureClicked());
-  this.getMonthlyExpenditrueChart().setOnAction(e->onMonthlyExpenditureClicked());
-  this.getQuarterlyExpenditrueChart().setOnAction(e->onQuarterlyExpenditureClicked());
-  this.getHalfYearlyExpenditrueChart().setOnAction(e->onHalfYearlyExpenditureClicked());
-  this.getYearlyExpenditrueChart().setOnAction(e->onYearlyExpenditureClicked());
-*/
  }
 
  public void onSearchClicked() {
