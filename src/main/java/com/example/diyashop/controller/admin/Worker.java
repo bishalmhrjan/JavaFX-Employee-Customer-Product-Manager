@@ -1,61 +1,37 @@
 package com.example.diyashop.controller.admin;
 
 import com.example.diyashop.model.backend.FilialeShop;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
 import java.util.UUID;
 
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Table(name = "worker")
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Worker {
+
+    @Id
+    @Column(name = "worker_id", updatable = false, nullable = false, columnDefinition = "CHAR(36)")
+    private String workerId;
+
+    @Column(name = "first_name", nullable = false)
     private String firstName;
+
+    @Column(name = "last_name", nullable = false)
     private String lastName;
 
-    private  boolean adminRight;
-    private String id;
 
+
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "filiale_id", nullable = false)
     private FilialeShop filialeShop;
 
-    private UUID filialeShopFKID;
 
 
-
-    public Worker(String firstName, String lastName, boolean adminRight,FilialeShop filialeShop) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.adminRight = adminRight;
-        this.filialeShopFKID =filialeShop.getFilialeID();
-        this.id = id;
-    }
-    public FilialeShop getFilialeShop() {
-        return filialeShop;
-    }
-
-    public UUID getFilialeShopFKID() {
-        return filialeShopFKID;
-    }
-    public String getId() {
-        return id;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public boolean isAdminRight() {
-        return adminRight;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public void setAdminRight(boolean adminRight) {
-        this.adminRight = adminRight;
-    }
-}
+ }

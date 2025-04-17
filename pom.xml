@@ -97,6 +97,8 @@
                 <artifactId>logback-classic</artifactId>
                 <version>1.2.10</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->
+
 
 
             <dependency>
@@ -154,10 +156,23 @@
                 <artifactId>jfoenix</artifactId>
                 <version>9.0.10</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
+            <dependency>
+                <groupId>org.xerial</groupId>
+                <artifactId>sqlite-jdbc</artifactId>
+                <version>3.49.1.0</version>
+            </dependency>
             <dependency>
                 <groupId>net.java.jinput</groupId>
                 <artifactId>awt-plugin</artifactId>
                 <version>2.0.9</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.38</version>
+                <scope>provided</scope>
             </dependency>
 
         </dependencies>

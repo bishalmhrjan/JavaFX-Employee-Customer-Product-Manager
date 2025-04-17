@@ -1,6 +1,5 @@
 package com.example.diyashop.controller.admin;
 
-import com.example.diyashop.DiyaShopException;
 import com.example.diyashop.model.DatabaseDriver;
 import com.example.diyashop.model.finance.PeriodTime;
 import com.example.diyashop.model.productstype.ProductEnum;
@@ -9,21 +8,13 @@ import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
 
-import javax.swing.text.DateFormatter;
 import java.net.URL;
 import java.sql.SQLException;
-import java.text.DateFormat;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
-import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class ProductController implements Initializable {

@@ -1,11 +1,26 @@
 package com.example.diyashop.controller.admin;
 
-import com.example.diyashop.model.backend.FilialeShop;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-public class Employee extends Worker{
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
+public class Employee extends Worker {
 
 
-    public Employee(String firstName, String lastName, boolean adminRight, FilialeShop filialeShop) {
-        super(firstName, lastName, adminRight, filialeShop);
-    }
+    // Constructors, getters, and setters
+
+    private Role employeeRight= Role.EMPLOYEE;
+    // Default constructor for Hibernate
+
+
+
+    // Other methods as needed
 }

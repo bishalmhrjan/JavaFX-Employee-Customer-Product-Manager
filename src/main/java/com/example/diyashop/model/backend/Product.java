@@ -2,21 +2,52 @@ package com.example.diyashop.model.backend;
 
 import com.example.diyashop.model.productstype.ProductEnum;
 
+import javax.persistence.Entity;
+import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
+@Entity
+@Table(name = "product")
 public class Product {
 
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private ProductEnum productName;
-    private ProductEnum.ProductType productType;
-    private UUID productId;
 
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private ProductEnum.ProductType productType;
+
+    @Id
+    @Column(updatable = false, nullable = false, columnDefinition = "CHAR(36)")
+    private String productId;
+
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<RecieptItem> recieptItems = new ArrayList<>();
     public Product(ProductEnum productName, ProductEnum.ProductType productType) {
         this.productName = productName;
         this.productType = productType;
-        this.productId = UUID.randomUUID();
+        this.productId = UUID.randomUUID().toString();
     }
 
+    public Product() {
+        this.productId = UUID.randomUUID().toString();
+
+    }
+
+    public void addRecieptItem(RecieptItem recieptItem){
+        recieptItems.add(recieptItem);
+        recieptItem.setProduct(this);
+
+    }public void removeRecieptItem(RecieptItem recieptItem){
+        recieptItems.remove(recieptItem);
+        recieptItem.setReciept(null);
+
+    }
+    // Getters
     public ProductEnum getProductName() {
         return productName;
     }
@@ -25,7 +56,7 @@ public class Product {
         return productType;
     }
 
-    public UUID getProductId() {
+    public String getProductId() {
         return productId;
     }
 }

@@ -1,6 +1,5 @@
 package com.example.diyashop.controller;
 
-import com.example.diyashop.DiyaShopException;
 import com.example.diyashop.model.Model;
 import com.example.diyashop.view.AccountType;
 import javafx.collections.FXCollections;

@@ -1,6 +1,5 @@
 package com.example.diyashop.model;
 
-import com.example.diyashop.DiyaShopException;
 import com.example.diyashop.model.finance.PeriodTime;
 import com.example.diyashop.model.productstype.ProductEnum;
 import com.example.diyashop.view.AccountType;

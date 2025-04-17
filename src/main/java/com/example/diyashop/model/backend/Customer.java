@@ -1,40 +1,86 @@
 package com.example.diyashop.model.backend;
 
+
+import javax.persistence.*;
+
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
-
+@Entity
+@Table(name = "customer")
 public class Customer {
+    @Column(name = "first_name", updatable = false, nullable = false)
     private String firstName;
+
+    @Column(name = "last_name", nullable = false)
     private String lastName;
-    private String userName;
-    private ArrayList<Reciept> reciepts;
+
+
+
+    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Reciept> receipts = new ArrayList<>();
+
+    @Column(name = "date_of_birth")
     private Date dateOfBirth;
+
+    @Column(name = "sex")
     private String sex;
+
+    @OneToMany(mappedBy = "filialeShop", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<CustomerFilialeTable> customerFilialeTables = new ArrayList<>();
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "residence", nullable = false)
     private Country residence;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "nationality", nullable = false)
     private Country nationality;
 
+    @Enumerated(EnumType.STRING)
+    @Column(name = "occupation", nullable = false)
     private Occupation occupation;
 
-    private UUID customerId;
+    @Id
+    @Column(name = "customer_id", updatable = false, nullable = false)
+    private String customerId;
 
 
      public Customer(String firstName, String lastName, String userName,   Date dateOfBirth, String sex, Country residence, Country nationality, Occupation occupation) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.userName = userName;
-        this.reciepts = new ArrayList<>();
-        this.dateOfBirth = dateOfBirth;
+         this.dateOfBirth = dateOfBirth;
         this.sex = sex;
         this.residence = residence;
         this.nationality = nationality;
         this.occupation = occupation;
-        this.customerId = UUID.randomUUID();
+        this.customerId = UUID.randomUUID().toString();
     }
 
-    public Customer(){}
+    public Customer(){
+        this.customerId = UUID.randomUUID().toString();
 
-    public UUID getCustomerId() {
+    }
+    public void addCustomerFiliale(CustomerFilialeTable customerFilialeTable){
+         customerFilialeTables.add(customerFilialeTable);
+         customerFilialeTable.setCustomer(this);
+    }
+    public void removeCustomerFiliale(CustomerFilialeTable customerFilialeTable){
+         customerFilialeTables.remove(customerFilialeTable);
+         customerFilialeTable.setCustomer(null);
+    }
+    public  void addReciept(Reciept reciept){
+         receipts.add(reciept);
+         reciept.setCustomer(this);
+    }
+
+    public void removeReciept(Reciept reciept){
+         receipts.remove(reciept);
+         reciept.setCustomer(null);
+    }
+
+    public String getCustomerId() {
         return customerId;
     }
 
@@ -46,13 +92,8 @@ public class Customer {
         this.lastName = lastName;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
 
-    public void setReciepts(ArrayList<Reciept> reciepts) {
-        this.reciepts = reciepts;
-    }
+
 
     public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
@@ -87,13 +128,7 @@ public class Customer {
         return lastName;
     }
 
-    public String getUserName() {
-        return userName;
-    }
 
-    public ArrayList<Reciept> getReciepts() {
-        return reciepts;
-    }
 
     public Date getDateOfBirth() {
         return dateOfBirth;

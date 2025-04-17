@@ -1,10 +1,7 @@
 package com.example.diyashop.controller.admin;
 
-import com.example.diyashop.DiyaShopException;
-import com.example.diyashop.model.backend.RecieptItem;
 import com.example.diyashop.model.productstype.ProductEnum;
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

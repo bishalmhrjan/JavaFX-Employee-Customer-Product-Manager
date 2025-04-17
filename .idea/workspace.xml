@@ -5,25 +5,85 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="Admin, worker class is created. &#10;passwort is encrypted and decrypted.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/HibernateTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/helperClasses/DummyName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/DummyDataCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/style/skeleton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements" beforeDir="false" afterPath="$PROJECT_DIR$/requirements" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/DiyaShopException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/CreateAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/CreateAccountController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/RecieptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/RecieptController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/Worker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DatabaseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DatabaseDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/CustomerFilialeTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/CustomerFilialeTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/FilialeShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/FilialeShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/MySQLConnectionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Occupation.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/ProductInTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/ProductInTracker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Reciept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Reciept.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/RecieptItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/RecieptItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/dao/CustomerFilialeTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/dao/CustomerFilialeTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/CustomerFilialeTableManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/CustomerFilialeTableManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/CustomerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/CustomerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/FilialeShopManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/FilialeShopManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/GenericManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/GenericManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/ProductInTrackerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/ProductInTrackerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/RecieptItemManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/RecieptItemManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/RecieptManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/RecieptManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/WorkerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/WorkerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/PeriodTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/earnings/DailyEarning.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/earnings/Earning.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/earnings/HalfYearEarning.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/earnings/MonthlyEarning.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/earnings/QuaterlyEarning.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/earnings/WeeklyEarning.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/expenditure/DailyExpenditure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/expenditure/Expenditure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/expenditure/HalfYearExpenditure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/expenditure/MonthlyExpenditure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/expenditure/QuaterlyExpenditure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/finance/expenditure/WeeklyExpenditure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svgfiles/DiyaDesktop.svg" beforeDir="false" afterPath="$PROJECT_DIR$/svgfiles/DiyaDesktop.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svgfiles/DiyaDesktop13.svg" beforeDir="false" afterPath="$PROJECT_DIR$/svgfiles/DiyaDesktop13.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/AddProduct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/AddProduct.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/Admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/Admin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/AdminMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/AdminMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/DailyChart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/DailyChart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/DailyChartExpenditure.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/DailyChartExpenditure.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/DailyExpenditure.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/DailyExpenditure.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/DeleteProduct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/DeleteProduct.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/HalfYearlyChart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/HalfYearlyChart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/HalfYearlyChartExpenditure.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/HalfYearlyChartExpenditure.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/MonthlyChart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/MonthlyChart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/MonthlyChartExpenditure.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/MonthlyChartExpenditure.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/QuarterlyChart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/QuarterlyChart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/QuarterlyChartExpenditure.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/QuarterlyChartExpenditure.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/StateOfProducts.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/StateOfProducts.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/UpdateProduct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/UpdateProduct.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/WeeklyChart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/WeeklyChart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/WeeklyChartExpenditure.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/WeeklyChartExpenditure.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/YearlyChart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/YearlyChart.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Admin/YearlyChartExpenditure.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/YearlyChartExpenditure.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Anmelde.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/Anmelde.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/CreateAccount.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/CreateAccount.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Employee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/Employee.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/EmployeeMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/EmployeeMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Extra.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/Extra.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Reciept.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/Reciept.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SearchProduct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/SearchProduct.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dash.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/dash.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/styles/skeleton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/goal.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +95,9 @@
       <list>
         <option value="Kotlin Class" />
         <option value="FxmlFile" />
-        <option value="Enum" />
         <option value="editable-svg" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -51,6 +111,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -70,7 +133,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "returnToDiya",
-    "last_opened_file_path": "D:/seatrade_1.0",
+    "last_opened_file_path": "D:/githubcloneprojects/studiumjavapractice/DemoDashboardJavaFx/DashboardFx",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -89,11 +152,11 @@
       <recent name="D:\FilesExercises\DiyaShop\src\main\resources\worker" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\PrivateProjectExercises\DiyaShop\svgfiles" />
-      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\csvData\customer" />
-      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\csvData" />
+      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\fxml" />
+      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\fxml\admin\otherfxml" />
+      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\fxml\otherfxml" />
+      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\fxml\admin" />
       <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources" />
-      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\csvdata\cvs-produkt" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -103,7 +166,7 @@
       <recent name="com.example.diyashop" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HibernateTest">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.diyashop.App" />
       <module name="DiyaShop" />
@@ -117,12 +180,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DatabaseDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.model.DatabaseDriver" />
+    <configuration name="CustomerManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.model.backend.manager.CustomerManager" />
       <module name="DiyaShop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.diyashop.model.*" />
+          <option name="PATTERN" value="com.example.diyashop.model.backend.manager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +193,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Encryptor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.model.Encryptor" />
+    <configuration name="DummyDataCreator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.model.backend.manager.DummyDataCreator" />
       <module name="DiyaShop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.diyashop.model.*" />
+          <option name="PATTERN" value="com.example.diyashop.model.backend.manager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,12 +206,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HibernateTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.model.HibernateTest" />
+    <configuration name="MySQLConnectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.model.backend.MySQLConnectionTest" />
       <module name="DiyaShop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.diyashop.model.*" />
+          <option name="PATTERN" value="com.example.diyashop.model.backend.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,12 +219,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.Test" />
+    <configuration name="ProductManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.model.backend.manager.ProductManager" />
       <module name="DiyaShop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.diyashop.*" />
+          <option name="PATTERN" value="com.example.diyashop.model.backend.manager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,11 +234,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HibernateTest" />
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.DatabaseDriver" />
-        <item itemvalue="Application.Encryptor" />
+        <item itemvalue="Application.DummyDataCreator" />
+        <item itemvalue="Application.CustomerManager" />
+        <item itemvalue="Application.ProductManager" />
+        <item itemvalue="Application.MySQLConnectionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -267,16 +330,47 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DatabaseDriver.java</url>
-          <line>82</line>
+          <line>81</line>
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/GenericManager.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/GenericManager.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/GenericManager.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/DummyDataCreator.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/Admin.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="com.example.diyashop.controller.admin.ProductController" memberName="productName" />
+        <PinnedItemInfo parentTag="javax.persistence.PersistenceException" memberName="cause" />
       </pinned-members>
     </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((MappingException)((MappingException)ex).cause).backtrace" custom="org.hibernate.MappingException" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

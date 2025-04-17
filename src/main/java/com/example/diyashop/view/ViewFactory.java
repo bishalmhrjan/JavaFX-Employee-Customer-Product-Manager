@@ -12,28 +12,28 @@ import java.io.IOException;
 
 public class ViewFactory {
 
-    private final String RECIEPT_ANCHORPANE="/Reciept.fxml";
-    private final String SEARCH_PRODUCT_ANCHORPANE="/SearchProduct.fxml";
-    private final String ANMELDUNG_DIALOG="/Anmelde.fxml";
-    private final String ADD_PRODUCT_ANCHORPANE="/Admin/AddProduct.fxml";
-    private final String STATE_OF_PRODUCTS_ANCHORPANE="/Admin/StateOfProducts.fxml";
-    private final String DAILYCHART_ANCHORPANE="/Admin/DailyChart.fxml";
-    private final String MONTHLYCHART_ANCHORPANE="/Admin/MonthlyChart.fxml";
-    private final String QUATERLYCHART_ANCHORPANE="/Admin/QuarterlyChart.fxml";
-    private final String HALFYEARLY_ANCHORPANE="/Admin/HalfYearlyChart.fxml";
-    private final String YEARLY_ANCHORPANE="/Admin/YearlyChart.fxml";
-    private final String DAILY_EXPENDITURE="/Admin/DailyExpenditure.fxml";
-    private final String WEEKLYCHART_EXPENDITURE="/Admin/WeeklyChartExpenditure.fxml";
-    private final String MONTHLYCHART_EXPENDITURE="/Admin/MonthlyChart.fxml";
-    private final String WEEKLYCHART_ANCHORPANE="/Admin/WeeklyChart.fxml";
-    private final String QUATERLYCHART_EXPENDITURE="/Admin/QuarterlyChartExpenditure.fxml";
-    private final String HALFYEARLYCHART_EXPENDITURE="/Admin/HalfYearlyChartExpenditure.fxml";
-    private final String COMMON_ANCHORPANE= "/Employee.fxml";
+    private final String RECIEPT_ANCHORPANE= "/fxml/otherfxml/Reciept.fxml";
+    private final String SEARCH_PRODUCT_ANCHORPANE= "/fxml/otherfxml/SearchProduct.fxml";
+    private final String ANMELDUNG_DIALOG= "/fxml/otherfxml/Anmelde.fxml";
+    private final String ADD_PRODUCT_ANCHORPANE= "/fxml/otherfxml/AddProduct.fxml";
+    private final String STATE_OF_PRODUCTS_ANCHORPANE= "/fxml/otherfxml/StateOfProducts.fxml";
+    private final String DAILYCHART_ANCHORPANE= "/fxml/otherfxml/DailyChart.fxml";
+    private final String MONTHLYCHART_ANCHORPANE= "/fxml/otherfxml/MonthlyChart.fxml";
+    private final String QUATERLYCHART_ANCHORPANE= "/fxml/otherfxml/QuarterlyChart.fxml";
+    private final String HALFYEARLY_ANCHORPANE= "/fxml/otherfxml/HalfYearlyChart.fxml";
+    private final String YEARLY_ANCHORPANE= "/fxml/otherfxml/YearlyChart.fxml";
+    private final String DAILY_EXPENDITURE= "/fxml/otherfxml/DailyExpenditure.fxml";
+    private final String WEEKLYCHART_EXPENDITURE= "/fxml/otherfxml/WeeklyChartExpenditure.fxml";
+    private final String MONTHLYCHART_EXPENDITURE= "/fxml/otherfxml/MonthlyChart.fxml";
+    private final String WEEKLYCHART_ANCHORPANE= "/fxml/otherfxml/WeeklyChart.fxml";
+    private final String QUATERLYCHART_EXPENDITURE= "/fxml/otherfxml/QuarterlyChartExpenditure.fxml";
+    private final String HALFYEARLYCHART_EXPENDITURE= "/fxml/otherfxml/HalfYearlyChartExpenditure.fxml";
+    private final String COMMON_ANCHORPANE= "/fxml/otherfxml/Employee.fxml";
 
-    private final String CREATE_ACCOUNT="/CreateAccount.fxml";
+    private final String CREATE_ACCOUNT= "/fxml/otherfxml/CreateAccount.fxml";
 
-    private final String YEARLYCHART_EXPENDITURE="/Admin/YearlyChartExpenditure.fxml";
-    private final String ADMIN_DIALOG="/Admin/Admin.fxml";
+    private final String YEARLYCHART_EXPENDITURE= "/fxml/otherfxml/YearlyChartExpenditure.fxml";
+    private final String ADMIN_DIALOG= "/fxml/admin/Admin.fxml";
 
     private final String COMPANY_NAME="Diya Hastakala";
 

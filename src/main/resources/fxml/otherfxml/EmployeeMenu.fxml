@@ -7,9 +7,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="750.0" prefWidth="200.0" styleClass="left_panel" stylesheets="@styles/adminMenu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diyashop.controller.worker.EmployeeMenuController">
+<AnchorPane prefHeight="750.0" prefWidth="200.0" styleClass="left_panel" stylesheets="@../../styles/adminMenu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diyashop.controller.worker.EmployeeMenuController">
 <children>
-    <VBox prefHeight="110.0" prefWidth="200.0" styleClass="logo_container" stylesheets="@styles/adminMenu.css">
+    <VBox prefHeight="110.0" prefWidth="200.0" styleClass="logo_container" stylesheets="@../../styles/adminMenu.css">
         <children>
             <FontAwesomeIconView glyphName="HOME" size="30" />
             <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="logo_container" text="Diya Hastakala">
@@ -19,7 +19,7 @@
             </Text>
         </children>
     </VBox>
-    <VBox layoutY="116.0" prefHeight="160.0" prefWidth="200.0" styleClass="menu_container" stylesheets="@styles/adminMenu.css" AnchorPane.bottomAnchor="479.0">
+    <VBox layoutY="116.0" prefHeight="160.0" prefWidth="200.0" styleClass="menu_container" stylesheets="@../../styles/adminMenu.css" AnchorPane.bottomAnchor="479.0">
         <children>
 
             <Button fx:id="receipt" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" text="Reciept" />

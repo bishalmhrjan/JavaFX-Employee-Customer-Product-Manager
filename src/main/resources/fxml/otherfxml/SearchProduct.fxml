@@ -7,14 +7,14 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="750.0" prefWidth="600.0" styleClass="search_bar_container" stylesheets="@styles/Search.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"  >
+<AnchorPane prefHeight="750.0" prefWidth="600.0" styleClass="search_bar_container" stylesheets="@../../styles/Search.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"  >
    <children>
       <TextField fx:id="searchTextField" layoutX="78.0" layoutY="39.0" prefHeight="33.0" prefWidth="378.0" styleClass="textfield">
          <font>
             <Font size="15.0" />
          </font>
       </TextField>
-      <Button fx:id="searchId" layoutX="464.0" layoutY="39.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" stylesheets="@styles/Search.css" text="Search">
+      <Button fx:id="searchId" layoutX="464.0" layoutY="39.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" stylesheets="@../../styles/Search.css" text="Search">
          <graphic>
             <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="18" text="" />
          </graphic>
