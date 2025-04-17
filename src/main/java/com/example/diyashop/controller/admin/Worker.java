@@ -1,17 +1,12 @@
 package com.example.diyashop.controller.admin;
 
 import com.example.diyashop.model.backend.FilialeShop;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+
 
 import javax.persistence.*;
 import java.util.UUID;
 
 @Entity
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Table(name = "worker")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Worker {
@@ -33,5 +28,35 @@ public class Worker {
     private FilialeShop filialeShop;
 
 
+    public String getWorkerId() {
+        return workerId;
+    }
 
- }
+    public void setWorkerId(String workerId) {
+        this.workerId = workerId;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public FilialeShop getFilialeShop() {
+        return filialeShop;
+    }
+
+    public void setFilialeShop(FilialeShop filialeShop) {
+        this.filialeShop = filialeShop;
+    }
+}

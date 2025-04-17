@@ -1,7 +1,7 @@
 package com.example.diyashop.model;
 
 import com.example.diyashop.view.AccountType;
-import com.example.diyashop.view.ViewFactory;
+import com.example.diyashop.view.CommonViewFactory;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class Model {
 
     private static Model model;
-    private final ViewFactory viewFactory;
+    private final CommonViewFactory viewFactory;
 
     private final DatabaseDriver database;
     private final EmployeeModel employeeModel;
@@ -32,7 +32,7 @@ public class Model {
     private Model() {
         this.employeeLogInSuccess = false;
         this.adminLogInSuccess = false;
-        this.viewFactory = new ViewFactory();
+        this.viewFactory = new CommonViewFactory();
         this.database = new DatabaseDriver();
         this.employeeModel = new EmployeeModel(0, "", "");
 
@@ -48,7 +48,7 @@ public class Model {
     }
 
 
-    public ViewFactory getViewFactory() {
+    public CommonViewFactory getViewFactory() {
         return viewFactory;
     }
 

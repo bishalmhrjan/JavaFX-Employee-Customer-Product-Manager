@@ -1,7 +1,6 @@
 package com.example.diyashop.model;
 
-import com.example.diyashop.model.finance.PeriodTime;
-import com.example.diyashop.model.productstype.ProductEnum;
+ import com.example.diyashop.model.productstype.ProductEnum;
 import com.example.diyashop.view.AccountType;
 
 import java.sql.*;
@@ -77,7 +76,7 @@ public class DatabaseDriver {
         }
     }
 
-    public   boolean createNewUser(String username, String firstPassword, String confirmPassword, AccountType accountType) throws DiyaShopException {
+    public   boolean createNewUser(String username, String firstPassword, String confirmPassword, AccountType accountType) throws Exception {
         if (firstPassword.equals(confirmPassword)) {
             System.out.println("-----------------before-if-true-------------------"+accountType.name());
 

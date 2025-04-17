@@ -1,4 +1,7 @@
 - main app banda vayesi, open vako ni banda hunu paryo
 - drag option ni rakhnu paryo
 - ra design ramro hune gari garnu paryo
-- 
+
+
+- Focus here more on frontend fx, as i have already spring boot done in one project
+-

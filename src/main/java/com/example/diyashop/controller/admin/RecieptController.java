@@ -252,7 +252,7 @@ public class RecieptController implements Initializable {
     }
 
 
-    private void copyInTableView() throws SQLException, NumberFormatException, DiyaShopException, ParseException {
+    private void copyInTableView() throws SQLException, NumberFormatException,  ParseException {
         getNoOfStocks().setText("");
         getSellUnitPrice().setText("");
         getNoOfStocks().setText("");

@@ -13,11 +13,11 @@ import java.util.UUID;
 @Table(name = "reciept")
 public class Reciept {
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "customer_id", nullable = false)
     private Customer customer;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "filiale_id", nullable = false)
     private FilialeShop filialeShop;
 

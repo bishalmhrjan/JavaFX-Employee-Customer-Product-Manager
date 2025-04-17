@@ -1,7 +1,6 @@
 package com.example.diyashop.controller.admin;
 
 import com.example.diyashop.model.DatabaseDriver;
-import com.example.diyashop.model.finance.PeriodTime;
 import com.example.diyashop.model.productstype.ProductEnum;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -87,12 +86,14 @@ public class ProductController implements Initializable {
         this.getAddProduct().setOnAction(e-> {
             try {
                 saveInDataBase();
-            } catch (SQLException | DiyaShopException ex) {
+            } catch (SQLException  ex) {
                 throw new RuntimeException(ex);
             } catch (ParseException ex) {
                 throw new RuntimeException(ex);
+            } catch (Exception ex) {
+                throw new RuntimeException(ex);
             }
-         });
+        });
     }
 
 
@@ -253,7 +254,7 @@ public class ProductController implements Initializable {
     }
 
 
-    private void saveInDataBase() throws SQLException, NumberFormatException, DiyaShopException, ParseException {
+    private void saveInDataBase() throws Exception {
 
         if (isValid(getNoOfStocks().getText().toString()) && isValid(getBuyingPrice().getText().toString()) && isValid(getTargetPrice().getText().toString()) &&   checkValidDate(getTimePeriod().getText().toString())&& isValid(getMaxDiscountPercent().getText().toString())) {
             new DatabaseDriver().addProduct(getProductName().getValue(), getProductType().getValue(), Integer.parseInt(getNoOfStocks().getText().toString()),
@@ -268,7 +269,7 @@ public class ProductController implements Initializable {
             getMaxDiscountPercent().setText("");
             getTimePeriod().setText("");
         } else {
-            throw new DiyaShopException("Either number is  negative, non-number or empty textfield.");
+            throw new IllegalArgumentException("Either number is  negative, non-number or empty textfield.");
 
         }
 
@@ -316,7 +317,7 @@ public class ProductController implements Initializable {
 
 
 
-    private     boolean checkValidDate(String date) throws DiyaShopException {
+    private  boolean checkValidDate(String date) throws Exception {
 
 
         String year= ""+date.charAt(0)+date.charAt(1)+date.charAt(2)+date.charAt(3);
@@ -334,7 +335,7 @@ public class ProductController implements Initializable {
             return true;
         }
 
-throw new DiyaShopException("invalid date");
+throw new IllegalArgumentException("invalid date");
     }
 
     //4 Textfield compare, valid int or double and non negative,

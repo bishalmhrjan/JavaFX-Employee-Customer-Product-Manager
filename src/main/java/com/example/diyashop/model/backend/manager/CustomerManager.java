@@ -19,7 +19,6 @@ public class CustomerManager extends GenericManager<Customer, UUID>{
         customer.setSex("male");
         customer.setResidence(Country.AFGHANISTAN);
         customer.setNationality(Country.GERMANY);
-        customer.setOccupation(Occupation.HOUSEWIFE);
 
         System.out.println("customer id is "+customer.getCustomerId());
         System.out.println("customer name is "+customer.getFirstName());

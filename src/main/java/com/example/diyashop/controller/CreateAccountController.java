@@ -41,7 +41,7 @@ public class CreateAccountController implements Initializable {
             try {
                 System.out.println("inside try block");
                 createAccount();
-            } catch (DiyaShopException ex) {
+            } catch (Exception ex) {
                 throw new RuntimeException(ex);
             }
         });
@@ -68,7 +68,7 @@ public class CreateAccountController implements Initializable {
         return accountTypeChoiceBox;
     }
 
-    public void createAccount() throws DiyaShopException {
+    public void createAccount() throws Exception {
         System.out.println("inside createmethod in createcontroller class "+Model.getInstance().getViewFactory().getAccountType().name());
         if (getAccountTypeChoiceBox().getValue() == AccountType.EMPLOYEE) {
             System.out.println("inside admin type in create account method");

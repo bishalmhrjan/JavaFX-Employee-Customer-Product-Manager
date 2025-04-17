@@ -9,7 +9,6 @@ module com.example.diyashop {
     requires org.hibernate.orm.core;
     requires java.naming;
     requires java.persistence;
-    requires lombok;
 
     // Opening packages to Hibernate for entity access
     opens com.example.diyashop.model.backend to org.hibernate.orm.core;
