@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
- <?import javafx.geometry.Insets?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
@@ -16,21 +16,19 @@
 <BorderPane prefHeight="750.0" prefWidth="200.0" styleClass="left_panel" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diyashop.controller.admin.AdminMenuController">
 
 
-    <left>
-        <fx:include source="../otherfxml/EmployeeMenu.fxml" fx:id="employeeMenu"/>
-    </left>
-    <left>
-        <fx:include source="../otherfxml/EmployeeMenu.fxml" fx:id="employeeMenuController"/>
-    </left>
+
     <center>
         <VBox>
-            <Button fx:id="stateOfProducts" mnemonicParsing="false" text="State Of Products" />
+            <Button fx:id="stateOfProducts" mnemonicParsing="false" text="State Of Products" onAction="#onStateOfProductsClicked"/>
         </VBox>
     </center>
+    <left>
+        <AnchorPane fx:id="employeeMenuPane"/>
+    </left>
 
 
     <bottom>
-        <Button fx:id="adminLogOut" mnemonicParsing="false" text="Admin Log Out" />
+        <Button fx:id="adminLogOut" mnemonicParsing="false" text="Admin Log Out" onAction="#onAdminLogOutClicked"/>
     </bottom>
 
 

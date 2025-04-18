@@ -1,5 +1,6 @@
 package com.example.diyashop.controller.employee;
 
+import com.example.diyashop.controller.admin.AdminMenuController;
 import com.example.diyashop.model.Model;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -14,6 +15,7 @@ public class EmployeeController implements Initializable {
     private BorderPane borderPane;
 
 
+
     @FXML private ToggleGroup group;
       public BorderPane getBorderPane() {
         return borderPane;
@@ -21,6 +23,8 @@ public class EmployeeController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        System.out.println("Employee Controller initialize() called!");
+
         Model.getInstance().getViewFactory().getWorkerOptionViewObjectProperty().addListener((observable, oldvalue, nevalue) -> {
             switch (nevalue) {
                case RECIEPT -> this.getBorderPane().setCenter(Model.getInstance().getViewFactory().getRecieptAnchorPane());

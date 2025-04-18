@@ -5,25 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="Admin, worker class is created. &#10;passwort is encrypted and decrypted.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/CommonOptionView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminEmployeeManagement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminEmployeeManagementController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/AdminUserManagementController.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/goal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/goal.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/worker/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/worker/EmployeeMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/AdminModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/Boxes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/DummyDataCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/DummyDataCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/AdminOptionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/AdminOptionView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/CommonViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/CommonViewFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/EmployeeOptionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/EmployeeOptionView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/Admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/Admin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/AdminMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/AdminMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/Employee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/Employee.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/EmployeeMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/EmployeeMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/AdminMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/AdminMenu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +25,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
-        <option value="FxmlFile" />
         <option value="editable-svg" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -92,10 +83,10 @@
       <recent name="D:\FilesExercises\DiyaShop\src\main\resources\worker" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\fxml\admin" />
       <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\fxml" />
       <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\fxml\admin\otherfxml" />
       <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\fxml\otherfxml" />
-      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\fxml\admin" />
       <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -288,17 +279,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeMenuController.java</url>
-          <line>39</line>
+          <line>42</line>
           <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminController.java</url>
-          <line>18</line>
-          <properties class="com.example.diyashop.controller.admin.AdminController" method="initialize">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

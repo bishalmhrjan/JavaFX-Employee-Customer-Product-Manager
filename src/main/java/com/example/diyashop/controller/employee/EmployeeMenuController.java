@@ -30,6 +30,8 @@ public class EmployeeMenuController implements Initializable {
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        System.out.println("EmployeeMenuController initialize() called!");
+
         this.getReceipt().setOnAction(e -> onRecieptClicked());
         this.getSearch().setOnAction(e -> onSearchClicked());
         this.getLogOut().setOnAction(e->onLogOutClick());
@@ -37,12 +39,15 @@ public class EmployeeMenuController implements Initializable {
     }
 
     public void onRecieptClicked() {
+        System.out.println("onReceipt method got called");
         Model.getInstance().getViewFactory().getWorkerOptionViewObjectProperty().set(CommonOptionView.RECIEPT);
         ;
     }
 
 
     public void onSearchClicked() {
+        System.out.println("onsearch method got called");
+
         Model.getInstance().getViewFactory().getWorkerOptionViewObjectProperty().set(CommonOptionView.SEARCH);
     }
     public void onLogOutClick(){

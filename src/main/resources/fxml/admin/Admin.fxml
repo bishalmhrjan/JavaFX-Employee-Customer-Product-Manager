@@ -2,9 +2,10 @@
 
 <?import javafx.scene.layout.BorderPane?>
 
+<?import javafx.scene.layout.AnchorPane?>
 <BorderPane fx:id="adminParent" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diyashop.controller.admin.AdminController">
     <left>
-        <fx:include source="../otherfxml/EmployeeMenu.fxml" />
+        <AnchorPane fx:id="adminMenuPlaceholder" />
     </left>
 
     <center>
