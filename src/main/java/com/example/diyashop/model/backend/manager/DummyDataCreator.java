@@ -21,9 +21,9 @@ public class DummyDataCreator {
         for(int i =0;i<size;i++){
             workerManager.save(workers[i]);
 
-        Worker worker = new Worker("bishal","Maharjan",false,new FilialeShop(DummyName.GermanCity.KARLSRUHE.toString()));
-        System.out.println("id of worker is "+worker.getWorkerId());
-        //workerManager.save(worker); }*/
+        Worker employee = new Worker("bishal","Maharjan",false,new FilialeShop(DummyName.GermanCity.KARLSRUHE.toString()));
+        System.out.println("id of employee is "+employee.getWorkerId());
+        //workerManager.save(employee); }*/
        FilialeShop [] filialeShops= creator.saveAllFilialeShop();
        /// System.out.println("filialeshops size is "+filialeShops.length);
 

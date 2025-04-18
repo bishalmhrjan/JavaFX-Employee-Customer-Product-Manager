@@ -1,7 +1,7 @@
-package com.example.diyashop.controller.worker;
+package com.example.diyashop.controller.employee;
 
 import com.example.diyashop.model.Model;
-import com.example.diyashop.view.AdminOptionView;
+import com.example.diyashop.view.CommonOptionView;
 import com.example.diyashop.view.EmployeeOptionView;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -14,9 +14,6 @@ import java.util.ResourceBundle;
 public class EmployeeMenuController implements Initializable {
     @FXML
     public Button receipt;
-
-
-
     @FXML
     public Button logOut;
     @FXML public Button search;
@@ -40,13 +37,13 @@ public class EmployeeMenuController implements Initializable {
     }
 
     public void onRecieptClicked() {
-        Model.getInstance().getViewFactory().getWorkerOptionViewObjectProperty().set(EmployeeOptionView.RECIEPT);
+        Model.getInstance().getViewFactory().getWorkerOptionViewObjectProperty().set(CommonOptionView.RECIEPT);
         ;
     }
 
 
     public void onSearchClicked() {
-        Model.getInstance().getViewFactory().getWorkerOptionViewObjectProperty().set(EmployeeOptionView.SEARCH);
+        Model.getInstance().getViewFactory().getWorkerOptionViewObjectProperty().set(CommonOptionView.SEARCH);
     }
     public void onLogOutClick(){
         ((Stage)logOut.getScene().getWindow()).close();

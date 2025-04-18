@@ -19,13 +19,13 @@ module com.example.diyashop {
     // Opening packages to JavaFX for FXML access
     opens com.example.diyashop to javafx.fxml;
     opens com.example.diyashop.controller to javafx.fxml;
-    opens com.example.diyashop.controller.worker to javafx.fxml;
+    opens com.example.diyashop.controller.employee to javafx.fxml;
 
     // Exporting packages for public access
     exports com.example.diyashop;
     exports com.example.diyashop.controller;
     exports com.example.diyashop.controller.admin;
-    exports com.example.diyashop.controller.worker;
+    exports com.example.diyashop.controller.employee;
     exports com.example.diyashop.model.productstype;
     exports com.example.diyashop.model;
     exports com.example.diyashop.view;

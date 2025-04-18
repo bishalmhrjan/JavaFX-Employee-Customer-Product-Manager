@@ -75,3 +75,13 @@ Material Sourcing Tracker: Help track the origin and sustainability of materials
 Collaborative Production Planning (for shops with multiple makers): Allow assigning production tasks to specific employees and tracking their progress.
 Integration with Local Craft Events/Markets: A feature to track participation in local events and potentially manage inventory and sales related to those events.
 Visual Workflow Designer: For complex production processes, a visual tool to map out the steps and dependencies.
+
+
+Todays Goal first:
+ 1) Admin can give right employee to be admin, but not employee to admin.
+ 2) Admin have authority to CRUD accounts of employee and Customer.
+
+
+employee can watch customer detail, but not deactivate it and its order.
+
+

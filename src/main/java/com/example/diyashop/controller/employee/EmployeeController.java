@@ -1,7 +1,6 @@
-package com.example.diyashop.controller.worker;
+package com.example.diyashop.controller.employee;
 
 import com.example.diyashop.model.Model;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ToggleGroup;

@@ -29,11 +29,12 @@ public class CommonViewFactory {
 
 
     private AccountType accountType;
+    private final ObjectProperty<EmployeeOptionView> employeeOptionView;
 
-    private final ObjectProperty<EmployeeOptionView> commonOptionViewObjectProperty;
+
+    private final ObjectProperty<CommonOptionView> commonOptionViewObjectProperty;
     private final ObjectProperty<AdminOptionView> adminOptionViewObjectProperty;
     private ProductEnum productEnum;
-    private ProductEnum productEnumType;
 
 
 
@@ -41,8 +42,9 @@ public class CommonViewFactory {
 
     public CommonViewFactory(){
         this.accountType= AccountType.EMPLOYEE;
-         this.commonOptionViewObjectProperty = new SimpleObjectProperty<>();
+        this.commonOptionViewObjectProperty = new SimpleObjectProperty<>();
         this.adminOptionViewObjectProperty = new SimpleObjectProperty<>();
+        this.employeeOptionView = new SimpleObjectProperty<>();
     }
 
     public AccountType getAccountType() {
@@ -51,7 +53,7 @@ public class CommonViewFactory {
     }
 
 
-    public ObjectProperty<EmployeeOptionView> getWorkerOptionViewObjectProperty() {
+    public ObjectProperty<CommonOptionView> getWorkerOptionViewObjectProperty() {
         return commonOptionViewObjectProperty;
     }
 
@@ -145,9 +147,7 @@ public class CommonViewFactory {
 
     }
 
-    public void setProductType(ProductEnum value) {
-        this.productEnumType = productEnumType;
-    }
+
 
     public AnchorPane returnRequiredAnchorpane(AnchorPane anchorPane,final String filePath){
 

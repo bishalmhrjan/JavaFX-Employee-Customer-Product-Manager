@@ -11,73 +11,32 @@
 <?import javafx.scene.control.TitledPane?>
 <?import java.net.URL?>
 
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.control.ToggleButton?>
-<?import javafx.scene.control.ToggleGroup?>
-<?import javafx.scene.shape.SVGPath?>
-<AnchorPane prefHeight="750.0" prefWidth="200.0" styleClass="left_panel" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diyashop.controller.admin.AdminMenuController">
-<children>
-    <VBox prefHeight="100.0" prefWidth="200.0" styleClass="logo_container" stylesheets="@../../styles/adminMenu.css">
-        <children>
-             <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="logo_container" text="Diya Hastakala">
-                <font>
-                    <Font size="18.0" />
-                </font>
-            </Text>
-        </children>
-    </VBox>
-    <VBox layoutY="-1.0" prefHeight="512.0" prefWidth="202.0" styleClass="menu_container" stylesheets="@../../styles/adminMenu.css" AnchorPane.bottomAnchor="118.0">
-        <children>
 
-            <Button fx:id="receipt" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" text="Reciept" />
-            <Button fx:id="search" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" text="Search" />
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane prefHeight="750.0" prefWidth="200.0" styleClass="left_panel" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diyashop.controller.admin.AdminMenuController">
 
-            <Button fx:id="addProduct" mnemonicParsing="false" prefHeight="18.0" prefWidth="87.0" text="Add Product" />
 
+    <left>
+        <fx:include source="../otherfxml/EmployeeMenu.fxml" fx:id="employeeMenu"/>
+    </left>
+    <left>
+        <fx:include source="../otherfxml/EmployeeMenu.fxml" fx:id="employeeMenuController"/>
+    </left>
+    <center>
+        <VBox>
             <Button fx:id="stateOfProducts" mnemonicParsing="false" text="State Of Products" />
+        </VBox>
+    </center>
 
 
-            <TitledPane   alignment="CENTER_RIGHT" contentDisplay="RIGHT" expanded="false" nodeOrientation="RIGHT_TO_LEFT" style="-fx-font-weight: normal;" styleClass="drawer-menu" text="Business Charts" textAlignment="JUSTIFY">
-
-            <VBox nodeOrientation="LEFT_TO_RIGHT">
-
-
-                  <ToggleButton alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goDatePicker" styleClass="drawer-item" text="Daily" />
-                  <ToggleButton alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goHtmlEditor" styleClass="drawer-item" text="Weekly" />
-                  <ToggleButton alignment="CENTER_LEFT" layoutX="20.0" layoutY="20.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goHyperlink" styleClass="drawer-item" text="Monthly"   />
-                  <ToggleButton alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goLabels" styleClass="drawer-item" text="Quaterly" />
-                  <ToggleButton alignment="CENTER_LEFT" layoutX="20.0" layoutY="90.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goListView" styleClass="drawer-item" text="Half Yearly" />
-                  <ToggleButton alignment="CENTER_LEFT" layoutX="20.0" layoutY="230.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goMediaView" styleClass="drawer-item" text="Yearly" />
+    <bottom>
+        <Button fx:id="adminLogOut" mnemonicParsing="false" text="Admin Log Out" />
+    </bottom>
 
 
-               <opaqueInsets>
-                  <Insets bottom="10.0" top="10.0" />
-               </opaqueInsets>
-               <VBox.margin>
-                  <Insets />
-               </VBox.margin>
-
-    </VBox>
-</TitledPane>
-            <TitledPane   alignment="CENTER_RIGHT" contentDisplay="RIGHT" expanded="false" nodeOrientation="RIGHT_TO_LEFT" style="-fx-font-weight: normal;" styleClass="drawer-menu" text="Expenditure Charts" textAlignment="JUSTIFY">
-
-                <VBox nodeOrientation="LEFT_TO_RIGHT">
-                    <ToggleButton  alignment="CENTER_LEFT" layoutX="20.0" layoutY="67.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goButton" styleClass="drawer-item" text="Daily"   />
-                    <ToggleButton  alignment="CENTER_LEFT" layoutX="20.0" layoutY="55.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goCarousel" styleClass="drawer-item" text="Weekly" />
-                    <ToggleButton   alignment="CENTER_LEFT" layoutX="10.0" layoutY="245.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goCheckBox" styleClass="drawer-item" text="Monthly" />
-                    <ToggleButton    alignment="CENTER_LEFT" layoutX="20.0" layoutY="615.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goChoiceBox" styleClass="drawer-item" text="Quarterly" />
-                    <ToggleButton    alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goColorPicker" styleClass="drawer-item" text="Half Yearly" />
-                    <ToggleButton  alignment="CENTER_LEFT" layoutX="20.0" layoutY="55.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goComboBox" styleClass="drawer-item" text="Yearly" />
-
-                </VBox>
-            </TitledPane>
-              <Button fx:id="logOut" mnemonicParsing="false" text="Log Out" />
-        </children>
-    </VBox>
-</children>
     <stylesheets>
 
         <URL value="@../../styles/drawer.css" />
 
     </stylesheets>
-</AnchorPane>
+</BorderPane>
