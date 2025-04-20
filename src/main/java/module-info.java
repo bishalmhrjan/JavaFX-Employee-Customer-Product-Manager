@@ -32,8 +32,6 @@ module com.example.diyashop {
     exports com.example.diyashop.model.productstype;
     exports com.example.diyashop.model;
     exports com.example.diyashop.view;
-    exports com.example.diyashop.dao;
-    opens com.example.diyashop.dao to javafx.fxml, org.hibernate.orm.core;
-    exports com.example.diyashop.controller.product;
-    opens com.example.diyashop.controller.product to javafx.fxml, org.hibernate.orm.core;
+     opens com.example.diyashop.dao to javafx.fxml, org.hibernate.orm.core;
+     opens com.example.diyashop.controller.product to javafx.fxml, org.hibernate.orm.core;
 }

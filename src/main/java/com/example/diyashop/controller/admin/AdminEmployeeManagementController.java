@@ -1,6 +1,5 @@
 package com.example.diyashop.controller.admin;
 
-import com.example.diyashop.controller.employee.EmployeeDao;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
