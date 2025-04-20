@@ -5,7 +5,7 @@ import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -21,15 +21,17 @@ public class CommonViewFactory {
 
     private final String ADMIN_DIALOG= "/fxml/admin/Admin.fxml";
     private final String COMPANY_NAME="Diya Hastakala";
+    private final String PRODUCT_DETAILS= "/fxml/otherfxml/ProductDetails.fxml";
     //Admin views
 
-    private  AnchorPane addProductAnchorPane;
-    private  AnchorPane recieptAnchorPane;
-    private  AnchorPane searchAnchorPane;
+    private Pane addProductAnchorPane;
+    private  Pane recieptAnchorPane;
+    private  Pane searchAnchorPane;
+
+    private Pane productDetails;
 
 
     private AccountType accountType;
-    private final ObjectProperty<EmployeeOptionView> employeeOptionView;
 
 
     private final ObjectProperty<CommonOptionView> commonOptionViewObjectProperty;
@@ -37,15 +39,19 @@ public class CommonViewFactory {
     private ProductEnum productEnum;
 
 
+    public Pane getProductManagementPane() {
+        return productDetails;
+    }
 
-
+    public ProductEnum getProductEnum() {
+        return productEnum;
+    }
 
     public CommonViewFactory(){
         this.accountType= AccountType.EMPLOYEE;
         this.commonOptionViewObjectProperty = new SimpleObjectProperty<>();
         this.adminOptionViewObjectProperty = new SimpleObjectProperty<>();
-        this.employeeOptionView = new SimpleObjectProperty<>();
-    }
+     }
 
     public AccountType getAccountType() {
 
@@ -53,31 +59,36 @@ public class CommonViewFactory {
     }
 
 
-    public ObjectProperty<CommonOptionView> getWorkerOptionViewObjectProperty() {
+    public ObjectProperty<CommonOptionView> getCommonOptionViewObjectProperty() {
         return commonOptionViewObjectProperty;
     }
 
 
-    public ObjectProperty<AdminOptionView> getAdminSelectedMenuItem() {
+
+    public ObjectProperty<AdminOptionView> getAdminOptionViewObjectProperty() {
         return adminOptionViewObjectProperty;
     }
 
 
    // admin, employee view starts
-    public AnchorPane getRecieptAnchorPane() {
+    public Pane getRecieptAnchorPane() {
 
         return returnRequiredAnchorpane(recieptAnchorPane,RECIEPT_ANCHORPANE);
     }
 
-    public AnchorPane getSearchAnchorPane() {
+    public Pane getSearchAnchorPane() {
 
         return returnRequiredAnchorpane(searchAnchorPane,SEARCH_PRODUCT_ANCHORPANE);
 
     }
-    public AnchorPane getAddProductAnchorPane() {
+    public Pane getAddProductAnchorPane() {
 
         return returnRequiredAnchorpane(addProductAnchorPane,ADD_PRODUCT_ANCHORPANE);
 
+    }
+
+    public Pane getProductDetailsPane(){
+        return returnRequiredAnchorpane(productDetails,PRODUCT_DETAILS);
     }
 
 
@@ -149,7 +160,7 @@ public class CommonViewFactory {
 
 
 
-    public AnchorPane returnRequiredAnchorpane(AnchorPane anchorPane,final String filePath){
+    public Pane returnRequiredAnchorpane(Pane anchorPane,final String filePath){
 
         if(anchorPane == null){
             try{

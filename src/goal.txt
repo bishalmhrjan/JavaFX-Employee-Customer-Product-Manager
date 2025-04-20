@@ -82,6 +82,7 @@ Todays Goal first:
  2) Admin have authority to CRUD accounts of employee and Customer.
 
 
-employee can watch customer detail, but not deactivate it and its order.
+- employee can watch customer detail, but not deactivate it and its order.
+- product detail deactivate button only for admin. user log k ma state cha, tei anusar fxml file wa checkbox activate or deactivate garnu parne cha.
 
 

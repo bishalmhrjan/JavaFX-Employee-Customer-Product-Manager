@@ -46,7 +46,7 @@ public class LogInController implements Initializable {
        this.getChooseAccountType().setValue(AccountType.ADMIN);
         this.getChooseAccountType().valueProperty().addListener(e -> setChooseAccountType());
         this.getSignUp().setOnAction(e->{
-            Model.getInstance().getViewFactory().createAccount();
+            Model.getInstance().getCommonViewFactory().createAccount();
         });
         this.getLogInButton().setOnAction(e -> {
             try {
@@ -60,11 +60,11 @@ public class LogInController implements Initializable {
     public boolean onLogIn() throws SQLException {
         //    Stage stage = (Stage) passwordLabel.getScene().getWindow();
 
-        if (Model.getInstance().getViewFactory().getAccountType() == AccountType.EMPLOYEE) {
+        if (Model.getInstance().getCommonViewFactory().getAccountType() == AccountType.EMPLOYEE) {
 
             if (Model.getInstance().evaluateCredential(AccountType.EMPLOYEE, this.getUserName().getText(), this.getPassword().getText())) {
 
-                Model.getInstance().getViewFactory().showWorkerWindow();
+                Model.getInstance().getCommonViewFactory().showWorkerWindow();
                 return true;
             } else {
                 error_lbl.setText("Either wrong Benutzername or Password");
@@ -72,10 +72,10 @@ public class LogInController implements Initializable {
             }
         } else {
 
-            if (Model.getInstance().getViewFactory().getAccountType() == AccountType.ADMIN) {
+            if (Model.getInstance().getCommonViewFactory().getAccountType() == AccountType.ADMIN) {
 
                 if (Model.getInstance().evaluateCredential(AccountType.ADMIN, this.getUserName().getText(), this.getPassword().getText())) {
-                    Model.getInstance().getViewFactory().showAdminWindow();
+                    Model.getInstance().getCommonViewFactory().showAdminWindow();
                     return true;
                 } else {
                     error_lbl.setText("Keine Admin mit dieser Existiert");
@@ -87,7 +87,7 @@ public class LogInController implements Initializable {
     }
 
     private void setChooseAccountType() {
-        Model.getInstance().getViewFactory().setLogInAccountType(chooseAccountType.getValue());
+        Model.getInstance().getCommonViewFactory().setLogInAccountType(chooseAccountType.getValue());
 
         if (chooseAccountType.getValue() == AccountType.ADMIN) {
             userNameLabel.setText("Admin Username");

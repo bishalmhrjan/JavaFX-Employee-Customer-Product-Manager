@@ -69,7 +69,7 @@ public class CreateAccountController implements Initializable {
     }
 
     public void createAccount() throws Exception {
-        System.out.println("inside createmethod in createcontroller class "+Model.getInstance().getViewFactory().getAccountType().name());
+        System.out.println("inside createmethod in createcontroller class "+Model.getInstance().getCommonViewFactory().getAccountType().name());
         if (getAccountTypeChoiceBox().getValue() == AccountType.EMPLOYEE) {
             System.out.println("inside admin type in create account method");
 

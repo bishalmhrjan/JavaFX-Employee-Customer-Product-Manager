@@ -86,7 +86,7 @@ public class DatabaseDriver {
                     preparedStatement.setString(1, username);
                     preparedStatement.setString(2, firstPassword);
                     //Model.getInstance().getDatabase
-                    Model.getInstance().getViewFactory().showLogInWindow();
+                    Model.getInstance().getCommonViewFactory().showLogInWindow();
 
                     /**
                      * getadmin data lai boolean banayera admin pw check garera matrai admin ko new account create garne.

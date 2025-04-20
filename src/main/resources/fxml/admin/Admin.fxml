@@ -3,13 +3,13 @@
 <?import javafx.scene.layout.BorderPane?>
 
 <?import javafx.scene.layout.AnchorPane?>
-<BorderPane fx:id="adminParent" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diyashop.controller.admin.AdminController">
+<BorderPane fx:id="adminPane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diyashop.controller.admin.AdminController">
     <left>
-        <AnchorPane fx:id="adminMenuPlaceholder" />
-    </left>
+        <fx:include source="AdminMenu.fxml" />
+     </left>
 
     <center>
-        <fx:include source="../otherfxml/dash.fxml" />
+        <fx:include source="../otherfxml/Dash.fxml" />
     </center>
 
 </BorderPane>

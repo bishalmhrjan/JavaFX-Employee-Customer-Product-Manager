@@ -25,14 +25,35 @@ public class Product {
     @Column(updatable = false, nullable = false, columnDefinition = "CHAR(36)")
     private String productId;
 
-    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<RecieptItem> recieptItems = new ArrayList<>();
-    public Product(ProductEnum productName, ProductEnum.ProductType productType) {
+    private double price;
+    private int stock;
+
+    public Product(ProductEnum productName, ProductEnum.ProductType productType, String productId, double price, List<RecieptItem> recieptItems) {
         this.productName = productName;
         this.productType = productType;
-        this.productId = UUID.randomUUID().toString();
+        this.productId = productId;
+        this.price = price;
+        this.recieptItems = recieptItems;
     }
 
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<RecieptItem> recieptItems = new ArrayList<>();
+    public Product(ProductEnum productName, ProductEnum.ProductType productType, double price, int stock) {
+        this.productName = productName;
+        this.price = price;
+        this.productType = productType;
+        this.stock = stock;
+        this.productId = UUID.randomUUID().toString();
+
+    }
+    public Product(ProductEnum productName, ProductEnum.ProductType productType ) {
+        this.productName = productName;
+        this.price = 15;
+        this.stock =15;
+        this.productType = productType;
+        this.productId = UUID.randomUUID().toString();
+
+    }
     public Product() {
         this.productId = UUID.randomUUID().toString();
 

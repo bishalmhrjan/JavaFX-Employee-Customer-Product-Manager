@@ -5,10 +5,12 @@ import com.example.diyashop.controller.admin.Employee;
 import java.util.List;
 import java.util.Optional;
 
-public interface UserRepository<T> {
+public interface DaoImplement<T> {
     List<Employee> findAll();
-    Optional<T> findById(int id);
+    Optional<T> findById(Long  id);
 
     void save(T t);
-    void updateRoles(int id, List<String> roles);
+
+    void update(T t);
+    void delete(Long id);
 }

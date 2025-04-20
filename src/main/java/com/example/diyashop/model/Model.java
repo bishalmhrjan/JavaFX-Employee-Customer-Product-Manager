@@ -53,7 +53,7 @@ public class Model {
     }
 
 
-    public CommonViewFactory getViewFactory() {
+    public CommonViewFactory getCommonViewFactory() {
         return viewFactory;
     }
 

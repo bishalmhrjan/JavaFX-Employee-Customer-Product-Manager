@@ -1,6 +1,5 @@
 package com.example.diyashop.controller.employee;
 
-import com.example.diyashop.controller.admin.AdminMenuController;
 import com.example.diyashop.model.Model;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -25,11 +24,12 @@ public class EmployeeController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         System.out.println("Employee Controller initialize() called!");
 
-        Model.getInstance().getViewFactory().getWorkerOptionViewObjectProperty().addListener((observable, oldvalue, nevalue) -> {
+        Model.getInstance().getCommonViewFactory().getCommonOptionViewObjectProperty().addListener((observable, oldvalue, nevalue) -> {
             switch (nevalue) {
-               case RECIEPT -> this.getBorderPane().setCenter(Model.getInstance().getViewFactory().getRecieptAnchorPane());
-                case SEARCH -> this.getBorderPane().setCenter(Model.getInstance().getViewFactory().getSearchAnchorPane());
-               default -> this.getBorderPane().setCenter(Model.getInstance().getViewFactory().getSearchAnchorPane());
+               case RECIEPT -> this.getBorderPane().setCenter(Model.getInstance().getCommonViewFactory().getRecieptAnchorPane());
+                case SEARCH -> this.getBorderPane().setCenter(Model.getInstance().getCommonViewFactory().getSearchAnchorPane());
+                case PRODUCT_DETAILS -> this.getBorderPane().setCenter(Model.getInstance().getCommonViewFactory().getProductDetailsPane());
+               default -> this.getBorderPane().setCenter(Model.getInstance().getCommonViewFactory().getSearchAnchorPane());
 
             }
         });

@@ -1,92 +1,80 @@
 package com.example.diyashop.controller.admin;
 
-import com.example.diyashop.controller.employee.EmployeeMenuController;
 import com.example.diyashop.model.Model;
 import com.example.diyashop.view.AdminOptionView;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
-import javafx.stage.Stage;
+import javafx.scene.layout.Pane;
 
 import java.io.IOException;
 import java.net.URL;
-import java.sql.SQLOutput;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class AdminMenuController implements Initializable {
 
 
 
- @FXML
- private Button stateOfProducts;
-
-
- @FXML
- private AnchorPane employeeMenuPane; // This gets injected
-
- @FXML
- private EmployeeMenuController employeeMenuController;
+ @FXML public Button customerManagement;
+ @FXML public Button employeeManagement;
 
 
 
  @FXML
- private Button adminLogOut;
+ private BorderPane employeeMenuPane;
 
 
- public Button getLogOut() {
-  return adminLogOut;
- }
+
+
  @Override
  public void initialize(URL url, ResourceBundle resourceBundle) {
+
   System.out.println("AdminMenuController initialize() called!");
-// REMOVE THIS BLOCK
-  FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/otherfxml/EmployeeMenu.fxml"));
-  AnchorPane pane = null;
+  loadEmployeMenuPane();
+
+
+ }
+
+ public Pane loadEmployeMenuPane() {
+  System.out.println("ui getting from employee menu!!!");
+
   try {
-   pane = loader.load();
+   FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/otherfxml/EmployeeMenu.fxml"));
+   BorderPane employeeMenu = loader.load(); // ✅ This is the actual UI
+   if(employeeMenu == null){
+    System.out.println("I m null, employeemenu");
+   }
+   System.out.println("EmployeeMenu loaded successfully.");
+
+   employeeMenuPane.setCenter(employeeMenu);
   } catch (IOException e) {
-   throw new RuntimeException(e);
+   e.printStackTrace();
   }
-  employeeMenuController = loader.getController();
-  employeeMenuPane.getChildren().setAll(pane);
-
-
+  return employeeMenuPane;
  }
 
 
-
-
-
- public void onAdminLogOutClicked(ActionEvent event) {
-  System.out.println("Admin Log Out clicked!");
-  // Implement your admin logout logic here, e.g.,
-  // - Clearing session data
-  // - Redirecting to the login screen
-  Stage stage = (Stage) adminLogOut.getScene().getWindow();
-  // Example: Model.getInstance().getViewFactory().showLoginWindow();
-  stage.close(); // Or navigate to login
+ public void onEmployeeManagementClicked(ActionEvent actionEvent) {
+  System.out.println("employee management got clicked!!!");
+  Model.getInstance().getAdminViewFactory().getAdminOptionViewObjectProperty().set(AdminOptionView.EMPLOYEE_MANAGEMENT);
  }
 
-
- public Button getAdminLogOut() {
-  return adminLogOut;
+ public void onCustomerManagementClicked(ActionEvent actionEvent) {
+  System.out.println("Customer management got clicked!!!");
+  Model.getInstance().getAdminViewFactory().getAdminOptionViewObjectProperty().set(AdminOptionView.CUSTOMER_MANAGEMENT);
  }
 
+ public void onRecieptAdminClicked(){
+  ObservableList<Node> list = loadEmployeMenuPane().getChildren();
+  Button reciept = (Button)list.get(0);
+  reciept.setOnAction(e-> System.out.println("reciept button in admin is activated"));
+ // Button search = (Button)list.get(1);
 
-
-
-
- public void onStateOfProductsClicked() {
-  Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.STATE_OF_PRODUCTS);
  }
- public Button getStateOfProducts() {
-  return stateOfProducts;
- }
-
-
-
 }

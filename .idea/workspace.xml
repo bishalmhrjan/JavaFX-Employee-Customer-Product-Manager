@@ -5,16 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="Admin, worker class is created. &#10;passwort is encrypted and decrypted.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminEmployeeManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminEmployeeManagementController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/AdminUserManagementController.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/EmployeeProductDetailsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/product/ProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/AdminEmployeeManagementView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/ProductManagement.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/goal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/goal.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/CreateAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/CreateAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/DaoImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/DaoImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/LogInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/ProductDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/ProductDetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminCustomerManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminCustomerManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminEmployeeManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminEmployeeManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminEmployeeManagementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminEmployeeManagementService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DatabaseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/DatabaseDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/AdminOptionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/AdminOptionView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/AdminViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/AdminViewFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/CommonOptionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/CommonOptionView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/CommonViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/CommonViewFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/Admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/Admin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/AdminMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/AdminMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/AdminMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/AdminMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/AdminCustomerManagementView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/AdminCustomerManagementView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/AdnminEmployeeManagementView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/ProductDetails.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/EmployeeMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/EmployeeMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/StateOfProducts.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/dash.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/Dash.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/productDetails.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +56,9 @@
         <option value="Kotlin Class" />
         <option value="editable-svg" />
         <option value="Enum" />
-        <option value="Class" />
+        <option value="Interface" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -273,14 +303,29 @@
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeController.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="43" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeMenuController.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeMenuController.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="46" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/DaoImplement.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminController.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -301,7 +346,7 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DiyaShop$App.ic" NAME="App Coverage Results" MODIFIED="1683884910614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/DiyaShop$App.ic" NAME="App Coverage Results" MODIFIED="1745047156886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.example.diyashop.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/DiyaShop$Test.ic" NAME="Test Coverage Results" MODIFIED="1701085723872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

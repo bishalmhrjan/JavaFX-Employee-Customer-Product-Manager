@@ -1,14 +1,42 @@
 package com.example.diyashop.view;
 
-import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 
 public class AdminViewFactory extends CommonViewFactory{
-    private  AnchorPane   stateOfProductsAnchorPane;
+    private  Pane   customerManagementPane;
+    private  Pane   employeeManagementPane;
+    private  Pane   productManagementPane;
 
-    private final String STATE_OF_PRODUCTS_ANCHORPANE= "/fxml/otherfxml/StateOfProducts.fxml";
-    public AnchorPane getStateOfProductsAnchorPane() {
+    private final String PRODUCT_MANAGEMENT = "/fxml/otherfxml/ProductManagement.fxml";
+    private final String CUSTOMER_MANAGEMENT = "/fxml/otherfxml/AdminCustomerManagementView.fxml";
+    private final String EMPLOYEEMANAGEMENT = "/fxml/otherfxml/AdminEmployeeManagementView.fxml";
 
-        return  returnRequiredAnchorpane(stateOfProductsAnchorPane, STATE_OF_PRODUCTS_ANCHORPANE);
+
+    public Pane getProductManagementPane() {
+
+        return  returnRequiredAnchorpane(productManagementPane, PRODUCT_MANAGEMENT);
+    }
+    public Pane getCustomerManagementPane() {
+
+        return returnRequiredAnchorpane(customerManagementPane,CUSTOMER_MANAGEMENT);
+
+    }
+    public Pane getEmployeeManagementPane() {
+
+        return returnRequiredAnchorpane(employeeManagementPane,EMPLOYEEMANAGEMENT);
+
     }
 
+
+    public String getPRODUCT_MANAGEMENT() {
+        return PRODUCT_MANAGEMENT;
+    }
+
+    public String getCUSTOMER_MANAGEMENT() {
+        return CUSTOMER_MANAGEMENT;
+    }
+
+    public String getEMPLOYEEMANAGEMENT() {
+        return EMPLOYEEMANAGEMENT;
+    }
 }
