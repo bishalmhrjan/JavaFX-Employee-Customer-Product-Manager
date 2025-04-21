@@ -22,16 +22,16 @@
 
     .button{
      -fx-background-color:rgb(128,0,0);
-        -fx-text-alignment:center;
+       -fx-text-alignment:center;
        -fx-font-weight:bold;
        -fx-text-fill:white;
        -fx-pref-height:40;
-          -fx-pref-width:100;
-          -fx-alignment:center;
+       -fx-pref-width:100;
+        -fx-alignment:center;
     }
 
     .label{
     -fx-font-weight:bold;
     -fx-font-size:1.3em;
- -fx-translate-x: 10px;
+    -fx-translate-x: 10px;
     }

@@ -1,9 +1,8 @@
 package com.example.diyashop.model.backend;
 
-import com.example.diyashop.model.productstype.ProductEnum;
+import com.example.diyashop.model.entity.Product;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.UUID;
 
 @Entity

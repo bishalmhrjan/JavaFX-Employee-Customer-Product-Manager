@@ -1,9 +1,9 @@
-package com.example.diyashop.controller.admin;
+package com.example.diyashop.model.entity;
 
 import com.example.diyashop.model.backend.FilialeShop;
 
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.UUID;
 
 @Entity

@@ -12,6 +12,7 @@ module com.example.diyashop {
    // requires jakarta.cdi;
 
     requires jakarta.transaction;
+    requires jakarta.persistence;
 
     // Opening packages to Hibernate for entity access
     opens com.example.diyashop.model.backend to org.hibernate.orm.core;
@@ -32,6 +33,6 @@ module com.example.diyashop {
     exports com.example.diyashop.model.productstype;
     exports com.example.diyashop.model;
     exports com.example.diyashop.view;
-     opens com.example.diyashop.dao to javafx.fxml, org.hibernate.orm.core;
-     opens com.example.diyashop.controller.product to javafx.fxml, org.hibernate.orm.core;
+    exports com.example.diyashop.model.entity;
+    opens com.example.diyashop.model.entity to javafx.fxml, org.hibernate.orm.core;
 }

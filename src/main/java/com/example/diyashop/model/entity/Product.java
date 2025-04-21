@@ -1,9 +1,9 @@
-package com.example.diyashop.model.backend;
+package com.example.diyashop.model.entity;
 
+import com.example.diyashop.model.backend.RecieptItem;
 import com.example.diyashop.model.productstype.ProductEnum;
 
-import javax.persistence.Entity;
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;

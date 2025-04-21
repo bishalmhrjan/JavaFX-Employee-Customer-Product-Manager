@@ -1,13 +1,12 @@
 package com.example.diyashop.model.backend;
 
- import com.example.diyashop.controller.admin.Worker;
+ import com.example.diyashop.model.entity.Customer;
+ import com.example.diyashop.model.entity.Product;
+ import com.example.diyashop.model.entity.Worker;
 import org.hibernate.SessionFactory;
-import org.hibernate.boot.registry.BootstrapServiceRegistryBuilder;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
-
-import java.io.File;
 
 
 public class HibernateUtil {
@@ -16,7 +15,7 @@ public class HibernateUtil {
     private static SessionFactory buildSessionFactory() {
         try {
             Configuration configuration = new Configuration();
-            //configuration.addAnnotatedClass(com.example.diyashop.model.backend.Product.class);
+            //configuration.addAnnotatedClass(com.example.diyashop.model.entity.Product.class);
 
             configuration.addAnnotatedClass(Customer.class)
                             .addAnnotatedClass(CustomerFilialeTable.class)

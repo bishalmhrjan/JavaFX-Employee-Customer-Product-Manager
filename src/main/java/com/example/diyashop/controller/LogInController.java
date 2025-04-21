@@ -65,6 +65,7 @@ public class LogInController implements Initializable {
             if (Model.getInstance().evaluateCredential(AccountType.EMPLOYEE, this.getUserName().getText(), this.getPassword().getText())) {
 
                 Model.getInstance().getCommonViewFactory().showWorkerWindow();
+
                 return true;
             } else {
                 error_lbl.setText("Either wrong Benutzername or Password");
@@ -75,9 +76,11 @@ public class LogInController implements Initializable {
             if (Model.getInstance().getCommonViewFactory().getAccountType() == AccountType.ADMIN) {
 
                 if (Model.getInstance().evaluateCredential(AccountType.ADMIN, this.getUserName().getText(), this.getPassword().getText())) {
+
                     Model.getInstance().getCommonViewFactory().showAdminWindow();
                     return true;
                 } else {
+
                     error_lbl.setText("Keine Admin mit dieser Existiert");
                     return false;
                 }

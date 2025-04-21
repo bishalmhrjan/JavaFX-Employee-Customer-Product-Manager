@@ -1,6 +1,6 @@
 package com.example.diyashop.model.backend.manager;
 
-import com.example.diyashop.model.backend.Product;
+import com.example.diyashop.model.entity.Product;
 import com.example.diyashop.model.productstype.ProductEnum;
 
 import java.util.UUID;

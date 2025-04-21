@@ -1,5 +1,7 @@
 package com.example.diyashop.model.backend;
 
+import com.example.diyashop.model.entity.Customer;
+
 import java.util.UUID;
 import javax.persistence.*;
 

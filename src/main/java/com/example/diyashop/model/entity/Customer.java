@@ -1,9 +1,12 @@
-package com.example.diyashop.model.backend;
+package com.example.diyashop.model.entity;
 
 
 
 
-import javax.persistence.*;
+import com.example.diyashop.model.backend.Country;
+import com.example.diyashop.model.backend.CustomerFilialeTable;
+import com.example.diyashop.model.backend.Reciept;
+import jakarta.persistence.*;
 
 import java.util.ArrayList;
 import java.util.Date;

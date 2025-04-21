@@ -1,7 +1,6 @@
 package com.example.diyashop.controller.dao;
 
-import com.example.diyashop.controller.admin.Admin;
-import com.example.diyashop.controller.admin.Employee;
+import com.example.diyashop.model.entity.Employee;
 
 import java.util.List;
 

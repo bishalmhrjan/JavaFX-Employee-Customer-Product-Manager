@@ -1,7 +1,7 @@
 package com.example.diyashop.model.backend.manager;
 
 import com.example.diyashop.model.backend.Country;
-import com.example.diyashop.model.backend.Customer;
+import com.example.diyashop.model.entity.Customer;
 
 import java.util.Date;
 import java.util.UUID;

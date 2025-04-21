@@ -16,8 +16,7 @@ public class Model {
 
 
     private final DatabaseDriver database;
-    private final EmployeeModel employeeModel;
-    private boolean clientLogInSuccessFlag;
+     private boolean clientLogInSuccessFlag;
 
 
     private boolean adminLogInSuccess;
@@ -38,7 +37,6 @@ public class Model {
         this.adminLogInSuccess = false;
         this.viewFactory = new CommonViewFactory();
         this.database = new DatabaseDriver();
-        this.employeeModel = new EmployeeModel(0, "", "");
         this.adminViewFactory = new AdminViewFactory();
 
     }
@@ -61,25 +59,27 @@ public class Model {
         return database;
     }
 
-    public boolean evaluateCredential(AccountType accountType, String username, String password) {
+    public boolean evaluateCredential(AccountType accountType, String username, String password) throws SQLException {
         ResultSet resultSet = null;
         String usernameInDatabase = "";
         String passwordInDatabase = "";
 
 
         if (accountType == AccountType.ADMIN) {
-            resultSet = database.getAdmitData(username, password);
+            resultSet = database.getAdminData(username, password);
+// Remove this line: System.out.println("admin result set has datas "+resultSet.next());
+
             try {
-                while (resultSet.next()) {
-                    usernameInDatabase = resultSet.getString("Username");
-                    passwordInDatabase = resultSet.getString("Password");
+                if (resultSet.next()) {  // Changed from while to if if you only expect one row
+                    usernameInDatabase = resultSet.getString("username");
+                    passwordInDatabase = resultSet.getString("password");
+
 
                     if (username.equals(usernameInDatabase) && password.equals(passwordInDatabase)) {
                         this.adminLogInSuccess = true;
-                        return adminLogInSuccess;
+                        System.out.println("admin login is "+adminLogInSuccess);
+                        return true;
                     }
-
-
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -98,13 +98,18 @@ public class Model {
         } else {
             if (accountType == AccountType.EMPLOYEE) {
                 resultSet = database.getWorkerData(username, password);
-                try {
-                    while (resultSet.next()) {
 
-                        usernameInDatabase = resultSet.getString("Username");
-                        passwordInDatabase = resultSet.getString("Password");
+                try {
+                    if (resultSet.next()) {
+
+                        usernameInDatabase = resultSet.getString("username");
+                        passwordInDatabase = resultSet.getString("password");
+
+
                         if (username.equals(usernameInDatabase) && password.equals(passwordInDatabase)) {
                             this.employeeLogInSuccess = true;
+                            System.out.println("employee login is "+employeeLogInSuccess);
+
                             return employeeLogInSuccess;
                         }
 

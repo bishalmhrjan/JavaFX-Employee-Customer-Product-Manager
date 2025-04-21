@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="750.0" prefWidth="200.0" styleClass="left_panel" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diyashop.controller.admin.AdminMenuController">
+<BorderPane prefHeight="900.0" prefWidth="230.0" styleClass="left_panel" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diyashop.controller.admin.AdminMenuController">
 
 
 
@@ -15,8 +15,8 @@
   </top>
 
 <bottom>
-       <VBox translateY="-200">
-         <Button fx:id="employeeManagement" mnemonicParsing="false" onAction="#onEmployeeManagementClicked" text="Employee Management"  />
+       <VBox translateY="-400" stylesheets="@../../styles/adminMenu.css">
+         <Button fx:id="employeeManagement" mnemonicParsing="false" onAction="#onEmployeeManagementClicked"  text="Employee Management"  />
          <Button fx:id="customerManagement" layoutY="34.0" mnemonicParsing="false" onAction="#onCustomerManagementClicked" text="Customer Management" />
       </VBox> </bottom>
 
@@ -25,7 +25,7 @@
 
     <stylesheets>
 
-        <URL value="@../../styles/drawer.css" />
+      <!--  <URL value="@../../styles/drawer.css" /> -->
 
     </stylesheets>
 </BorderPane>

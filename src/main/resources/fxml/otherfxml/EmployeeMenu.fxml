@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Text?>
 
 <?import javafx.scene.layout.BorderPane?>
-<BorderPane prefHeight="750.0" prefWidth="200.0" styleClass="left_panel" stylesheets="@../../styles/adminMenu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diyashop.controller.employee.EmployeeMenuController">
+<BorderPane prefHeight="900.0" prefWidth="230.0" styleClass="left_panel" stylesheets="@../../styles/adminMenu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diyashop.controller.employee.EmployeeMenuController">
 
     <top>
         <VBox prefHeight="110.0" prefWidth="200.0" styleClass="logo_container" stylesheets="@../../styles/adminMenu.css">
@@ -24,7 +24,7 @@
     <left>
         <VBox layoutY="116.0" prefHeight="160.0" prefWidth="200.0" styleClass="menu_container" stylesheets="@../../styles/adminMenu.css">
             <children>
-                 <Button fx:id="receipt" mnemonicParsing="false" prefHeight="20.0" prefWidth="200.0" text="Reciept" />
+                <Button fx:id="receipt" mnemonicParsing="false" prefHeight="20.0" prefWidth="200.0" text="Reciept" />
                 <Button fx:id="search" mnemonicParsing="false" prefHeight="20.0" prefWidth="200.0" text="Search" />
                 <Button fx:id="productDetails" mnemonicParsing="false" prefWidth="200.0" text="Product Details" onAction="#onProductDetailsClicked"/>
                 <Button fx:id="logOut" mnemonicParsing="false" text="Log Out" prefWidth="200.0" onAction ="#onLogOutClick" />

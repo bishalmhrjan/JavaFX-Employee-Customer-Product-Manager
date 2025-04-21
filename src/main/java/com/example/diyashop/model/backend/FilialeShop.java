@@ -1,7 +1,6 @@
 package com.example.diyashop.model.backend;
 
-import com.example.diyashop.controller.admin.Worker;
-import org.hibernate.jdbc.Work;
+import com.example.diyashop.model.entity.Worker;
 
 import javax.persistence.*;
 import java.util.ArrayList;

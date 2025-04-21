@@ -1,11 +1,8 @@
 package com.example.diyashop.model.backend.manager;
 
-import com.example.diyashop.controller.admin.Worker;
 import com.example.diyashop.model.backend.FilialeShop;
 import com.example.diyashop.model.backend.helperClasses.DummyName;
-import org.hibernate.jdbc.Work;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 

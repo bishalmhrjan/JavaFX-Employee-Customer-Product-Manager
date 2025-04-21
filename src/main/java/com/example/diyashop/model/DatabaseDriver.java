@@ -6,13 +6,16 @@ import com.example.diyashop.view.AccountType;
 import java.sql.*;
 
 public class DatabaseDriver {
+
     private Connection connection;
     private static  AccountType accountType;
-    private final String CONNECTION = "jdbc:sqlite:diyadesktop.db";
+    private final String CONNECTION = "jdbc:mysql://localhost:3306/diyadesktop";
+    private final String DB_USER = "root";
+    private final String DB_PASS = "admin";
 
-    private final String ADMIN_QUERY_USERNAME = "select * from Admin where username='";
-    private final String EMPLOYEE_QUERY_USERNAME = "select * from Employee where username='";
-    private final String PASSWORDS = "' and Password='";
+    private final String ADMIN_QUERY_USERNAME = "select * from admin where username='";
+    private final String EMPLOYEE_QUERY_USERNAME = "select * from employee where username='";
+    private final String PASSWORDS = "' and password='";
     private final String INSERT_INTO_PRODUCT_In_TRACKER = "Insert into Product_In_Tracker(id,product_id_fk,unit,inStore,total,date,target_price) values(?,?,?,?,?,?,?)";
 
     private final String CREATE_NEW_AADMIN = "Insert into Admin(username,password) values(?,?) ";
@@ -23,39 +26,42 @@ public class DatabaseDriver {
 
         try {
 
-            this.connection = DriverManager.getConnection(CONNECTION);
+            this.connection = DriverManager.getConnection(CONNECTION, DB_USER, DB_PASS);
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
 
-        public ResultSet getAdmitData(String username, String password)  {
-
-
-            Statement statement = null;
-            ResultSet resultSet = null;
-            try{
-                statement = this.connection.createStatement();
-                resultSet = statement.executeQuery(ADMIN_QUERY_USERNAME+username+ PASSWORDS +password+"';");
-            }catch (SQLException e){
-                e.printStackTrace();
-            }
-            return  resultSet;
+    public ResultSet getAdminData(String username, String password) throws SQLException {
+        Statement statement = null;
+        ResultSet resultSet = null;
+        try {
+            statement = this.connection.createStatement();
+            String query = ADMIN_QUERY_USERNAME + username + PASSWORDS + password + "';";
+            System.out.println("Query: " + query);
+            resultSet = statement.executeQuery(query);
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
+        return resultSet;
+    }
 
 
-    public ResultSet getWorkerData(String username, String password) {
+
+    public ResultSet getWorkerData(String username, String password) throws SQLException {
 
 
         Statement statement = null;
         ResultSet resultSet = null;
         try {
             statement = this.connection.createStatement();
-            resultSet = statement.executeQuery(EMPLOYEE_QUERY_USERNAME + username + PASSWORDS + password + "';");
+            String query = EMPLOYEE_QUERY_USERNAME + username + PASSWORDS + password + "';";
+            resultSet = statement.executeQuery(query);
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
         return resultSet;
     }
 

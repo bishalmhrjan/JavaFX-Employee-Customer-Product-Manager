@@ -1,6 +1,6 @@
 package com.example.diyashop.model.backend.manager;
 
-import com.example.diyashop.controller.admin.Worker;
+import com.example.diyashop.model.entity.Worker;
 
 import java.util.UUID;
 
