@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<BorderPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.diyashop.controller.EmployeeProductDetailsController"
-             prefHeight="400.0" prefWidth="600.0">
+<BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../../styles/%20admin-style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diyashop.controller.EmployeeProductDetailsController">
     <top>
         <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Manage Products" BorderPane.alignment="CENTER" />
     </top>
@@ -25,11 +24,11 @@
         </TableView>
     </center>
     <bottom>
-        <HBox alignment="CENTER_RIGHT" spacing="10.0" style="-fx-padding: 10.0;">
+        <HBox alignment="CENTER_RIGHT" spacing="10.0" style="-fx-padding: 10.0;" styleClass="hbox">
 
              <Button fx:id="addProductButton" onAction="#handleAddProduct" text="Add Product" />
             <Button fx:id="editProductButton" onAction="#handleEditProduct" text="Edit Product" />
-            <Button fx:id="deleteProductButton" onAction="#handleDeleteProduct" text="Delete Product" />
+            <Button fx:id="deleteProductButton" onAction="#handleDeleteProduct" style="-fx-background-color: red;" text="Delete Product" />
         </HBox>
     </bottom>
 
