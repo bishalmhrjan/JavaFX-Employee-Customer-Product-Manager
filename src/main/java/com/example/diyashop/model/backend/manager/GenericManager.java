@@ -49,7 +49,7 @@ public class GenericManager<T, ID extends Serializable> {
             entity = session.get(entityType,id);
             transaction.commit();
         }  catch (Exception ex){
-             rollback(transaction);
+            rollback(transaction);
             ex.printStackTrace();
         }
         return entity;
@@ -77,15 +77,15 @@ public class GenericManager<T, ID extends Serializable> {
         try(Session session = HibernateUtil.getSessionFactory().openSession()){
             transaction =session.beginTransaction();
             T entity = session.get(entityType,id);
-                if(entity != null){
-                    session.delete(entity);
-                    System.out.println("Entity is deleted");
-                }
-                transaction.commit();
-            } catch(Exception ex){
-                rollback(transaction);
-                ex.printStackTrace();
+            if(entity != null){
+                session.delete(entity);
+                System.out.println("Entity is deleted");
             }
+            transaction.commit();
+        } catch(Exception ex){
+            rollback(transaction);
+            ex.printStackTrace();
+        }
 
     }
 
@@ -99,7 +99,7 @@ public class GenericManager<T, ID extends Serializable> {
             transaction.commit();
         } catch (Exception ex){
             rollback(transaction);
-        ex.printStackTrace();}
+            ex.printStackTrace();}
 
 
         return entities;

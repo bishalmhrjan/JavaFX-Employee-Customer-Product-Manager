@@ -91,3 +91,12 @@ start chai vayo tara db ma customer, admin,product, employee map vayeko chaina, 
 
 CSS:
 employeemenu n admin menu compare watch and apply to other
+
+admin 900h n 900 wid
+230 menu rest
+1. i need in table view some shape and size edit, and admin menu background colour round/
+2. all( reciept, customer,employee, product) ----> CRUD operation
+
+Today:
+- products empoye vs admin milaune, table view milaune, button ko level milaune
+- hibernate ma lagne DB

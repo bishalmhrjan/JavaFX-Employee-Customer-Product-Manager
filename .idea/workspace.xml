@@ -5,9 +5,80 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="admin created">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/admin-employement-management.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/admin-menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/admin-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/product-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/styles/reciept.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/AdminCustomerManagementView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/AdminCustomerManagementView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/ProductDetails.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/ProductDetails.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/goal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/goal.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/RecieptController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminEmployeeManagementService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/RecieptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/RecieptController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/Expenditure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/QuittungModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/Reciept.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/FilialeShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/FilialeShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/Reciept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/entity/Reciept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/RecieptItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/entity/RecieptItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/ToCSVMigrator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/GenericManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/GenericManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/RecieptItemManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/RecieptManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/WorkerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/WorkerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/ProductEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/model/productstype/ProductEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/AdminViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/AdminViewFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/CommonViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/diyashop/view/CommonViewFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/Admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/Admin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/admin/AdminMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/admin/AdminMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/AdminCustomerManagementView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/AdminCustomerManagement.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/AdminEmployeeManagementController.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/AdminEmployeeManagementView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/AdminEmployeeManagemen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/Anmelde.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/LogIn.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/CreateAccount.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/CreateAccount.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/Dash.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/AdminStartDash.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/DeleteProduct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/dash.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/Employee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/Employee.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/EmployeeMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/EmployeeMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/ProductDetails.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/ProductManagement.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/ProductManagement.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/Reciept.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/Reciept.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/SearchProduct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/SearchProduct.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/UpdateProduct.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/ admin-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/Search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/addProduct.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/adminMenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/bootstrapfx.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/colors.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/extrastyle/dash.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/extrastyle/drawer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/extrastyle/helpers.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/extrastyle/shapes.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/extrastyle/skeleton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/extrastyle/typographic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/immersive_scroll.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/styles/products.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/style/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/style/css/colors.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/style/css/dash.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/style/css/drawer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/style/css/helpers.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/style/css/immersive_scroll.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/style/css/shapes.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/style/css/skeleton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/style/css/theme/dark_info.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/style/css/theme/poplight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/style/css/theme/simple_info.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/style/css/typographic.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +92,8 @@
         <option value="editable-svg" />
         <option value="Enum" />
         <option value="Interface" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -220,8 +291,39 @@
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="05910a1c-c22b-4766-bd60-2bf714f6b2e2" value="TOOL_WINDOW" />
+        <entry key="c6377381-eeee-4672-b445-ab6b2debbc06" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="05910a1c-c22b-4766-bd60-2bf714f6b2e2">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/PrivateProjectExercises/DiyaShop/src/main/resources/styles" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -239,6 +341,31 @@
             </State>
           </value>
         </entry>
+        <entry key="c6377381-eeee-4672-b445-ab6b2debbc06">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/PrivateProjectExercises/DiyaShop/src/main/java/com/example/diyashop/model/backend/manager" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
@@ -253,21 +380,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/GenericManager.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/GenericManager.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/GenericManager.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/DummyDataCreator.java</url>
           <line>22</line>
@@ -295,7 +407,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/model/entity/Product.java</url>
-          <line>10</line>
+          <line>8</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -305,7 +417,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/model/entity/Product.java</url>
-          <line>15</line>
+          <line>13</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">

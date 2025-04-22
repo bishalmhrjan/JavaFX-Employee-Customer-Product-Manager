@@ -1,7 +1,7 @@
 package com.example.diyashop.model.productstype;
 
 public enum ProductEnum {
-    JACKET , T_SHIRT , SWEATER , BAG , PURSE,CERAMICS , SHOES ,SLIPPERS , TOYS , PAPER_ITEMS ,
+    JACKET, T_SHIRT , SWEATER , BAG , PURSE,CERAMICS , SHOES ,SLIPPERS , TOYS , PAPER_ITEMS ,
     SCHWALS , SOAP , TEE , METAL , POTTERY ,     NECKLACE, EAR_RINGS;
 
 

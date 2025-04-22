@@ -112,7 +112,10 @@
     -fx-border-radius: 3px;
     -fx-padding: 5px;
     -fx-font-size: 14px;
-}
+}/* Add this to your main CSS file */
+
+
+
 
 .text-field:focused {
     -fx-border-color: #3498db;

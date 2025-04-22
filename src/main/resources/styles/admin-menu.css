@@ -1,0 +1,87 @@
+/* Base styling - matches admin panel theme */
+.root {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-background-color: transparent;
+}
+/* Add this to your main CSS file */
+BorderPane, AnchorPane, VBox, HBox {
+    -fx-pref-width: 100%;
+    -fx-pref-height: 100%;
+}
+
+/* Ensure included FXML files expand properly */
+.fx-include {
+    -fx-pref-width: 100%;
+    -fx-pref-height: 100%;
+}
+/* BorderPane styling */
+.border-pane {
+    -fx-background-color: #2c3e50; /* Dark blue background */
+    -fx-padding: 0;
+    -fx-border-color: transparent;
+}
+
+/* VBox container styling */
+.vbox {
+    -fx-background-color: transparent;
+    -fx-spacing: 8px; /* Space between buttons */
+    -fx-padding: 15px;
+    -fx-alignment: TOP_CENTER;
+}
+
+/* Menu button styling */
+.button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ecf0f1;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 20px;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-cursor: hand;
+    -fx-min-width: 190px;
+    -fx-border-color: transparent;
+    -fx-effect: none;
+    -fx-transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-text-fill: #ffffff;
+}
+
+/* Button pressed effect */
+.button:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Active button state */
+.button:active, .button:focused {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(52,152,219,0.3), 5, 0, 0, 0);
+}
+
+/* Top section styling */
+#employeeMenuPane {
+    -fx-background-color: #3498db;
+    -fx-padding: 20px;
+    -fx-alignment: CENTER;
+}
+
+/* Optional: Add icon support if you add icons later */
+.button .glyph-icon {
+    -fx-fill: #ecf0f1;
+    -fx-padding: 0 10px 0 0;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 800px) {
+    .button {
+        -fx-min-width: 160px;
+        -fx-padding: 10px 15px;
+        -fx-font-size: 13px;
+    }
+}

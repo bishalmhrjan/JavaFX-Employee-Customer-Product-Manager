@@ -5,7 +5,6 @@ package com.example.diyashop.model.entity;
 
 import com.example.diyashop.model.backend.Country;
 import com.example.diyashop.model.backend.CustomerFilialeTable;
-import com.example.diyashop.model.backend.Reciept;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;

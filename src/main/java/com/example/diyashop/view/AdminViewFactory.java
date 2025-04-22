@@ -8,8 +8,8 @@ public class AdminViewFactory extends CommonViewFactory{
     private  Pane   productManagementPane;
 
     private final String PRODUCT_MANAGEMENT = "/fxml/otherfxml/ProductManagement.fxml";
-    private final String CUSTOMER_MANAGEMENT = "/fxml/otherfxml/AdminCustomerManagementView.fxml";
-    private final String EMPLOYEEMANAGEMENT = "/fxml/otherfxml/AdminEmployeeManagementView.fxml";
+    private final String CUSTOMER_MANAGEMENT = "/fxml/otherfxml/AdminCustomerManagement.fxml";
+    private final String EMPLOYEEMANAGEMENT = "/fxml/otherfxml/AdminEmployeeManagemen.fxml";
 
 
     public Pane getProductManagementPane() {

@@ -77,4 +77,7 @@ public class AdminMenuController implements Initializable {
  // Button search = (Button)list.get(1);
 
  }
+
+ public void onBusinessVisualizeClicked(ActionEvent actionEvent) {
+ }
 }

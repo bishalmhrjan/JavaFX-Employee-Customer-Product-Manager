@@ -1,5 +1,6 @@
 package com.example.diyashop.controller.admin;
 
+import com.example.diyashop.model.Model;
 import com.example.diyashop.model.productstype.ProductEnum;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
@@ -32,13 +33,25 @@ public class RecieptController implements Initializable {
 
 
     public ChoiceBox<ProductEnum> getProductName() {
-        return productName;
+                return productName;
+    }
+
+    public void setProductName(ChoiceBox<ProductEnum> productName) {
+
+
+        this.productName = productName;
+    }
+
+
+    public void setProductType(ChoiceBox<ProductEnum.ProductType> productType) {
+        this.productType = productType;
     }
 
     public ChoiceBox<ProductEnum.ProductType> getProductType() {
         return productType;
 
     }
+
 
     public TextField getSellUnitPrice() {
         return sellUnitPrice;
@@ -88,9 +101,12 @@ public class RecieptController implements Initializable {
         this.getProductName().valueProperty().addListener(e -> setProductType(getProductName().getValue()));
         this.getProductName().setValue(ProductEnum.T_SHIRT);
         this.getProductType().setValue(ProductEnum.ProductType.GOD);
+        this.getProductType().setStyle("-fx-text-fill: black; -fx-font-size: 14px;");
+        this.getProductName().setStyle("-fx-text-fill: black; -fx-font-size: 14px;");
 
 
-    productNameColumn.setCellValueFactory(new PropertyValueFactory<>("productEnum"));
+
+        productNameColumn.setCellValueFactory(new PropertyValueFactory<>("productEnum"));
     productTypeColumn.setCellValueFactory(new PropertyValueFactory<>("productType"));
     price.setCellValueFactory(new PropertyValueFactory<>("price"));
     noOfItems.setCellValueFactory(new PropertyValueFactory<>("numberOfStocks"));
@@ -135,12 +151,12 @@ public class RecieptController implements Initializable {
                     this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.COLOR_RED, ProductEnum.ProductType.COLOR_BLUE, ProductEnum.ProductType.COLOR_BLACK));
 
         }
-        //Model.getInstance().getViewFactory().setProductType(this.productType.getValue());
+       // Model.getInstance().getAdminViewFactory().setProductType(this.productType.getValue());
     }
 
     private void setJacketType() {
-        this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.WOLL_SHEEP, ProductEnum.ProductType.WOLL_SHEEP, ProductEnum.ProductType.WOLL_YAK, ProductEnum.ProductType.SILK));
-        this.getProductType().setValue(ProductEnum.ProductType.WOLL_SHEEP);
+       this.getProductType().setItems(FXCollections.observableArrayList(ProductEnum.ProductType.WOLL_SHEEP, ProductEnum.ProductType.WOLL_SHEEP, ProductEnum.ProductType.WOLL_YAK, ProductEnum.ProductType.SILK));
+       this.getProductType().setValue(ProductEnum.ProductType.WOLL_SHEEP);
     }
 
     private void setSweaterType() {

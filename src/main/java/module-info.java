@@ -1,7 +1,7 @@
 module com.example.diyashop {
     requires javafx.controls;
     requires javafx.fxml;
-    requires de.jensd.fx.glyphs.fontawesome;
+   // requires de.jensd.fx.glyphs.fontawesome;
     requires java.sql;
     requires java.desktop;
     requires kotlin.stdlib;

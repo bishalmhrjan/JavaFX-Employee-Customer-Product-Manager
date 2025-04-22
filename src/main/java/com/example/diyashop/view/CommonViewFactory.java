@@ -13,7 +13,7 @@ import java.io.IOException;
 public class CommonViewFactory {
     private final String RECIEPT_ANCHORPANE= "/fxml/otherfxml/Reciept.fxml";
     private final String SEARCH_PRODUCT_ANCHORPANE= "/fxml/otherfxml/SearchProduct.fxml";
-    private final String ANMELDUNG_DIALOG= "/fxml/otherfxml/Anmelde.fxml";
+    private final String ANMELDUNG_DIALOG= "/fxml/otherfxml/LogIn.fxml";
     private final String ADD_PRODUCT_ANCHORPANE= "/fxml/otherfxml/AddProduct.fxml";
     private final String COMMON_ANCHORPANE= "/fxml/otherfxml/Employee.fxml";
 
@@ -21,7 +21,7 @@ public class CommonViewFactory {
 
     private final String ADMIN_DIALOG= "/fxml/admin/Admin.fxml";
     private final String COMPANY_NAME="Diya Hastakala";
-    private final String PRODUCT_DETAILS= "/fxml/otherfxml/ProductDetails.fxml";
+    private final String PRODUCT_MANAGEMENT = "/fxml/otherfxml/ProductManagement.fxml";
     //Admin views
 
     private Pane addProductAnchorPane;
@@ -88,7 +88,7 @@ public class CommonViewFactory {
     }
 
     public Pane getProductDetailsPane(){
-        return returnRequiredAnchorpane(productDetails,PRODUCT_DETAILS);
+        return returnRequiredAnchorpane(productDetails, PRODUCT_MANAGEMENT);
     }
 
 

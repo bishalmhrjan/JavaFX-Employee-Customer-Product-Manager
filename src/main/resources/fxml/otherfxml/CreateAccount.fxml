@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
@@ -10,34 +9,28 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="450.0" prefWidth="600.0" stylesheets="@../../styles/login.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diyashop.controller.CreateAccountController">
+<AnchorPane prefHeight="900.0" prefWidth="900.0" styleClass="anchor-pane" stylesheets="@../../styles/login.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diyashop.controller.CreateAccountController">
    <children>
-      <VBox prefHeight="400.0" prefWidth="275.0" styleClass="login_logo_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="325.0" AnchorPane.topAnchor="0.0">
+      <VBox prefHeight="900.0" prefWidth="421.0" styleClass="login_logo_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="479.0" AnchorPane.topAnchor="0.0">
          <children>
-            <FontAwesomeIconView glyphName="HOME" size="50" styleClass="login_logo_container" />
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="login_logo_container" text="Diya Hastakala" wrappingWidth="120.490234375" />
+             <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Diya Hastakala" wrappingWidth="139.490234375" />
          </children></VBox>
-      <VBox layoutX="141.0" prefHeight="233.0" prefWidth="134.0" styleClass="log_in_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="285.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox layoutX="422.0" maxHeight="900.0" maxWidth="478.0" prefHeight="900.0" prefWidth="478.0" styleClass="log_in_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="422.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <HBox prefHeight="80.0" prefWidth="295.0">
+            <HBox prefHeight="315.0" prefWidth="438.0">
                <children>
-                  <VBox prefHeight="150.0" prefWidth="160.0">
+                  <VBox prefHeight="253.0" prefWidth="421.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Account">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Create New Account">
+
                            <VBox.margin>
                               <Insets bottom="20.0" left="20.0" top="10.0" />
                            </VBox.margin>
                         </Text>
                         <Label graphicTextGap="0.0" lineSpacing="19.0" text="Choose Account Type" textAlignment="CENTER">
-                           <font>
-                              <Font size="14.0" />
-                           </font>
+
                            <VBox.margin>
                               <Insets bottom="10.0" left="20.0" />
                            </VBox.margin>
@@ -51,18 +44,18 @@
                   </VBox>
                </children>
             </HBox>
-            <HBox prefHeight="250.0" prefWidth="300.0" styleClass="log_in_container">
+            <HBox prefHeight="391.0" prefWidth="462.0" styleClass="log_in_container">
                <children>
-                  <VBox prefHeight="246.0" prefWidth="184.0" styleClass="lbl lbl-danger">
+                  <VBox prefHeight="344.0" prefWidth="429.0" styleClass="lbl lbl-danger" translateX="5.0">
                      <children>
-                        <Label fx:id="userNameLabel" text="Username" />
+                        <Label fx:id="userNameLabel" prefHeight="39.0" prefWidth="237.0" text="Username" />
                         <TextField fx:id="userName" styleClass="input_field" />
                         <Label fx:id="passwordLabel" text="Password :" />
                         <PasswordField fx:id="password" prefHeight="19.0" prefWidth="201.0" styleClass="input_field" />
                         <Label fx:id="passwordLabel1" text="Confirm Password :" />
                         <PasswordField fx:id="confirmPassword" prefHeight="19.0" prefWidth="201.0" styleClass="input_field" />
                         
-                        <Button fx:id="createAccount" mnemonicParsing="false" prefHeight="28.0" prefWidth="188.0" styleClass="btn btn-warning" text="Create Account" translateY="20.0">
+                        <Button fx:id="createAccount" maxWidth="300.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="300.0" styleClass="btn" text="Create Account" translateY="20.0">
                            <VBox.margin>
                               <Insets left="20.0" />
                            </VBox.margin></Button>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="900.0" prefWidth="900.0" styleClass="root" stylesheets="@../../styles/login.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diyashop.controller.LogInController">
+   <children>
+      <VBox prefHeight="900.0" prefWidth="403.0" styleClass="login_logo_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="497.0" AnchorPane.topAnchor="0.0">
+         <children>
+             <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Diya Hastakala" wrappingWidth="135.490234375" />
+         </children></VBox>
+      <VBox layoutX="404.0" prefHeight="900.0" prefWidth="496.0" styleClass="log_in_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="404.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="250.0" prefWidth="459.0" styleClass="account_selector">
+               <children>
+                  <VBox prefHeight="237.0" prefWidth="469.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Log In" wrappingWidth="101.546875">
+
+                        </Text>
+                        <HBox prefHeight="26.0" prefWidth="149.0" styleClass="account_selector">
+                           <children>
+                              <Label text="Choose your Account Type:" />
+                           </children>
+                        </HBox>
+                        <ChoiceBox fx:id="chooseAccountType" prefWidth="150.0" translateX="15.0" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="-100.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="401.0" prefWidth="463.0" styleClass="log_in_container">
+               <children>
+                  <VBox prefHeight="360.0" prefWidth="451.0" styleClass="lbl lbl-danger">
+                     <children>
+                        <Label fx:id="userNameLabel" prefHeight="35.0" prefWidth="216.0" text="Username" />
+                        <TextField fx:id="userName" styleClass="input_field" stylesheets="@../../styles/login.css" />
+                        <Label fx:id="passwordLabel" text="Password" />
+                        <PasswordField fx:id="password" prefHeight="19.0" prefWidth="201.0" styleClass="input_field" stylesheets="@../../styles/login.css" />
+                        
+                        <Button fx:id="logInButton" mnemonicParsing="false" prefHeight="28.0" prefWidth="188.0" styleClass="btn" text="Log In" translateY="20.0" />
+                        <VBox prefHeight="130.0" prefWidth="416.0" translateY="25.0">
+                           <children>
+                              <Label prefHeight="29.0" prefWidth="296.0" text="Don't have Account ?">
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+      
+                              </Label>
+                              <Hyperlink fx:id="signUp" prefHeight="31.0" prefWidth="157.0" text="Sign up" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="23.0" prefWidth="296.0" styleClass="h" />
+            <Label fx:id="error_lbl" prefHeight="34.0" prefWidth="415.0" text="Error:" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

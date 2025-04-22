@@ -1,5 +1,6 @@
 package com.example.diyashop.model.backend;
 
+import com.example.diyashop.model.entity.Reciept;
 import com.example.diyashop.model.entity.Worker;
 
 import javax.persistence.*;

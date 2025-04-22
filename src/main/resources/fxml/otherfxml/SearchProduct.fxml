@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="750.0" prefWidth="600.0" styleClass="search_bar_container" stylesheets="@../../styles/Search.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"  >
+<AnchorPane prefHeight="900.0" prefWidth="600.0" styleClass="border-pane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <TextField fx:id="searchTextField" layoutX="78.0" layoutY="39.0" prefHeight="33.0" prefWidth="378.0" styleClass="textfield">
-         <font>
-            <Font size="15.0" />
-         </font>
+
       </TextField>
-      <Button fx:id="searchId" layoutX="464.0" layoutY="39.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" stylesheets="@../../styles/Search.css" text="Search">
-         <graphic>
-            <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="18" text="" />
-         </graphic>
+      <Button fx:id="searchId" layoutX="464.0" layoutY="39.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0"  text="Search">
+
       </Button>
    </children>
+   <stylesheets>
+       <URL value="@../../styles/admin-style.css" />
+   </stylesheets>
 </AnchorPane>

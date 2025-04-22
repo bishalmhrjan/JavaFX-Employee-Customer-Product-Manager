@@ -2,14 +2,17 @@
 
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="com.example.diyashop.controller.employee.EmployeeController">
+<BorderPane fx:id="borderPane"
+            xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.diyashop.controller.employee.EmployeeController">
 
     <left>
         <fx:include source="EmployeeMenu.fxml" />
     </left>
 
     <center>
-        <fx:include source="SearchProduct.fxml" />
+        <fx:include source="Reciept.fxml" />
 
     </center>
 

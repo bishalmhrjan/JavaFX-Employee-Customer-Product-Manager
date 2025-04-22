@@ -21,7 +21,8 @@
             <artifactId>weld-se-core</artifactId>
             <version>4.0.2.Final</version> </dependency>
 
-          <!--  implementation 'org.jboss.weld.se:weld-se-core:4.0.2.Final' -->
+
+            <!--  implementation 'org.jboss.weld.se:weld-se-core:4.0.2.Final' -->
             <dependency>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-controls</artifactId>

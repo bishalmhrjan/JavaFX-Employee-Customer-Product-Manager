@@ -1,9 +1,7 @@
 package com.example.diyashop.model.backend;
 
- import com.example.diyashop.model.entity.Customer;
- import com.example.diyashop.model.entity.Product;
- import com.example.diyashop.model.entity.Worker;
-import org.hibernate.SessionFactory;
+ import com.example.diyashop.model.entity.*;
+ import org.hibernate.SessionFactory;
  import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;

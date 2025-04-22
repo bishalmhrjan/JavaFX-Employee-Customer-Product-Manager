@@ -1,6 +1,0 @@
-package com.example.diyashop.model;
-
-public enum Expenditure {
-
-    DAILY_EXPENDITURE,WEEKLY_EXPENDITURE,MONTHLY_EXPENDITURE,HALF_YEARLY_EXPENDITURE,YEARLY_EXPENDITURE;
-}

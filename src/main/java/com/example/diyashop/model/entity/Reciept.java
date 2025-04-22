@@ -1,6 +1,6 @@
-package com.example.diyashop.model.backend;
+package com.example.diyashop.model.entity;
 
-import com.example.diyashop.model.entity.Customer;
+import com.example.diyashop.model.backend.FilialeShop;
 
 import javax.persistence.*;
 import java.util.ArrayList;
