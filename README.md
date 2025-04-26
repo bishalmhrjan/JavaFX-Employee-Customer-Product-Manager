@@ -115,11 +115,11 @@ Complete CRUD operations for all entities.
 Here is some Screenshots of Desktop App.
 ### Admin Customer Management 
 ![App Interface](META-INF/image/Admin-CustomerManagement.png)
-**LogIn-View**
+### LogIn-View
 ![App Interface](META-INF/image/LogIn-View.png)
-**Employee Reciept Management**
+### Employee Reciept Management
 ![App Interface](META-INF/image/Employee-RecieptManagement.png)
-**<h3>Employee Product Management**
+### Employee Product Management
 ![App Interface](META-INF/image/Employee-ProductManagement.png)
-**Admin Customer Management**
+### Admin Customer Management
 ![App Interface](META-INF/image/Admin-CustomerManagement.png)
