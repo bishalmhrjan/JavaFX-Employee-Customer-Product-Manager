@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="" />
-=======
-    <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="admin created">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/Admin-CustomerManagement.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/Admin-Employeemanagement.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/Admin-Recieptt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/Employee-ProductManagement.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/Employee-RecieptManagement.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/image/LogIn-View.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/Reciept.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/Reciept.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
->>>>>>> returnToDiya
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,15 +45,12 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-<<<<<<< HEAD
-=======
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
->>>>>>> returnToDiya
   <component name="ProjectId" id="2P5cL5TL3dKxZO9FiKNJt4QpBkZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -169,16 +167,11 @@
       </method>
     </configuration>
     <list>
-<<<<<<< HEAD
-      <item itemvalue="Application.HelloApplication" />
-      <item itemvalue="Application.App" />
-=======
       <item itemvalue="Application.HibernateTest" />
       <item itemvalue="Application.App" />
       <item itemvalue="Application.CustomerManager" />
       <item itemvalue="Application.DummyDataCreator" />
       <item itemvalue="Application.ProductManager" />
->>>>>>> returnToDiya
     </list>
     <recent_temporary>
       <list>
@@ -373,14 +366,11 @@
         <PinnedItemInfo parentTag="javax.persistence.PersistenceException" memberName="cause" />
       </pinned-members>
     </pin-to-top-manager>
-<<<<<<< HEAD
-=======
     <watches-manager>
       <configuration name="Application">
         <watch expression="((MappingException)((MappingException)ex).cause).backtrace" custom="org.hibernate.MappingException" />
       </configuration>
     </watches-manager>
->>>>>>> returnToDiya
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

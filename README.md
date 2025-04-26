@@ -112,4 +112,8 @@ Object-relational mapping benefits
 
 Complete CRUD operations for all entities
 
-
+![App Interface](src/main/resources/image/Admin-CustomerManagement.png)
+![App Interface](src/main/resources/image/Login-View.png)
+![App Interface](src/main/resources/image/Employee-RecieptManagement.png)
+![App Interface](src/main/resources/image/Employee-ProductManagement.png)
+![App Interface](src/main/resources/image/Admin-CustomerManagement.png)
