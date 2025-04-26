@@ -1,6 +1,17 @@
 # 📦 JavaFX Desktop Application – Customer, Product & Employee Management
 A robust desktop application built using Client-Server architecture with MVC pattern, implementing an e-commerce shop service with Hibernate backend and JavaFX frontend. This project demonstrates expertise in database management, Hibernate, algorithms, security, and clean code practices.
 ---
+Here is some Screenshots of Desktop App.
+### Admin Customer Management
+![App Interface](META-INF/image/Admin-CustomerManagement.png)
+### LogIn-View
+![App Interface](META-INF/image/LogIn-View.png)
+### Employee Reciept Management
+![App Interface](META-INF/image/Employee-RecieptManagement.png)
+### Employee Product Management
+![App Interface](META-INF/image/Employee-ProductManagement.png)
+### Admin Customer Management
+![App Interface](META-INF/image/Admin-CustomerManagement.png)
 
 ## 🚀 Features
 
@@ -112,14 +123,3 @@ Object-relational mapping benefits
 
 Complete CRUD operations for all entities.
 
-Here is some Screenshots of Desktop App.
-### Admin Customer Management 
-![App Interface](META-INF/image/Admin-CustomerManagement.png)
-### LogIn-View
-![App Interface](META-INF/image/LogIn-View.png)
-### Employee Reciept Management
-![App Interface](META-INF/image/Employee-RecieptManagement.png)
-### Employee Product Management
-![App Interface](META-INF/image/Employee-ProductManagement.png)
-### Admin Customer Management
-![App Interface](META-INF/image/Admin-CustomerManagement.png)
