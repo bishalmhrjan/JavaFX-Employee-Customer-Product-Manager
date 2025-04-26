@@ -17,7 +17,7 @@
                      <graphic>
                         <ImageView fx:id="tea1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171115_180024-300x300.jpg" />
+                              <Image url="@tea.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -26,7 +26,7 @@
                      <graphic>
                         <ImageView fx:id="tea2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171115_180056-300x300.jpg" />
+                              <Image url="@tea1.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -35,7 +35,7 @@
                      <graphic>
                         <ImageView fx:id="tea3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171115_180107-300x300.jpg" />
+                              <Image url="@tea2.jpg" />
                            </image>
                         </ImageView>
                      </graphic>

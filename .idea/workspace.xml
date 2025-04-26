@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="" />
+=======
+    <list default="true" id="0ddf81d6-f2f1-408f-a1da-4f0b69cfd5ae" name="Changes" comment="admin created">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/Reciept.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/otherfxml/Reciept.fxml" afterDir="false" />
+    </list>
+>>>>>>> returnToDiya
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,18 +22,37 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="editable-svg" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
         <option value="FxmlFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Jpause" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+>>>>>>> returnToDiya
   <component name="ProjectId" id="2P5cL5TL3dKxZO9FiKNJt4QpBkZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -36,14 +63,16 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/FilesExercises/DiyaShop/src/main/resources/worker&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;returnToDiya&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/udemy-courses/minh-book hibernate-jsp-course/bookstore1&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -51,18 +80,32 @@
       <recent name="com.example.diyashop.view" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PrivateProjectExercises\DiyaShop\svgfiles" />
+      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\style" />
+      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources" />
+      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\styles" />
       <recent name="D:\FilesExercises\DiyaShop\src\main\resources\worker" />
-      <recent name="D:\FilesExercises\DiyaShop\src\main\java\com\example\diyashop\controller\worker" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\FilesExercises\DiyaShop\src\main\resources" />
-      <recent name="D:\FilesExercises\DiyaShop\src\main\resources\Admin" />
+      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\styles\extrastyle" />
+      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\fxml\admin" />
+      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\fxml" />
+      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\fxml\admin\otherfxml" />
+      <recent name="D:\PrivateProjectExercises\DiyaShop\src\main\resources\fxml\otherfxml" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.diyashop.controller" />
+      <recent name="com.example.diyashop" />
     </key>
   </component>
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.diyashop.App" />
       <module name="DiyaShop" />
+      <option name="PROGRAM_PARAMETERS" value="--add-modules javafx.controls,javafx.fxml,javafx.graphics,java.sql --add-reads com.example.diyashop=lombok" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.diyashop.*" />
@@ -73,12 +116,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.HelloApplication" />
+    <configuration name="CustomerManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.model.backend.manager.CustomerManager" />
       <module name="DiyaShop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.diyashop.controller.*" />
+          <option name="PATTERN" value="com.example.diyashop.model.backend.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DummyDataCreator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.model.backend.manager.DummyDataCreator" />
+      <module name="DiyaShop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.diyashop.model.backend.manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HibernateTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.model.HibernateTest" />
+      <module name="DiyaShop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.diyashop.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.diyashop.model.backend.manager.ProductManager" />
+      <module name="DiyaShop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.diyashop.model.backend.manager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,13 +169,24 @@
       </method>
     </configuration>
     <list>
+<<<<<<< HEAD
       <item itemvalue="Application.HelloApplication" />
       <item itemvalue="Application.App" />
+=======
+      <item itemvalue="Application.HibernateTest" />
+      <item itemvalue="Application.App" />
+      <item itemvalue="Application.CustomerManager" />
+      <item itemvalue="Application.DummyDataCreator" />
+      <item itemvalue="Application.ProductManager" />
+>>>>>>> returnToDiya
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="Application.ProductManager" />
+        <item itemvalue="Application.DummyDataCreator" />
+        <item itemvalue="Application.CustomerManager" />
+        <item itemvalue="Application.HibernateTest" />
       </list>
     </recent_temporary>
   </component>
@@ -106,11 +199,72 @@
       <option name="presentableId" value="Default" />
       <updated>1682750325597</updated>
     </task>
+    <task id="LOCAL-00001" summary="viewfactory code is updated and made readable by deleting string file path in every method">
+      <created>1690021400332</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690021400332</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Choise box in fxml is added and respective variable in ProductController is defined.">
+      <created>1690024493096</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690024493096</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Admin, worker class is created. &#10;passwort is encrypted and decrypted.">
+      <created>1691331668885</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691331668885</updated>
+    </task>
+    <task id="LOCAL-00004" summary="admin created">
+      <option name="closed" value="true" />
+      <created>1745234179441</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745234179441</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="05910a1c-c22b-4766-bd60-2bf714f6b2e2" value="TOOL_WINDOW" />
+        <entry key="c6377381-eeee-4672-b445-ab6b2debbc06" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="05910a1c-c22b-4766-bd60-2bf714f6b2e2">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/PrivateProjectExercises/DiyaShop/src/main/resources/styles" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -119,7 +273,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="returnToDiya" />
                       </list>
                     </value>
                   </entry>
@@ -128,27 +282,89 @@
             </State>
           </value>
         </entry>
+        <entry key="c6377381-eeee-4672-b445-ab6b2debbc06">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/PrivateProjectExercises/DiyaShop/src/main/java/com/example/diyashop/model/backend/manager" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="viewfactory code is updated and made readable by deleting string file path in every method" />
+    <MESSAGE value="Choise box in fxml is added and respective variable in ProductController is defined." />
+    <MESSAGE value="Admin, worker class is created. &#10;passwort is encrypted and decrypted." />
+    <MESSAGE value="admin created" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin created" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java</url>
-          <line>224</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/model/backend/manager/DummyDataCreator.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java</url>
-          <line>194</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeMenuController.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/view/ViewFactory.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminController.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/admin/AdminMenuController.java</url>
           <line>54</line>
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/employee/EmployeeController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/model/entity/Product.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/controller/dao/AdminDao.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/diyashop/model/entity/Product.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="57" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
@@ -157,6 +373,14 @@
         <PinnedItemInfo parentTag="javax.persistence.PersistenceException" memberName="cause" />
       </pinned-members>
     </pin-to-top-manager>
+<<<<<<< HEAD
+=======
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((MappingException)((MappingException)ex).cause).backtrace" custom="org.hibernate.MappingException" />
+      </configuration>
+    </watches-manager>
+>>>>>>> returnToDiya
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,0 +1,102 @@
+- main app banda vayesi, open vako ni banda hunu paryo
+- drag option ni rakhnu paryo
+- ra design ramro hune gari garnu paryo
+
+
+- Focus here more on frontend fx, as i have already spring boot done in one project
+- Admin ko reciept ma search bar ko pannel auncha
+
+Tomorrow goal:
+Core Business Operations:
+
+Product Management:
+
+Detailed Product Catalog: Beyond basic name and price, include fields for materials used, creation time, size/dimensions, weight, variations (colors, styles), stock levels, minimum stock alerts, and even digital photos/videos.
+Categorization & Tagging: Implement a robust system for categorizing products (e.g., "Jewelry," "Pottery," "Textiles") and adding relevant tags (e.g., "Hand-painted," "Organic Cotton," "Limited Edition") for easy filtering and searching.
+Recipe/Process Tracking: For complex items, allow storing the "recipe" or steps involved in making the product, including material quantities and estimated time. This can help with cost calculation and production planning.
+Pricing Rules & Discounts: Implement the ability to set tiered pricing, bulk discounts, seasonal sales, and promotional codes.
+Product Bundles: Allow creating and managing product bundles with special pricing.
+Digital Asset Management: Integrate a way to store and link product photos, videos, and even care instructions.
+Inventory Management:
+
+Real-time Stock Levels: Display current stock for each product and its variations.
+Low Stock Alerts: Automatically notify admins/employees when stock levels fall below a predefined threshold.
+Stock Adjustment Logs: Track any manual adjustments to inventory (e.g., spoilage, returns, manual counts) with reasons and timestamps.
+Supplier Management: Maintain a database of suppliers for raw materials, including contact information, pricing, lead times, and past orders.
+Purchase Order Generation: Allow creating and managing purchase orders for restocking materials.
+Inventory Valuation Reports: Generate reports on the total value of the current inventory.
+Order Management:
+
+Order Tracking: Record and track the status of orders (e.g., "Pending," "Processing," "Shipped," "Delivered," "Cancelled").
+Customer Order Details: Capture all necessary customer information, ordered items, quantities, shipping addresses, and payment status.
+Invoice Generation: Automatically generate professional-looking invoices that can be printed or emailed.
+Shipping Integration: Potentially integrate with local or popular shipping providers to calculate shipping costs and track shipments.
+Return/Exchange Management: Implement a system for processing returns and exchanges, adjusting inventory accordingly, and potentially issuing refunds or store credit.
+Customer Relationship Management (CRM):
+
+Customer Database: Store customer contact information, purchase history, order preferences, and potentially notes on interactions.
+Customer Segmentation: Allow categorizing customers based on purchase history, interests, or other criteria for targeted communication.
+Loyalty Programs: Implement a system for rewarding repeat customers with discounts or special offers.
+Communication Logs: Track email or other direct communications with customers.
+II. Employee & Admin Specific Features:
+
+Employee Management (Admin Only):
+
+User Account Creation & Management: Create, edit, and deactivate employee and admin accounts.
+Role-Based Access Control: Precisely define the permissions and functionalities accessible to each role (e.g., employee can only manage orders and update product stock, while admin can manage everything).
+Activity Logs: Track employee logins, actions performed within the system, and any modifications made to data.
+Admin Dashboard:
+
+Key Performance Indicators (KPIs): Display a visual overview of important business metrics like total sales, order volume, low stock items, pending orders, and customer growth over different time periods.
+Sales Reports: Generate detailed sales reports by product, category, date range, customer, etc.
+Inventory Reports: Provide insights into current stock levels, low stock items, and inventory turnover.
+Customer Reports: Analyze customer demographics, purchase behavior, and loyalty.
+Financial Summaries: Offer basic financial overviews (e.g., total revenue, potential profit margins).
+III. Enhanced Desktop Experience:
+
+Customizable Dashboard: Allow users (especially admins) to customize their dashboard with the widgets and information most relevant to them.
+Notifications & Alerts: Implement a system for real-time notifications for events like low stock, new orders, pending returns, or important system messages.
+Calendar & Task Management: Integrate a simple calendar for scheduling production tasks, deadlines, or marketing activities.
+Reporting & Analytics:
+Custom Report Generation: Allow users to create their own reports with specific data fields and filters.
+Data Export: Enable exporting data in various formats (CSV, Excel) for further analysis.
+Visualizations: Present data through charts and graphs for easier understanding.
+Search & Filtering: Implement powerful search functionality across all modules (products, orders, customers, etc.) with advanced filtering options.
+User Preferences: Allow users to customize aspects of the application like themes, date/time formats, and default views.
+Offline Mode (Potentially): If feasible, consider allowing some basic functionalities to work offline, with data synchronization when an internet connection is restored.
+Integration with Local Hardware:
+Barcode Scanner Support: For efficient inventory management and order processing.
+Label Printing: For printing product labels or shipping labels.
+Audit Trails: Maintain detailed logs of all data modifications, including who made the change and when. This is crucial for accountability.
+Creative & Unique Ideas:
+
+"Maker's Corner" Module: A space to document the inspiration, stories, and processes behind specific handmade items. This can add a personal touch and marketing value.
+Material Sourcing Tracker: Help track the origin and sustainability of materials used, which can be a selling point for ethically conscious customers.
+Collaborative Production Planning (for shops with multiple makers): Allow assigning production tasks to specific employees and tracking their progress.
+Integration with Local Craft Events/Markets: A feature to track participation in local events and potentially manage inventory and sales related to those events.
+Visual Workflow Designer: For complex production processes, a visual tool to map out the steps and dependencies.
+
+
+Todays Goal first:
+ 1) Admin can give right employee to be admin, but not employee to admin.
+ 2) Admin have authority to CRUD accounts of employee and Customer.
+
+
+- employee can watch customer detail, but not deactivate it and its order.
+- product detail deactivate button only for admin. user log k ma state cha, tei anusar fxml file wa checkbox activate or deactivate garnu parne cha.
+
+
+start chai vayo tara db ma customer, admin,product, employee map vayeko chaina, infact table ni create vayeko chaina
+
+
+CSS:
+employeemenu n admin menu compare watch and apply to other
+
+admin 900h n 900 wid
+230 menu rest
+1. i need in table view some shape and size edit, and admin menu background colour round/
+2. all( reciept, customer,employee, product) ----> CRUD operation
+
+Today:
+- products empoye vs admin milaune, table view milaune, button ko level milaune
+- hibernate ma lagne DB

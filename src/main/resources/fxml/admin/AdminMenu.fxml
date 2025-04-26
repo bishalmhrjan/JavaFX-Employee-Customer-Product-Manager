@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="900.0"
+            prefWidth="230.0"
+            style="-fx-background-color: #3498db;;"
+            styleClass="border-pane"
+            stylesheets="@../../styles/admin-menu.css"
+            xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.diyashop.controller.admin.AdminMenuController">
+
+
+
+  <top>
+        <BorderPane fx:id="employeeMenuPane" style="-fx-background-color: #3498db;" styleClass="border-pane" translateY="200" />
+  </top>
+
+<bottom>
+       <VBox prefHeight="155.0" prefWidth="174.0" styleClass="vbox" stylesheets="@../../styles/adminMenu.css" translateY="-640">
+         <Button fx:id="employeeManagement" mnemonicParsing="false" onAction="#onEmployeeManagementClicked" text="Employee Management"  />
+         <Button fx:id="customerManagement" layoutY="34.0" mnemonicParsing="false" onAction="#onCustomerManagementClicked" text="Customer Management"   />
+
+      </VBox> </bottom>
+</BorderPane>

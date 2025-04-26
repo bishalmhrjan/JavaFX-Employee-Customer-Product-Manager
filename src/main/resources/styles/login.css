@@ -1,77 +1,151 @@
+/* Base styling */
+.root {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-background-color: #f5f7fa;
+}
 
-/*rgb(128,0,0)*/
-.log_in_container{
-    -fx-background-color:#EEEEEE;
-    -fx-padding-left:10px;
+/* AnchorPane styling */
+.anchor-pane {
+    -fx-background-color: linear-gradient(to right, #ffffff 0%, #ffffff 45%, #f5f7fa 45%, #f5f7fa 100%);
+}
 
+/* Logo container styling */
+.login_logo_container {
+    -fx-alignment: CENTER;
+    -fx-spacing: 15px;
+    -fx-padding: 40px;
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+}
+
+.login_logo_container .text {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-fill: white;
+}
+
+/* Login container styling */
+.log_in_container {
+    -fx-alignment: CENTER;
+    -fx-spacing: 20px;
+    -fx-padding: 40px 30px;
+    -fx-background-color: transparent;
+}
+
+/* Text styling */
+.text {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-fill: #2c3e50;
+}
+
+/* Form elements styling */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: normal;
+}
+
+.account_selector .label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #7f8c8d;
+}
+
+/* Input field styling */
+.input_field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-padding: 8px 12px;
+    -fx-font-size: 24px;
+    -fx-pref-height: 35px;
+    -fx-pref-width: 250px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 3, 0, 0, 1);
+}
+
+.input_field:focused {
+    -fx-border-color: #3498db;
+    -fx-effect: dropshadow(three-pass-box, rgba(52,152,219,0.2), 5, 0, 0, 1);
+}
+
+/* ChoiceBox styling */
+.choice-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-pref-width: 250px;
+    -fx-pref-height: 35px;
+}
+
+.choice-box .arrow {
+    -fx-background-color: #3498db;
+}
+
+.choice-box .context-menu {
+    -fx-background-color: white;
+    -fx-border-color: #e0e0e0;
+}
+
+/* Button styling */
+.btn {
+    -fx-background-color: linear-gradient(to bottom, #3498db, #2980b9);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 4px;
+    -fx-cursor: hand;
+    -fx-pref-width: 250px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 1);
+}
+
+.btn:hover {
+    -fx-background-color: linear-gradient(to bottom, #3aa0e6, #2c8fd8);
+}
+
+.btn:pressed {
+    -fx-background-color: #2980b9;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 3, 0, 0, 1);
+}
+
+/* Hyperlink styling */
+.hyperlink {
+    -fx-text-fill: #3498db;
+    -fx-border-color: transparent;
+    -fx-underline: true;
+    -fx-font-size: 14px;
+    -fx-padding: 0;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #2980b9;
+}
+
+/* Error label styling */
+#error_lbl {
+    -fx-text-fill: #e74c3c;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 0 0 0;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .anchor-pane {
+        -fx-background: linear-gradient(to bottom, #ffffff 0%, #ffffff 40%, #f5f7fa 40%, #f5f7fa 100%);
     }
 
+    .login_logo_container {
+        -fx-padding: 20px;
+    }
 
-/*logo container styles */
-.login_logo_container {
-    -fx-background-color:rgb(128,0,0);
+    .log_in_container {
+        -fx-padding: 30px 20px;
+    }
 
--fx-alignment:center;
-}
-
-.login_logo_container Text{
--fx-font-size:2em;
--fx-fill:white;
--fx-font-weight:bold;
-}
-
-.login_logo_container FontAwesomeIconView{
-    -fx-fill:#ea9999;
-}
-/*Account Selector choice box*/
-
-.account_selector{
-    -fx-background-color:#ECF39E;
-
-}
-
-#choice-box-menu{
--fx-background-color:rgb(128,0,0);
-}
-
-#choice-prompt-text{
-    -fx-font-weight:bold;
-}
-
-.login_form_container {
-    -fx-spacing: 5;
-    -fx-alignment: top_left;
-}
-
-.login_form_container Label {
-    -fx-font-size: 1.1em;
-    -fx-font-weight: bold;
-}
-
-.input_field{
--fx-background-color:#FFFFFF;
--fx-pref_height:35;
--fx-font-size:1.5em;
-}
-
-.login_form_container Button{
-    -fx-background-color:rgb(128,0,0);
-    -fx-text-fill:#FFFFFF;
-    -fx-font-size:1.5em;
-}
-
-.login_form_container MenuBotton{
-    -fx-background-color:rgb(128,0,0);
-    -fx-text-fill:#FFFFFF;
-    -fx-font-size:1.5em;
-}
-
-.login_form_container Button:hover{
-    -fx-cursor:hand;
-}
-
-.error_lbl{
-    -fx-text-fill:#FF0000;
-    -fx-alignment:center-left;
-    -fx-font-weight:bold;
+    .input_field, .choice-box, .btn {
+        -fx-pref-width: 200px;
+    }
 }

@@ -1,208 +1,83 @@
 package com.example.diyashop.controller.admin;
 
-import com.example.diyashop.controller.CommonMenuController;
 import com.example.diyashop.model.Model;
 import com.example.diyashop.view.AdminOptionView;
-import com.example.diyashop.view.CommonOptionView;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
-import javafx.scene.control.MenuButton;
-import javafx.scene.control.MenuItem;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
 
+import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 
-public class AdminMenuController extends CommonMenuController {
+public class AdminMenuController implements Initializable {
+
+
+
+ @FXML public Button customerManagement;
+ @FXML public Button employeeManagement;
+
 
 
  @FXML
- private Button addProduct;
-
- @FXML
- private Button stateOfProducts;
-
-
- @FXML private MenuButton businessChart;
- @FXML
- private MenuItem dailyChart;
- @FXML
- private MenuItem weeklyCharts;
-
-
- @FXML
- private MenuItem monthlyChart;
-
- @FXML
- private MenuItem quarterlyChart;
- @FXML
- private MenuItem halfYearlChart;
- @FXML
- private MenuItem yearlyChart;
-
-@FXML
-private MenuButton expenditureChart;
-
-
- @FXML
- private MenuItem dailyExpenditrueChart;
- @FXML
- private MenuItem weeklyExpenditrueChart;
- @FXML
- private MenuItem monthlyExpenditrueChart;
- @FXML
- private MenuItem quarterlyExpenditrueChart;
- @FXML
- private MenuItem halfYearlyExpenditrueChart;
- @FXML
- private MenuItem yearlyExpenditrueChart;
-
-
- public Button getAddProduct() {
-  return addProduct;
- }
+ private BorderPane employeeMenuPane;
 
 
 
-
- public Button getStateOfProducts() {
-  return stateOfProducts;
- }
-
-
- public MenuItem getDailyChart() {
-  return dailyChart;
- }
-
- public MenuItem getWeeklyCharts() {
-  return weeklyCharts;
- }
-
- public MenuItem getMonthlyCharts() {
-  return monthlyChart;
- }
-
- public MenuItem getQuarterlyChart() {
-  return quarterlyChart;
- }
-
- public MenuItem getHalfYearlChart() {
-  return halfYearlChart;
- }
-
- public MenuItem getYearlyChart() {
-  return yearlyChart;
- }
-
- public MenuButton getExpenditureChart() {
-  return expenditureChart;
- }
-
- public MenuItem getDailyExpenditrueChart() {
-  return dailyExpenditrueChart;
- }
-
- public MenuItem getWeeklyExpenditrueChart() {
-  return weeklyExpenditrueChart;
- }
-
- public MenuItem getMonthlyExpenditrueChart() {
-  return monthlyExpenditrueChart;
- }
-
- public MenuItem getQuarterlyExpenditrueChart() {
-  return quarterlyExpenditrueChart;
- }
-
- public MenuItem getHalfYearlyExpenditrueChart() {
-  return halfYearlyExpenditrueChart;
- }
-
- public MenuItem getYearlyExpenditrueChart() {
-  return yearlyExpenditrueChart;
- }
 
  @Override
  public void initialize(URL url, ResourceBundle resourceBundle) {
-  this.getAddProduct().setOnAction(e -> onAddProductClicked());
-  this.getStateOfProducts().setOnAction(e->onStateOfProductsClicked());
-  //Charts Begins
-  this.getDailyChart().setOnAction(e->onDailyChartViewClicked());
-  this.getWeeklyCharts().setOnAction(e->onWeeklyChartViewClicked());
-  this.getMonthlyCharts().setOnAction(e->onMonthlyChartViewClicked());
-  this.getQuarterlyChart().setOnAction(e->onQuarterlyChartViewClicked());
-  this.getHalfYearlChart().setOnAction(e->onHalfYearChartViewClicked());
-  this.getYearlyChart().setOnAction(e->onYearlyChartViewClicked());
 
-   //Expenditure Begins
-  this.getDailyExpenditrueChart().setOnAction(e->onDailyExpenditureClicked());
-  this.getWeeklyExpenditrueChart().setOnAction(e->onWeeklyExpenditureClicked());
-  this.getMonthlyExpenditrueChart().setOnAction(e->onMonthlyExpenditureClicked());
-  this.getQuarterlyExpenditrueChart().setOnAction(e->onQuarterlyExpenditureClicked());
-  this.getHalfYearlyExpenditrueChart().setOnAction(e->onHalfYearlyExpenditureClicked());
-  this.getYearlyExpenditrueChart().setOnAction(e->onYearlyExpenditureClicked());
+  System.out.println("AdminMenuController initialize() called!");
+  loadEmployeMenuPane();
+
 
  }
 
+ public Pane loadEmployeMenuPane() {
+  System.out.println("ui getting from employee menu!!!");
 
+  try {
+   FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/otherfxml/EmployeeMenu.fxml"));
+   BorderPane employeeMenu = loader.load(); // ✅ This is the actual UI
+   if(employeeMenu == null){
+    System.out.println("I m null, employeemenu");
+   }
+   System.out.println("EmployeeMenu loaded successfully.");
 
- public void onAddProductClicked() {
-  Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.ADD_PRODUCT);
+   employeeMenuPane.setCenter(employeeMenu);
+  } catch (IOException e) {
+   e.printStackTrace();
+  }
+  return employeeMenuPane;
  }
 
 
-
-
-
- public void onStateOfProductsClicked() {
-  Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.STATE_OF_PRODUCTS);
+ public void onEmployeeManagementClicked(ActionEvent actionEvent) {
+  System.out.println("employee management got clicked!!!");
+  Model.getInstance().getAdminViewFactory().getAdminOptionViewObjectProperty().set(AdminOptionView.EMPLOYEE_MANAGEMENT);
  }
 
-
-
-
- public void onDailyChartViewClicked() {
-  Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.DAILY_VIEW);
+ public void onCustomerManagementClicked(ActionEvent actionEvent) {
+  System.out.println("Customer management got clicked!!!");
+  Model.getInstance().getAdminViewFactory().getAdminOptionViewObjectProperty().set(AdminOptionView.CUSTOMER_MANAGEMENT);
  }
 
- public void onWeeklyChartViewClicked() {
-  Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.WEEKLY_VIEW);
+ public void onRecieptAdminClicked(){
+  ObservableList<Node> list = loadEmployeMenuPane().getChildren();
+  Button reciept = (Button)list.get(0);
+  reciept.setOnAction(e-> System.out.println("reciept button in admin is activated"));
+ // Button search = (Button)list.get(1);
+
  }
 
- public void onMonthlyChartViewClicked() {
-  Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.MOTHLY_VIEW);
+ public void onBusinessVisualizeClicked(ActionEvent actionEvent) {
  }
-
-
- public void onQuarterlyChartViewClicked() {
-  Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.QUATERLY_VIEW);
- }
-
- public void onHalfYearChartViewClicked() {
-  Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.HALF_YEARLY_VIEW);
- }
-
- public void onYearlyChartViewClicked() {
-  Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.YEARLY_VIEW);
- }
-
- public void onDailyExpenditureClicked() {
-  Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.DAILY_EXPENDITURE);
- }
- public void onWeeklyExpenditureClicked() {
-  Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.WEEKLY_EXPENDITURE);
- }
- public void onMonthlyExpenditureClicked() {
-  Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.MONTHLY_EXPENDITURE);
- }
- public void onQuarterlyExpenditureClicked() {
-  Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.QUARTERLY_EXPENDITURE);
- }
-
- public void onHalfYearlyExpenditureClicked() {
-  Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.HALF_YEARLY_EXPENDITURE);
- }
- public void onYearlyExpenditureClicked() {
-  Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminOptionView.YEARLY_EXPENDITURE);
- }
-
 }

@@ -1,0 +1,143 @@
+1.Account has two type: Admin and worker.
+2.
+
+
+
+
+//Product
+1.it has name, stocks, bought price, target price, discount price, category_id,
+added,sold
+2. Search bar
+
+Sonntag:
+-All Products searchable hunu paryo. Option euta matra ni search hunu paryo
+-products haru image ma, grid ma dekhinu paryo. ra stock number haru Green ma hunu paryo, yedi tanna xa vane.
+ra last 5 vanda kam xa vane, red ma dekhinu paryo.
+image
+tesko tala number of stocks dekhinu paryo, euta box ma.
+
+-Search garne chai arrow down wa textfield search bar ko use garne.textfield ko use gareko ramro hola, ali new ni hunxa malai.
+-search list ma kei ni vetena vane, kei ni nadekhaune!
+-search ko result haru box ma dekhi nu paryo. ra dherai nai xa vane, next button use garera arko page ma hunu paryo.
+weekly, monthly, daily ko expenditure hos ya business details, table view ma application ma nai dekhaune. tespaxi details
+haru lai diagramm ma convert garne.
+
+
+-CSS manage:
+-color change, logo change and logo color changed,button haru ramro banaune
+- diagramm lai ramro banaune.ani deploy garne
+
+Internet ma connect garne:
+- android app ma every sell reciept ko details as notification aune banaune.
+
+2nd: Calendar banaune, artifact banaune ra tyo mero project ma use garne as artifact. tyo calendar bata nai from ra date to date picker jasari banaune.
+
+
+ Css
+-shadow
+
+
+Todays goal:
+
+productEnum search bar and should give result productEnum name, type and pic
+image gallery?
+
+Functions to add:
+- CRUD in database
+-LogInLDAP--> only work for webapps, also not good idea.
+-Passwort Save in Encryption done
+-Create new account for admin, worker, and admin can be only created when admin is logged in, otherwise not
+-Date Artifacts save in local
+-Database Pool
+-How to save data in cache, reduce read and write operation in database
+
+Main functions to add:
+-java fx css background with orange, shiny 60,30, and 10 % rule frontend
+-Menu, sub menu with Css, JS
+- daily, weekly, monthly sales, expenditure in pie chart, chart, line chart with diff color in
+main section with multiple tabs
+- customer details with QR-code, name, lastName, sex, nationality(200 Nations), resident(200 Nations), age, nepal(Primary KEy= Username), With Reciept Number key generator,
+and qr code scan n save in web database/server
+
+
+
+//DB Requirements:-->DONE
+-> produkt ma produkt name, ra productEnum type together pk, ra reciept ma fk hunxa
+-> reciept ma automatic incrment pk, reciept fk produckt name+procut type,date hunu paryo, customer username as fk
+-> customer username-pk,, age, sex, nationality, residence in
+-> Reciept_Item has auto increment pk hunxa jasma recipet ra productEnum id fk hunxa.
+
+
+//reciept bata old datas new table ma migrate hunu parxa.not sharding, migration
+charts haru csv bata read garne, not from db.
+
+
+//write batch script to fetch data from sql table to csv : product, customer and Reciept
+in product section:Nepali date should be written. YYYY.MM.DD ---> String format, change date format in product in admin section
+
+->NEXT STEP is: check datepattern and halt process if not correct.
+
+IMPORTANT: Reciept layout---DONE!!!!!!!!!!
+Table view is also done:
+-> one reciept has list of invoice items.
+-table view row should be able to delete.
+
+FIND/CREATE the BIGTABLE, which will have 3-4 table and same information.
+1.1.Fill the database first
+1.2.Migrate to csv file
+1.3. delete old files or overwrite, only one csv files should exist in each folder.
+1.4. draw charts from csv files.
+1.5. write script files to export to data from db to csv file.
+1.6 CRUD operations to SQL Table:
+
+
+Customer,Product multiply attributes
+:02.12.2023
+addproduct ma addproductintracker ma update garnu xa method ma, teha fk aunxa.
+
+Next Goal:
+ -Product table is filled,
+
+product
+product intracker:
+customer
+reciept
+TODO
+
+recieptItem
+min 43 Reciept .
+
+-Random RecieptItem nikalne ra reciept sanga zuweisen garidine.
+-reciept ko date lai increment garera line graph ma dekhaune,
+-pie chart ma dekhaune
+ra css schön banaune. border, background, titlepanel use garne.
+mile ali code copy ni garne. ux border, passend color aussuchen garne!
+
+ER // Diagramm:
+One or more employee sell one or more than one Products to one or more customer in certain filiale.
+
+
+************TO Complete**************
+//19.08.2024
+// Hibernate connection to every classes, CRUD Operation, single and double side add, delete, cascading effect cover
+Employee plus filiale garum, hibernate notation
+Employee (N) ↔ (1) Filiale
+Filiale (1) ↔ (N) Receipt
+Customer (1) ↔ (N) Receipt
+Customer (M) ↔ (N) Filiale (Indirectly through Receipts)  Customer filiable table id 1:M Filiale, Customer-Filiale table 1:N Customer
+
+
+// populate database, and  show information in diagram
+-create Dummy Datas through code. and add them in Database..
+
+
+*****************DONE*********************
+productintracker (1) ↔ (1) Product
+Reciept (1) ↔ (M) Reciept Item //Each reciept can have multiple reciept items, but each receipt item belongs to one reciept.
+Product (1) ↔ (M) Reciept Item // Each Product can appear in multiple receipt items, but a receipt item references exactly one product.
+
+
+
+//20.08.2024
+backend and amazon frontend (with edit connect) this time only with JS.
+Payment Integration

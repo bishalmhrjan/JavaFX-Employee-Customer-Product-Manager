@@ -17,7 +17,7 @@
                      <graphic>
                         <ImageView fx:id="hemp1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171112_161920-300x300.jpg" />
+                              <Image url="@hemp.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -26,7 +26,7 @@
                      <graphic>
                         <ImageView fx:id="hemp2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171112_163110-300x300.jpg" />
+                              <Image url="@hemp1.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -35,7 +35,7 @@
                      <graphic>
                         <ImageView fx:id="hemp3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171115_161141_2-300x300.jpg" />
+                              <Image url="@hemp2.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -44,7 +44,7 @@
                      <graphic>
                         <ImageView fx:id="hemp4" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171115_170713-300x300.jpg" />
+                              <Image url="@hemp3.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -57,7 +57,7 @@
                      <graphic>
                         <ImageView fx:id="hemp5" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171115_172551-300x300.jpg" />
+                              <Image url="@hemp4.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -66,7 +66,7 @@
                      <graphic>
                         <ImageView fx:id="hemp6" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../bagsandpurse/20171115_162703-300x300.jpg" />
+                              <Image url="@../bagsandpurse/bagsandpurse8.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -75,7 +75,7 @@
                      <graphic>
                         <ImageView fx:id="hemp7" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171115_180155-300x300.jpg" />
+                              <Image url="@hemp6.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -84,7 +84,7 @@
                      <graphic>
                         <ImageView fx:id="hemp8" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@20171115_174433-300x300.jpg" />
+                              <Image url="@hemp5.jpg" />
                            </image>
                         </ImageView>
                      </graphic>
