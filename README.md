@@ -110,10 +110,16 @@ Improved maintainability
 
 Object-relational mapping benefits
 
-Complete CRUD operations for all entities
+Complete CRUD operations for all entities.
 
-![App Interface](src/main/resources/image/Admin-CustomerManagement.png)
-![App Interface](src/main/resources/image/Login-View.png)
-![App Interface](src/main/resources/image/Employee-RecieptManagement.png)
-![App Interface](src/main/resources/image/Employee-ProductManagement.png)
-![App Interface](src/main/resources/image/Admin-CustomerManagement.png)
+Here is some Screenshots of Desktop App.
+### Admin Customer Management 
+![App Interface](META-INF/image/Admin-CustomerManagement.png)
+**LogIn-View**
+![App Interface](META-INF/image/LogIn-View.png)
+**Employee Reciept Management**
+![App Interface](META-INF/image/Employee-RecieptManagement.png)
+**<h3>Employee Product Management**
+![App Interface](META-INF/image/Employee-ProductManagement.png)
+**Admin Customer Management**
+![App Interface](META-INF/image/Admin-CustomerManagement.png)
